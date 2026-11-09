@@ -1,0 +1,267 @@
+{
+  "report": "IMF Country Report No. 25/147 - Seychelles 2025 Fourth Reviews under the EFF and RSF",
+  "cleaning": {
+    "raw_chars": 372048,
+    "clean_chars": 349312,
+    "lines_removed": {
+      "blank": 373,
+      "IMF banner": 113,
+      "header/footer": 241,
+      "page number / chart axis value": 486,
+      "TOC leader / separator": 35
+    }
+  },
+  "chunking": {
+    "n_chunks": 279,
+    "max_tokens": 350,
+    "overlap": 50
+  },
+  "sections": {
+    "PRESS RELEASE AND EXECUTIVE SUMMARY": {
+      "notes": [
+        "On June 16, 2025, the IMF Executive Board completed the fourth reviews under the Extended Fund Facility (EFF) and Resilience and Sustainability Facility (RSF), approving an immediate disbursement of about US$13.7 million (SDR 6.1 million under EFF, SDR 3.9 million under RSF).",
+        "Real GDP growth for Seychelles is estimated at 2.9 percent in 2024 and projected at 3.2 percent for 2025, revised down from 4.3 percent at the previous reviews due to weaker European tourism demand.",
+        "Year-on-year inflation reached 1.7 percent in December 2024 and is expected to moderate to 1.2 percent by end-2025, driven by lower food, fuel, and utility prices.",
+        "Fiscal outturns in 2024 were tighter than budgeted, recording a primary surplus of 3.2 percent of GDP due to capital expenditure underspending, procurement bottlenecks, and civil service recruitment delays.",
+        "The current account deficit expanded to 7.9 percent of GDP in 2024, while gross international reserves rose to $774 million (3.8 months of imports or 115 percent of the ARA metric).",
+        "EFF program implementation remained strong, with all quantitative targets and structural benchmarks for end-December 2024 met, though two 2025 SBs faced minor delays due to capacity constraints.",
+        "RSF implementation progressed satisfactorily with all March 2025 reform measures met, though one component of an April 2025 electricity tariff measure was delayed to November and modifications were requested for two December 2025 measures.",
+        "Key downside risks include slower global growth impacting tourist arrivals and spending, commodity price volatility, global trade tensions, and climate change threats to coastal infrastructure."
+      ],
+      "summary": "On June 16, 2025, the IMF Executive Board completed the fourth reviews under Seychelles’ EFF and RSF arrangements, approving a US$13.7 million disbursement. Real GDP growth is estimated at 2.9 percent in 2024 and projected at 3.2 percent in 2025. December 2024 inflation reached 1.7 percent, while the 2024 primary fiscal surplus was 3.2 percent of GDP. All end-December 2024 EFF targets were met. The current account deficit reached 7.9 percent of GDP in 2024, with gross reserves at $774 million.",
+      "words": 81,
+      "length_check": "ok",
+      "model": "gemini-3.5-flash",
+      "latency_s": 13.49
+    },
+    "CONTEXT AND RECENT DEVELOPMENTS": {
+      "notes": [
+        "Real GDP growth for 2024 is estimated at 2.9 percent, down from 3 percent projected at the 3rd reviews, while Q4 2024 unemployment declined to 2 percent from 2.8 percent in Q4 2023.",
+        "Headline inflation rose to 1.7 percent in 2024 (from -2.7 percent in 2023) due to cumulative 9 percent utility tariff increases and rupee depreciation, but fell to -0.04 percent in March 2025.",
+        "The 2024 current account deficit widened by 0.5 percentage points to about 7.9 percent of GDP as tourist arrivals grew by only 0.5 percent and per-tourist spending dropped 7.4 percent.",
+        "Gross international reserves increased by $92 million in 2024 to $774 million (3.8 months of imports) and reached $801 million (3.9 months of imports) by end-Q1 2025.",
+        "The government achieved a 2024 primary fiscal surplus of 3.2 percent of GDP (exceeding the projected 1.1 percent), driven by total expenditure underspending of 3.1 percentage points of GDP.",
+        "Central Bank of Seychelles maintained the monetary policy rate at 1.75 percent since March 2024, but excess reserves rose to SR 261 million and average lending rates reached 9.9 percent in December 2024.",
+        "Private sector credit grew by 12.1 percent in 2024 (up from 7.4 percent in 2023), while banking sector NPLs declined to 5.5 percent of gross loans in December 2024."
+      ],
+      "summary": "Seychelles' 2024 real GDP growth was estimated at 2.9 percent, with Q4 unemployment dropping to 2 percent. Inflation reached 1.7 percent in 2024 before falling to -0.04 percent in March 2025. The current account deficit widened to 7.9 percent of GDP, while reserves rose to $774 million by end-2024. Fiscal policy achieved a 3.2 percent primary surplus due to capital and operational underspending. Central bank policy rates remained at 1.75 percent, private credit grew 12.1 percent, and bank NPLs fell to 5.5 percent by December 2024.",
+      "words": 86,
+      "length_check": "ok",
+      "model": "gemini-3.5-flash",
+      "latency_s": 17.36
+    },
+    "OUTLOOK AND RISKS": {
+      "notes": [
+        "Real GDP growth for 2025 is projected at 3.2 percent, down from 4.3 percent at the third reviews due to slower growth in Europe.",
+        "Medium-term growth is expected to stabilize around 3.4 percent, assuming tourism inflows recover and spending stabilizes.",
+        "Average annual inflation is projected to stabilize around 3 percent, but remains vulnerable to external commodity, transport, and currency shocks.",
+        "The current account deficit is expected to average 8.8 percent of GDP over the medium term.",
+        "Reserve coverage is projected to remain around 3.8 months of imports, supported by an overall balance of payments surplus and FDI inflows.",
+        "In March 2024, the Central Bank of Seychelles (CBS) reduced the Monetary Policy Rate (MPR) by 25bps, from 2 to 1.75 percent.",
+        "Downside risks include heightened trade tensions, geopolitical impacts on commodity prices and shipping, credit concentration, high (albeit declining) NPLs, and climate risks to coastal infrastructure.",
+        "Upside risks include lower international commodity prices easing inflation and shifting tourism demand opening new source markets."
+      ],
+      "summary": "Seychelles' projected outlook is broadly stable but faces rising downside risks. Real GDP growth for 2025 is revised down to 3.2 percent (from 4.3 percent projected at the third reviews), before stabilizing around 3.4 percent medium-term. Average annual inflation is projected at 3 percent, while the current account deficit will average 8.8 percent of GDP over the medium term. Reserve coverage is expected around 3.8 months of imports. Key risks include global trade tensions, shipping disruptions, credit concentration, high NPLs, and climate threats.",
+      "words": 83,
+      "length_check": "ok",
+      "model": "gemini-3.5-flash",
+      "latency_s": 11.4
+    },
+    "PROGRAM PERFORMANCE": {
+      "notes": [
+        "EFF program implementation was strong, with all end-December 2024 quantitative performance criteria (QPCs) and indicative targets (ITs) met.",
+        "The primary fiscal balance and net domestic financing exceeded program targets by a wide margin, primarily due to capital expenditure under-execution.",
+        "Net international reserves (NIR) accumulation exceeded the program target by $47.8.",
+        "All structural benchmarks (SBs) scheduled for end-December 2024 were met by the slated deadline.",
+        "Two SBs programmed for 2025H1 encountered minor delays: a study on tourism dynamics and the SRC's automated risk analysis/tax audit selection platform (rescheduled to end-December 2025).",
+        "A new structural benchmark was agreed for August 2025 requiring the SRC to introduce a digital case management system for investigations and audits.",
+        "RSF implementation progress has been satisfactory for the 4th review, with all reform measures (RMs) through March implemented (RMs 6 and 7).",
+        "RMs 6.1 and 6.2 (slated for December 2025) require modification due to pending formal guidance from the Basel Committee on climate-related financial risk.",
+        "A component of RM 8 regarding energy pricing and a multi-year electricity tariff system is delayed from April 2025 and expected to be completed by November."
+      ],
+      "summary": "EFF program implementation remained strong, with all end-December 2024 QPCs and ITs met. Primary fiscal balance and net domestic financing exceeded targets due to capital expenditure under-execution, while NIR accumulation exceeded its target by $47.8. All end-December 2024 structural benchmarks were met, though two 2025H1 SBs face minor delays. A new August 2025 SB was established for an SRC digital case management system. RSF progress is satisfactory with March RMs completed, though minor modifications are needed for future RMs 6.1, 6.2, and 8.",
+      "words": 83,
+      "length_check": "ok",
+      "model": "gemini-3.5-flash",
+      "latency_s": 10.04
+    },
+    "POLICY DISCUSSIONS": {
+      "notes": [
+        "In 2024, Seychelles recorded a higher-than-anticipated fiscal surplus of 3.2 percent of GDP due to capital expenditure execution bottlenecks and emergency resource diversion following the December 2023 twin disasters.",
+        "The revised 2025 macroeconomic framework targets a fiscal surplus of 1.2 percent of GDP, while public debt is projected to increase to 61.2 percent of GDP driven by new guarantees for the Land Reclamation ($17.5 million) and Port Extension ($62.3 million) projects.",
+        "Public debt is expected to decrease to approximately 49 percent of GDP by 2030, supported by medium-term fiscal consolidation that targets a primary surplus of about 3.1 percent of GDP.",
+        "Headline inflation reached 1.7 percent at end-2024 before turning slightly negative in February and March 2025, leaving the Central Bank of Seychelles' (CBS) accommodative monetary stance appropriate.",
+        "Net international reserves reached $630.9 million at end-2024, while gross reserves reached $801 million (3.9 months of imports) in March 2025 following $69.5 million in FX purchases in 2024.",
+        "Banking system non-performing loans (NPLs) dropped from 8.1 percent in December 2023 to 5.5 percent in 2024, and CBS requires a capital injection of approximately SR 319 million (1 percent of GDP) over 10 years to reach its SR 550 million capital target.",
+        "Disaster risk financing needs are estimated to range from $1.2 million (0.05 percent of GDP for a 2-year event) to $45 million (2.1 percent of GDP for a 50-year event)."
+      ],
+      "summary": "In 2024, Seychelles recorded a 3.2 percent fiscal surplus due to capital spending bottlenecks. The revised 2025 macro framework targets a 1.2 percent fiscal surplus, while public debt is projected to reach 61.2 percent of GDP before declining to around 49 percent by 2030. Inflation stood at 1.7 percent at end-2024, supporting an accommodative monetary policy. Gross international reserves rose to $801 million by March 2025. NPLs fell to 5.5 percent in 2024, and disaster risk financing needs are estimated at up to $45 million.",
+      "words": 85,
+      "length_check": "ok",
+      "model": "gemini-3.5-flash",
+      "latency_s": 17.35
+    },
+    "PROGRAM MODALITIES": {
+      "notes": [
+        "New and revised quantitative program targets were established for 2025 and 2026, including raising the preliminary December 2025 net international reserves target to $670.9 million.",
+        "The December 2025 total revenue target was adjusted downward by SR 306.8 million due to lower growth and inflation projections, while the primary balance target increased by SR 4.9 million owing to lower expenditures.",
+        "The structural benchmark for an automated risk analysis and tax audit platform (end-June 2025) was rescheduled to end-December 2025, while the tourism dynamics study was rescheduled to end-September 2025.",
+        "A new structural benchmark was introduced for August 2025 to implement a case management system tracking audit and investigation cases from inception to finalization.",
+        "Reform Measures 6.1 and 6.2 for December 2025 were modified to request climate-related financial risk guidelines aligned with IMF staff recommendations instead of formal BCBS guidance.",
+        "Completion of the fourth reviews will release SDR 6.107 million under the EFF and SDR 3.90375 million under the RSF, both designated for budget support.",
+        "Fund credit to GDP is projected to peak at 7.7 percent of GDP in 2025, 21.5 percent of Gross International Reserves in 2026, and maximum debt service will reach 1 percent of GDP in 2027.",
+        "The Central Bank of Seychelles (CBS) addressed all 2023 safeguards assessment recommendations, supported by amendments to the CBS Act enacted in August 2024."
+      ],
+      "summary": "Upon approval of the fourth reviews, SDR 6.107 million under the EFF and SDR 3.90375 million under the RSF will be disbursed for budget support. Quantitative program targets for 2025–2026 were adjusted, including raising the December 2025 net international reserves target to $670.9 million. Structural benchmarks were rescheduled and a new benchmark was proposed for August 2025. Program risks are moderate, the EFF is fully financed, capacity to repay is adequate, and Fund credit will peak at 7.7 percent of GDP in 2025.",
+      "words": 83,
+      "length_check": "ok",
+      "model": "gemini-3.5-flash",
+      "latency_s": 16.48
+    },
+    "STAFF APPRAISAL": {
+      "notes": [
+        "Real GDP growth moderated in 2024 as tourist arrivals and spending remained flat compared to pre-pandemic growth levels.",
+        "Public debt has significantly declined from over 90 percent of GDP at the end of the pandemic to under 60 percent by 2024.",
+        "The growth outlook for 2025-26 has been revised downward due to expected lower arrivals and per-tourist spending from European markets.",
+        "Fiscal policy is characterized by repeated underspending on capital projects, which undermines budget credibility despite higher-than-projected primary surpluses.",
+        "Structural reforms are advancing, including the implementation of the IFMIS system for the FY 2026 budget and a new digital platform for tax audits.",
+        "Monetary policy remains data-driven as real interest rates are high and private credit growth is relatively strong despite low inflation.",
+        "Financial sector risks are assessed as low, with the Cabinet approving the draft Bank Recovery and Resolution Act in November 2024.",
+        "The second National Risk Assessment was published in February 2025, and the VASP Act was enacted in August 2024 to regulate virtual assets.",
+        "RSF implementation is progressing well, with the Disaster Risk Financing Strategy adopted in May 2025 following IMF recommendations.",
+        "Staff supports an EFF purchase of SDR 6.107 million (26.7 percent of quota) and an RSF disbursement of SDR 3.90375 million (17 percent of quota)."
+      ],
+      "summary": "Seychelles maintains macroeconomic stability with low inflation and public debt falling below 60 percent of GDP in 2024. However, growth moderated in 2024 due to flat tourism, prompting downward revisions for 2025-26. While fiscal positions are prudent, capital underspending remains a challenge. Monetary policy is data-driven amid high real interest rates. Financial risks are low, supported by the 2024 VASP Act and Bank Recovery and Resolution Act. Staff supports completing the fourth reviews, totaling SDR 10.01075 million in disbursements.",
+      "words": 79,
+      "length_check": "ok",
+      "model": "gemini-3-flash-preview",
+      "latency_s": 15.58
+    }
+  },
+  "executive_summary": {
+    "bullets": [
+      "Private sector credit grew by 12.1 percent in 2024, up from 7.4 percent in 2023.",
+      "Banking sector non-performing loans (NPLs) declined from 8.1 percent in December 2023 to 5.5 percent of gross loans in December 2024.",
+      "The Central Bank of Seychelles requires a capital injection of approximately SR 319 million (1 percent of GDP) over 10 years to achieve its SR 550 million capital target.",
+      "The Central Bank of Seychelles maintained its monetary policy rate at 1.75 percent since March 2024, while average lending rates reached 9.9 percent in December 2024 and excess reserves rose to SR 261 million.",
+      "Overall financial sector risks are assessed as low, with the Cabinet approving the draft Bank Recovery and Resolution Act in November 2024.",
+      "To address sector vulnerabilities, the second National Risk Assessment was published in February 2025, following the enactment of the VASP Act in August 2024 to regulate virtual assets.",
+      "Financing needs for disaster risk are estimated to range from $1.2 million (0.05 percent of GDP for a 2-year event) to $45 million (2.1 percent of GDP for a 50-year event).",
+      "Public debt is projected to increase to 61.2 percent of GDP in 2025 due to new guarantees for the Land Reclamation ($17.5 million) and Port Extension ($62.3 million) projects, before falling to approximately 49 percent of GDP by 2030.",
+      "Key downside risk assessments include credit concentration, high (albeit declining) NPLs, geopolitical impacts on commodity prices, global trade tensions, and climate change threats to coastal infrastructure."
+    ],
+    "model": "gemini-3.5-flash"
+  },
+  "judge_scores": {
+    "PRESS RELEASE AND EXECUTIVE SUMMARY": {
+      "consistency": 5,
+      "completeness": 5,
+      "factual_alignment": 5,
+      "unsupported_claims": [],
+      "rationale": "The summary is concise, fully faithful to the source text, and contains no unsupported claims or contradictions. All figures (13.7 million disbursement, 2.9 percent 2024 GDP growth, 3.2 percent 2025 projection, 1.7 percent inflation, 3.2 percent primary surplus, 7.9 percent current account deficit, and $774 million reserves) are directly supported by the source document.",
+      "judge_model": "gemini-3.5-flash-lite"
+    },
+    "CONTEXT AND RECENT DEVELOPMENTS": {
+      "consistency": 5,
+      "completeness": 5,
+      "factual_alignment": 5,
+      "unsupported_claims": [],
+      "rationale": "The summary accurately captures the key economic indicators, figures, and developments from the source text regarding Seychelles' GDP growth, unemployment, inflation, current account deficit, reserves, fiscal surplus, monetary policy, private credit, and NPLs without introducing any unsupported claims or contradictions.",
+      "judge_model": "gemini-3.5-flash-lite"
+    },
+    "OUTLOOK AND RISKS": {
+      "consistency": 5,
+      "completeness": 5,
+      "factual_alignment": 5,
+      "unsupported_claims": [],
+      "rationale": "The summary is fully consistent, complete, and factually aligned with the provided source text. All mentioned numbers, projections, and risks are directly supported by the source paragraphs.",
+      "judge_model": "gemini-3.5-flash-lite"
+    },
+    "PROGRAM PERFORMANCE": {
+      "consistency": 5,
+      "completeness": 5,
+      "factual_alignment": 5,
+      "unsupported_claims": [],
+      "rationale": "The summary is fully consistent, complete, and factually aligned with the provided source text. All figures, program statuses, and structural benchmark details accurately reflect the source without introducing unsupported external information.",
+      "judge_model": "gemini-3.5-flash-lite"
+    },
+    "POLICY DISCUSSIONS": {
+      "consistency": 5,
+      "completeness": 4,
+      "factual_alignment": 5,
+      "unsupported_claims": [],
+      "rationale": "The summary accurately captures key metrics and facts directly from the source report, including the 2024 fiscal surplus, the 2025 fiscal surplus target, public debt projections, end-2024 inflation, international reserves, NPL ratios, and disaster risk financing estimates without introducing unsupported claims.",
+      "judge_model": "gemini-3.5-flash-lite"
+    },
+    "PROGRAM MODALITIES": {
+      "consistency": 5,
+      "completeness": 5,
+      "factual_alignment": 5,
+      "unsupported_claims": [],
+      "rationale": "The summary is fully consistent, faithful in tone, and covers the main points of the source including disbursements, target adjustments, structural benchmarks, and program risks. Every claim and number mentioned in the summary is directly supported by the source text.",
+      "judge_model": "gemini-3.5-flash-lite"
+    },
+    "STAFF APPRAISAL": {
+      "consistency": 5,
+      "completeness": 5,
+      "factual_alignment": 5,
+      "unsupported_claims": [],
+      "rationale": "The summary accurately reflects the macroeconomic context, fiscal and monetary developments, financial sector risks, and the specific review and disbursement details outlined in the source documents without introducing any external or unsupported information.",
+      "judge_model": "gemini-3.5-flash-lite"
+    },
+    "EXECUTIVE SUMMARY": {
+      "consistency": 5,
+      "completeness": 5,
+      "factual_alignment": 5,
+      "unsupported_claims": [],
+      "rationale": "The summary is fully consistent, covers the main economic, financial, structural, and climate-related points accurately, and every single claim, percentage, and dollar/rupee amount is strictly supported by the source document.",
+      "judge_model": "gemini-3.5-flash-lite"
+    }
+  },
+  "numeric_grounding": {
+    "PRESS RELEASE AND EXECUTIVE SUMMARY": {
+      "numbers": 8,
+      "unsupported_numbers": [],
+      "support_rate": 1.0
+    },
+    "CONTEXT AND RECENT DEVELOPMENTS": {
+      "numbers": 10,
+      "unsupported_numbers": [
+        "-0.04"
+      ],
+      "support_rate": 0.9
+    },
+    "OUTLOOK AND RISKS": {
+      "numbers": 6,
+      "unsupported_numbers": [],
+      "support_rate": 1.0
+    },
+    "PROGRAM PERFORMANCE": {
+      "numbers": 4,
+      "unsupported_numbers": [],
+      "support_rate": 1.0
+    },
+    "POLICY DISCUSSIONS": {
+      "numbers": 8,
+      "unsupported_numbers": [],
+      "support_rate": 1.0
+    },
+    "PROGRAM MODALITIES": {
+      "numbers": 4,
+      "unsupported_numbers": [],
+      "support_rate": 1.0
+    },
+    "STAFF APPRAISAL": {
+      "numbers": 3,
+      "unsupported_numbers": [
+        "10.01075"
+      ],
+      "support_rate": 0.667
+    },
+    "EXECUTIVE SUMMARY": {
+      "numbers": 21,
+      "unsupported_numbers": [],
+      "support_rate": 1.0
+    }
+  }
+}

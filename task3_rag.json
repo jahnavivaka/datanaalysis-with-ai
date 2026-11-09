@@ -1,0 +1,954 @@
+{
+  "embedding_models": {
+    "MiniLM": "sentence-transformers/all-MiniLM-L6-v2",
+    "BGE": "BAAI/bge-small-en-v1.5"
+  },
+  "index": "faiss.IndexFlatL2 on L2-normalised vectors (= cosine ranking)",
+  "n_units": 279,
+  "truncation": {
+    "MiniLM": {
+      "max_tokens": 256.0,
+      "units_over_limit": 243.0,
+      "text_unseen_pct": 18.7
+    },
+    "BGE": {
+      "max_tokens": 512.0,
+      "units_over_limit": 0.0,
+      "text_unseen_pct": 0.0
+    }
+  },
+  "eval_set": [
+    {
+      "id": "bank_regulation",
+      "question": "What does the IMF recommend about bank regulation, provisioning and the banking legal framework in Seychelles?",
+      "gold": "bank regulation|provisioning|banking law|legal framework",
+      "gold_units": [
+        34,
+        45,
+        195,
+        213,
+        219,
+        220,
+        234,
+        235
+      ]
+    },
+    {
+      "id": "inflation_outlook",
+      "question": "What is the inflation outlook for Seychelles, and what factors are driving it?",
+      "gold": "inflation outlook|headline inflation|food prices|utilities",
+      "gold_units": [
+        4,
+        14,
+        16,
+        17,
+        34,
+        40,
+        45,
+        55,
+        57,
+        176,
+        209,
+        234,
+        235
+      ]
+    },
+    {
+      "id": "debt_stress_tests",
+      "question": "What assumptions or shocks are used in the debt sustainability stress tests for Seychelles?",
+      "gold": "stress tests?|contingent liabilit",
+      "gold_units": [
+        33,
+        38,
+        52,
+        122,
+        123,
+        141,
+        142,
+        149,
+        154,
+        233,
+        234,
+        245,
+        264
+      ]
+    },
+    {
+      "id": "climate_risks",
+      "question": "What climate-related risks does Seychelles face, and how does the IMF recommend addressing them?",
+      "gold": "climate risk|climate change|resilience|environmental",
+      "gold_units": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        12,
+        13,
+        15,
+        22,
+        23,
+        24,
+        28,
+        43,
+        44,
+        45,
+        53,
+        74,
+        82,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        135,
+        137,
+        143,
+        154,
+        157,
+        158,
+        159,
+        160,
+        166,
+        167,
+        168,
+        169,
+        171,
+        172,
+        174,
+        175,
+        176,
+        181,
+        183,
+        212,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        256,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        277,
+        278
+      ]
+    },
+    {
+      "id": "monetary_policy",
+      "question": "What is the Central Bank of Seychelles' monetary policy rate, and what does the report say about monetary policy?",
+      "gold": "1\\.75 percent|monetary policy rate",
+      "gold_units": [
+        19,
+        21,
+        179,
+        213,
+        275
+      ]
+    },
+    {
+      "id": "external_risks",
+      "question": "What external risks could affect Seychelles' economic outlook?",
+      "gold": "external shocks|external risks|global uncertainty",
+      "gold_units": [
+        21,
+        36,
+        161,
+        165,
+        166,
+        171,
+        174,
+        176,
+        182,
+        186
+      ]
+    },
+    {
+      "id": "tier1_trap",
+      "question": "What is the Tier 1 capital ratio of Seychelles' banks?",
+      "gold": null,
+      "gold_units": []
+    },
+    {
+      "id": "informality",
+      "question": "What does the report say about labour informality in Seychelles?",
+      "gold": null,
+      "gold_units": []
+    },
+    {
+      "id": "tax_target",
+      "question": "What fiscal or tax revenue targets have the authorities set?",
+      "gold": null,
+      "gold_units": []
+    },
+    {
+      "id": "aml_cft",
+      "question": "What does the report say about Seychelles' AML/CFT framework and its next mutual evaluation?",
+      "gold": "AML/CFT|mutual evaluation",
+      "gold_units": [
+        224
+      ]
+    },
+    {
+      "id": "tourism",
+      "question": "How important is tourism to Seychelles' economy, and what risks affect tourism receipts?",
+      "gold": "tourism",
+      "gold_units": [
+        1,
+        2,
+        4,
+        5,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        41,
+        42,
+        43,
+        47,
+        49,
+        54,
+        55,
+        56,
+        67,
+        70,
+        71,
+        74,
+        82,
+        126,
+        128,
+        129,
+        133,
+        134,
+        137,
+        156,
+        159,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        171,
+        176,
+        178,
+        180,
+        181,
+        182,
+        183,
+        188,
+        216,
+        217,
+        235,
+        236,
+        247,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277
+      ]
+    },
+    {
+      "id": "gfn",
+      "question": "What are the government's gross financing needs?",
+      "gold": "gross financing needs?",
+      "gold_units": [
+        32,
+        150,
+        152,
+        154
+      ]
+    },
+    {
+      "id": "contingent_shock",
+      "question": "What happens to public debt under the contingent liability stress scenario?",
+      "gold": "contingent liabilit|stress scenario",
+      "gold_units": [
+        33,
+        122,
+        123,
+        149,
+        154,
+        155,
+        264
+      ]
+    },
+    {
+      "id": "growth_2025",
+      "question": "What is the IMF's real GDP growth projection for Seychelles in 2025?",
+      "gold": "3\\.2 percent",
+      "gold_units": [
+        1,
+        2,
+        3,
+        4,
+        14,
+        18,
+        20,
+        21,
+        25,
+        177,
+        178,
+        273
+      ]
+    },
+    {
+      "id": "monetary_policy",
+      "question": "What is the Central Bank of Seychelles' monetary policy rate?",
+      "gold": "1\\.75 percent",
+      "gold_units": [
+        19,
+        21,
+        179,
+        213
+      ]
+    },
+    {
+      "id": "banking_regulation",
+      "question": "What does the IMF recommend about banking regulation and financial sector supervision?",
+      "gold": "banking sector|financial supervision|prudential",
+      "gold_units": [
+        19,
+        20,
+        35,
+        38,
+        52,
+        53,
+        58,
+        97,
+        124,
+        127,
+        128,
+        181,
+        214,
+        233,
+        234,
+        250,
+        251,
+        268
+      ]
+    },
+    {
+      "id": "provisioning",
+      "question": "What does the report say about bank provisioning and non-performing loans?",
+      "gold": "provisioning|non-performing loans",
+      "gold_units": [
+        58,
+        98
+      ]
+    },
+    {
+      "id": "climate_finance",
+      "question": "What climate-related reforms or financing measures are discussed under the Resilience and Sustainability Facility?",
+      "gold": "climate|resilience",
+      "gold_units": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        12,
+        13,
+        14,
+        15,
+        22,
+        23,
+        24,
+        26,
+        28,
+        31,
+        38,
+        43,
+        44,
+        45,
+        46,
+        47,
+        53,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        142,
+        143,
+        154,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        174,
+        175,
+        176,
+        181,
+        183,
+        186,
+        201,
+        204,
+        206,
+        207,
+        208,
+        212,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        242,
+        243,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        256,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        274,
+        277,
+        278
+      ]
+    },
+    {
+      "id": "tier1_capital",
+      "question": "What is the Tier 1 capital ratio of Seychelles' banks?",
+      "gold": null,
+      "gold_units": []
+    }
+  ],
+  "retrieval_metrics": [
+    {
+      "config": "MiniLM single-query",
+      "hit@1": 0.267,
+      "hit@k": 0.6,
+      "mrr@10": 0.402,
+      "k": 5,
+      "n": 15
+    },
+    {
+      "config": "BGE single-query",
+      "hit@1": 0.4,
+      "hit@k": 0.867,
+      "mrr@10": 0.56,
+      "k": 5,
+      "n": 15
+    },
+    {
+      "config": "BGE single-query",
+      "hit@1": 0.4,
+      "hit@k": 0.867,
+      "mrr@10": 0.56,
+      "k": 8,
+      "n": 15
+    },
+    {
+      "config": "BGE multi-query",
+      "hit@1": 0.533,
+      "hit@k": 0.867,
+      "mrr@10": 0.65,
+      "k": 5,
+      "n": 15
+    },
+    {
+      "config": "BGE multi-query",
+      "hit@1": 0.533,
+      "hit@k": 0.867,
+      "mrr@10": 0.65,
+      "k": 8,
+      "n": 15
+    }
+  ],
+  "query_variants": {
+    "bank_regulation": [
+      "How does the IMF advise strengthening Seychelles' prudential framework, loan-loss provisioning, and banking legislation?",
+      "What are the IMF recommendations for bank supervision, provisioning requirements, and financial sector legal updates in Seychelles?",
+      "IMF advice on financial sector oversight, regulatory provisioning guidelines, and legal reforms for Seychellois commercial banks."
+    ],
+    "inflation_outlook": [
+      "What are the projected CPI trends and underlying price pressure drivers for Seychelles in the IMF report?",
+      "How is inflation forecasted to evolve in Seychelles, and what main factors influence price dynamics?",
+      "Forecasted headline inflation trajectory and key inflationary determinants for Seychelles."
+    ],
+    "debt_stress_tests": [
+      "Which macroeconomic sensitivity shocks and baseline scenario assumptions are applied in the Seychelles Debt Sustainability Analysis (DSA)?",
+      "What adverse scenarios and stress parameters are evaluated for Seychelles' public debt sustainability?",
+      "Key assumptions, contingency shocks, and standardized stress scenarios in the IMF debt sustainability assessment for Seychelles."
+    ],
+    "climate_risks": [
+      "What climate vulnerability exposure is identified for Seychelles, and what adaptation or mitigation policy recommendations are provided?",
+      "How does the IMF suggest building climate resilience and managing natural disaster hazards in Seychelles?",
+      "Environmental shocks, physical and transition climate risks, and recommended resilience strategies for Seychelles."
+    ],
+    "monetary_policy": [
+      "Central Bank of Seychelles policy rate stance and key monetary interest rate",
+      "CBS Monetary Policy Rate MPR setting and operational target",
+      "Seychelles monetary stance benchmark interest rate level"
+    ],
+    "external_risks": [
+      "What global macroeconomic headwinds, external shocks, and downside risks threaten Seychelles' growth projection?",
+      "Key external vulnerabilities, global trade shocks, and tourism spillovers impacting the Seychellois economic outlook.",
+      "Which exogenous downside risks and international economic developments pose threats to Seychelles?"
+    ],
+    "tier1_trap": [
+      "What is the aggregate Tier 1 capital adequacy ratio for the banking sector in Seychelles?",
+      "Core capital ratios and Tier 1 solvency measures reported for Seychellois commercial banks.",
+      "How well capitalized are banks in Seychelles according to Tier 1 capital ratios in the report?"
+    ],
+    "informality": [
+      "Informal employment rate and informal sector dynamics in Seychelles",
+      "Unregistered labor force and informal economy assessment Seychelles IMF",
+      "Labour market informality extent and policy measures Seychelles"
+    ],
+    "tax_target": [
+      "Quantitative performance criteria on primary fiscal balance and domestic tax revenue Seychelles",
+      "Medium-term tax collection goals and fiscal revenue targets Seychelles IMF",
+      "Seychelles government revenue yield objectives and structural fiscal benchmarks"
+    ],
+    "aml_cft": [
+      "Seychelles anti-money laundering framework assessment and ESAAMLG mutual evaluation schedule",
+      "Financial Action Task Force compliance and upcoming AML/CFT assessment for Seychelles",
+      "Combating the financing of terrorism regime progress and next mutual evaluation Seychelles"
+    ],
+    "tourism": [
+      "Contribution of tourist arrivals to Seychelles GDP and external sector downside risks",
+      "Tourism sector economic share and visitor expenditure vulnerability Seychelles",
+      "Seychelles tourism revenue projections and exposure to external demand shocks"
+    ],
+    "gfn": [
+      "Seychelles public sector gross financing requirement forecast",
+      "Government debt service obligations and gross funding needs Seychelles",
+      "Fiscal deficit financing requirements and debt redemption profile Seychelles"
+    ],
+    "contingent_shock": [
+      "Public debt trajectory under implicit state contingent liability shock Seychelles",
+      "Impact of SOE debt realization on public debt-to-GDP ratio stress test",
+      "Debt sustainability analysis contingent liability stress scenario output Seychelles"
+    ],
+    "growth_2025": [
+      "Real economic growth forecast for Seychelles 2025",
+      "Seychelles 2025 GDP projection IMF baseline scenario",
+      "Expected real GDP expansion rate Seychelles 2025"
+    ],
+    "banking_regulation": [
+      "IMF recommendations for banking sector prudential supervision and regulatory framework Seychelles",
+      "Financial stability assessment and banking oversight strengthening Seychelles",
+      "CBS supervisory capacity enhancement and bank regulatory compliance recommendations"
+    ],
+    "provisioning": [
+      "Seychelles banking sector non-performing loan NPL ratio and loan loss provisioning",
+      "Asset quality assessment bank NPL levels and allowance for credit losses Seychelles",
+      "Bank balance sheet distress non-performing assets and provisioning coverage Seychelles"
+    ],
+    "climate_finance": [
+      "Seychelles RSF reform measures climate adaptation policy and RSF disbursements",
+      "Resilience and Sustainability Facility climate reform targets and funding Seychelles",
+      "IMF RSF arrangement climate mitigation matrix and structural reform measures Seychelles"
+    ],
+    "tier1_capital": [
+      "Seychelles banking system core capital adequacy ratio and Tier 1 capital",
+      "Commercial bank capital adequacy ratios regulatory Tier 1 capital Seychelles",
+      "Tier 1 capital to risk-weighted assets ratio in Seychelles banking sector"
+    ]
+  },
+  "variant_model": "gemini-3.5-flash",
+  "results": {
+    "single": {
+      "bank_regulation": {
+        "qid": "bank_regulation",
+        "question": "What does the IMF recommend about bank regulation, provisioning and the banking legal framework in Seychelles?",
+        "condition": "single",
+        "unit_ids": [
+          1,
+          174,
+          165,
+          171,
+          175
+        ],
+        "context": "[chunk 1] (page 2)\nThe IMF’s transparency policy allows for the deletion of market-sensitive information and premature disclosure of the authorities’ policy intentions in published staff reports and other documents.\nCopies of this report are available to the public from\nInternational Monetary Fund • Publication Services\nPO Box 92780 • Washington, D.C. 20090\nTelephone: (202) 623-7430 • Fax: (202) 623-7201\nE-mail: publications@imf.org Web: http://www.imf.org\nInternational Monetary Fund\nWashington, D.C.\nJune 2025\nPR 25/199\nIMF Executive Board Completes the Fourth Reviews Under the\nExtended Fund Facility and the Resilience and Sustainability\nFacility Arrangements and Approves US$13.7 Million\nDisbursement for Seychelles\nFOR IMMEDIATE RELEASE\n• The Executive Board of the International Monetary Fund (IMF) completed today the fourth reviews of Seychelles’ economic performance under the Extended Fund Facility (EFF)\nand Resilience and Sustainability Facility (RSF) Arrangements. Completion of the reviews allows for an immediate disbursement of about US$13.7 million intended to strengthen macroeconomic stability, sustain growth, and reinforce fiscal and monetary policy frameworks, while also supporting efforts to strengthen resilience to climate change, exploit synergies with other sources of official financing, and catalyze financing for climate-related investments.\n• Economic growth for Seychelles in 2024 is estimated at 2.9 percent, reflecting lower dynamism in the tourism sector. Inflation remained subdued and fiscal performance was tighter than budgeted, driven mainly by underspending on capital expenditure. For 2025, economic growth is projected at 3.2 percent, reflecting slower growth projected for\n\n[chunk 174] (page 70)\nDecember 2025.\nAll Quantitative Performance Criteria (QPCs) and Indicative Targets (ITs) have been met, and structural reforms in fiscal and public financial management, as well as monetary policy operations, are advancing. The Government is also progressing on RSF-agreed reform measures and remains committed to improving the AML/CFT framework and based on the significant progress of the legislative reforms, Seychelles has submitted a request for re-rating of the five outstanding deficiencies (recommendations 6, 7, 8, 15, 33) in February 2025 for discussion at the August 2025\nESAAMLG meeting.\nTackling regulatory arbitrage of activities involving Virtual Assets (VA) and Virtual Asset Service\nProviders (VASP) remains a key priority. The FSA has issued public warnings and taken enforcement action, including cease and desist orders, against unlicensed operators. To strengthen supervision, it has adopted a blockchain analytics tool and applies strict pre-assessment checks to ensure compliance, with non-compliant applications subject to rejection.\nThe Government remains steadfast in its commitment to the Economic and Fiscal Resilience Action\nPlan established under the 36-month Extended Fund Facility (EFF) arrangement and the RSF\nprogram. As a small island state vulnerable to external shocks and climate risks, our primary goals remain ensuring economic resilience, maintaining debt sustainability, optimizing the tax system, improving expenditure management, and enhancing financial sector stability in line with international standards.\nThis proactive approach reflects Seychelles’ dedication to sustainable growth, financial stability, and resilience-building in the face of both internal and external challenges.\nThe policies we will be implementing over the coming months are presented in the attached\n\n[chunk 165] (page 64)\nThe medium-term outlook for FDI is expected to be strong, driven by the construction of tourism-related establishments and resorts. New external debt\nincurred in 2024 was provided by IFIs and bilateral loans from development partners. Due to Seychelles’ high-income status, these loans were not provided on less concessional terms. Going forward Seychelles faces limited access to concessional financing. The authorities continue to levy an annual tax of 0.5 percent on immovable property owned in Seychelles by non-Seychellois, which is assessed an inflow CFM under the institutional view for liberalization and management of capital flows.\nAssessment. Risks related to capital flows are increasing primarily due to Seychelles’ high-income status which limits its access to concessional loans from development partners. Over the medium-term, the country’s exposure to climate-related challenges may also impact its ability to attract FDI. The authorities should continue to maintain a flexible exchange rate regime and build buffer against external shocks, while implementing structural reforms which would make Seychelles attractive to foreign investors. On the inflow\nCFM related to the tax on immovable property non-Seychellois, staff recommends making the tax broad-based by applying it to both Seychellois and non-Seychellois or removing the measure and relying on alternative fiscal revenue enhancing measures.\nFX Intervention and Reserves Level\nBackground. The exchange rate regime is classified as floating and foreign exchange interventions are aimed at addressing disorderly market conditions and maintaining an adequate level of international reserves. The authorities conducted several foreign exchange auctions for a total of US$69.5 million to accumulate reserves during 2024, mostly in the first part of the year.\n\n[chunk 171] (page 69)\nAppendix I. Letter of Intent\nVictoria\nMay 21, 2025\nMs. Kristalina Georgieva,\nManaging Director,\nInternational Monetary Fund\n700 19th St, NW\nWashington, DC 20431\nUSA\nDear Madam Managing Director:\nOn behalf of the Government of the Republic of Seychelles, we wish to express our continued commitment to implementing the economic and financial policies supported under the Extended\nFund Facility (EFF) and Resilience and Sustainability Facility (RSF) arrangements. These programs remain critical to supporting our ongoing macroeconomic stabilization and structural reform agenda.\nGlobal economic activity is projected to weaken significantly in 2025, driven by rising trade tensions, tighter financial conditions, and heightened policy uncertainty. These trends present complex fiscal challenges for a vulnerable small island states like Seychelles, requiring a balance between supporting domestic demand, maintaining debt sustainability, and building resilience to external shocks.\nDespite the December 2023 disaster and global uncertainties, Seychelles demonstrated economic resilience in 2024, achieving a primary surplus of 3.2% of GDP and advancing reforms in fiscal, monetary, and structural areas. Our transformative agenda focuses on modernizing the economy, improving public sector efficiency, and fostering sustainable, inclusive growth. Key reforms include digitalizing public services, enhancing public financial management, improving the business environment, and building resilience in tourism, agriculture, and fisheries.\nWe remain firmly committed to reducing public debt to 50% of GDP by 2030, supported by sound fiscal policies, improved cash flow forecasting, and ongoing reforms in public investment management. On climate resilience, we continue to implement adaptation and mitigation strategies aligned with our NDCs, while actively mobilizing resources to close the climate financing gap.\n\n[chunk 175] (page 71)\nThis proactive approach reflects Seychelles’ dedication to sustainable growth, financial stability, and resilience-building in the face of both internal and external challenges.\nThe policies we will be implementing over the coming months are presented in the attached\nMemorandum of Economic and Financial Policies, which updates the Memorandum of December\n2024. We are requesting the completion of the fourth review under the EFF and RSF approved in May\n2023. In this context, we request modification of targets proposed as quantitative performance criteria for June and indicative targets for September 2025 to align with the macro framework agreed in the context of the fourth reviews mission. Moreover, we ask for minor modification for two RMs slated for December 2025 (6th review) to account for the Basel Committee on Banking Supervision not yet having issued formal guidance on assessment and disclosure of climate-related financial risk.\nWe believe that the economic and financial policies set forth in the MEFP are sufficient to ensure that the objectives of the program will be met. We stand ready to take any further measures that may prove necessary to meet our objectives. We will consult with the Fund on the adoption of these measures, and in advance of revisions to the policies contained in the MEFP, in accordance with the\nFund’s policies on such consultations. We will supply the Fund with timely and accurate data that are needed for program monitoring.\nWe authorize the publication of this letter of intent, the attached MEFP, the technical memorandum of understanding, and the forthcoming staff report.\nSincerely yours,\n/s/\nAhmed Afif\nVice President\nMinister of Finance, National Planning and Trade\n/s/\nCaroline Abel\nGovernor, Central Bank of Seychelles\nAttachment I. Memorandum of Economic and Financial Policies\nI.",
+        "answer": "Not found in the retrieved context.",
+        "model": "gemini-3.5-flash",
+        "latency_s": 4.32,
+        "status": "refused",
+        "faithfulness": 5.0,
+        "completeness": 1.0,
+        "judge_explanation": "Answer B says 'Not found in the retrieved context', which is correct for its specific context chunks (which do not contain the answer), but Answer A proves the information is present in the broader evidence set.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "B"
+      },
+      "inflation_outlook": {
+        "qid": "inflation_outlook",
+        "question": "What is the inflation outlook for Seychelles, and what factors are driving it?",
+        "condition": "single",
+        "unit_ids": [
+          173,
+          178,
+          50,
+          21,
+          17
+        ],
+        "context": "[chunk 173] (page 70)\nRevenue (excluding grants) is projected to rise to 34.5% of GDP, with current expenditure at 31.6%.\nTotal expenditure and net lending are expected at 37.3% of GDP, with capital expenditure revised down to 5.0%. Domestic financing for capital projects will increase to SR 1,050.2 million, largely due to ongoing projects and key national events. Over the medium term, the Government will advance tax reforms to boost domestic resource mobilization.\nIn 2024, the Seychelles rupee weakened by 3.7% against the USD, driven by a 3.8% rise in foreign exchange demand outpacing a 2.1% increase in supply. The depreciation moderated in early 2025 compared to late 2024. Domestic prices began rising year-on-year from May 2024 due to the weaker currency and higher electricity tariffs. However, inflation eased from January 2025, largely due to tariff reductions. As of March 2025, year-on-year inflation was -0.04%, with a 12-month average of\n0.6%. Inflation is projected to reach 1.2% year-on-year and 1.0% on a 12-month average basis by\nDecember 2025.\nAll Quantitative Performance Criteria (QPCs) and Indicative Targets (ITs) have been met, and structural reforms in fiscal and public financial management, as well as monetary policy operations, are advancing.\n\n[chunk 178] (page 72)\n4. The Seychelles rupee weakened by 3.7 percent against the USD in annual average terms in 2024. This reflected developments in the domestic foreign exchange market whereby demand for foreign exchange rose by 3.8 per cent, whilst that of supply increased by a lower\nmagnitude of 2.1 per cent. During the first quarter of 2025, the currency depreciated by a lesser extent when compared to the fourth quarter of 2024.\n5. Domestic prices increased in year-on-year terms since May 2024 as a result of the weaker domestic currency, as well as higher electricity tariffs. However, there has been a moderation in the rate of inflation as of January 2025, mainly driven by lower electricity tariffs. In\nMarch 2025, the year-on-year inflation rate was negative 0.04 percent whilst the 12-month average stood at 0.6 percent. The year-on-year and 12-month average rates of inflation for December 2025 are forecasted at 1.2 percent and 1.0 percent, respectively.\n6. For the year 2025, Seychelles’ real GDP growth has been revised downwards to 3.2 percent, compared to the Budget forecast of 4.3 percent. The downward revision stems largely to a more subdued outlook in tourism-related sectors. The ‘Manufacturing Other’ sector is expected to grow by 3 percent, bolstered by efforts from the remaining quarry operator to increase production of rock and concrete products and help address supply constraints. This growth is further reinforced by increased construction activities, including preparations for the upcoming FIFA Beach Soccer World\nCup.\n\n[chunk 50] (page 26)\nLooking ahead, downside risks appear to dominate, as tourist arrivals and spending from Seychelles’ largest source countries in Europe have historically been sensitive to economic cycles in those countries. In the face of downward revisions to global growth and rising trade tensions, the growth outlook for 2025-26 has been revised with the expectation of fewer arrivals\n13 The authorities are expecting $54.5 million in budget support from the World Bank and $25 million from the\nAfDB.\nand lower per tourist spending. Prospects for the medium-term are uncertain and will depend on how current trade tensions and geopolitical developments play out.\n44. Seychelles approaches this more uncertain environment from a position of relative strength. Real GDP growth, while lower than projected, is roughly in line with potential. Inflation is low. The fiscal position remains prudent, and public debt has declined from over 90 percent of GDP\nat the end of the pandemic to under 60 percent by 2024. The CBS maintains a broadly sufficient reserve cushion and a flexible exchange rate. The banking system appears sound and well capitalized. The authorities have demonstrated strong policy discipline, and the flexibility needed to adapt to new shocks. Continued support under the EFF and RSF programs should assist in helping\nSeychelles maintain macroeconomic stability, both in the sense of continued budget financing as well as maintaining a solid policy framework and structural reform agenda that can address challenges as they emerge.\n45. Fiscal policy in Seychelles continues to demonstrate challenges, albeit mostly with respect to under-spending. While higher-than projected primary surpluses bring faster public debt reduction, repeated underspending on capital projects undermines budget credibility and delays implementation of critical public infrastructure projects.\n\n[chunk 21] (page 12)\nReal GDP growth is projected to rise to 3.2 percent in 2025. This is a downward revision from 4.3 percent projected at the third reviews. The less optimistic outlook reflects slower growth in Europe—Seychelles' largest tourism source market. Over the medium\n3 In March 2024, the CBS reduced the MPR by 25bps, from 2 to 1.75 percent.\nterm, growth is anticipated to stabilize around 3.4 percent, assuming a recovery in tourism inflows and a stabilization of tourist spending. Average annual inflation is projected to stabilize around 3 percent but remains subject to external shocks (commodity and transport prices) and currency movements given high import dependency. The current account deficit is expected to average 8.8 percent of GDP over the medium term. An overall balance of payments surplus supported by a modest improvement in the goods and services balance and continued financial inflows (FDI) is projected to maintain reserve coverage around 3.8 months of imports.\n10. Risks appear increasingly tilted to the downside (Annex I). These risks emanate from heightened trade tensions and uncertainty weighing on global growth and trade, and related spillovers to tourism demand, international supply chains, prices, and inflation. 4 Elevated trade tensions may disrupt supply chains, reduce FDI and lead to tighter financial conditions. Additionally, the course of geopolitical conflicts and their effects on commodity prices and international shipping can have direct impacts on Seychelles given its high import dependency and quick pass through to domestic inflation. On the domestic side, financial stability risks may arise from large exposures, credit concentration, and high (albeit declining) NPLs.\n\n[chunk 17] (page 11)\nGeneral elections are scheduled for late-September 2025.\n2. Headline inflation increased to 1.7 percent (YoY) in 2024, from -2.7 percent in 2023, but has since fallen. Utility tariffs were the primary driver in 2024, with multiple increases cumulating to 9 percent by end-year. Depreciation of the rupee (by 4 percent relative to the US\ndollar in 2024, and 1.9 percent in real effective terms) also contributed to upward pressure on prices, albeit with a lower-than-expected pass-through to non-food items. In 2025, headline inflation has declined and reached –0.04 in March (y-o-y) on the back of lower food prices, utilities, and recreation and culture. Recently introduced CBS surveys indicate inflation expectations for 12 months ahead average about 1.5 percent.1\n3. The current account deficit increased by 0.5 percentage points to about 7.9 percent of GDP in 2024. Tourism arrivals grew by only 0.5 percent over 2023, spending per tourist fell by\n7.4 percent. In the financial account, an anticipated increase in FDI did not materialize2, contributing to a lower overall balance of payments surplus. The external sector assessment for\n2024 suggests that Seychelles’ external position was substantially weaker than the level implied by medium-term fundamentals and desirable policies (Annex IV).\n4. Gross international reserves increased to $774 million by December 2024 (3.8 months of imports, 115 percent of the ARA metric)—an increase of $92 million compared to the end of\n2023.",
+        "answer": "By December 2025, Seychelles' year-on-year inflation is projected to reach 1.2% with a 1.0% 12-month average [chunk 173, chunk 178], and it is expected to stabilize around 3% over the medium term [chunk 21]. \n\nFollowing earlier upward pressure caused by currency depreciation and utility rate increases, inflation moderated to -0.04% in March 2025, primarily driven by lower electricity tariffs, food prices, and recreation costs [chunk 173, chunk 178, chunk 17]. \n\nGoing forward, the inflation outlook remains heavily driven by Seychelles' high import dependency, currency movements, and potential external shocks to commodity and international transport prices [chunk 21].",
+        "model": "gemini-3.5-flash",
+        "latency_s": 6.36,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer B is completely accurate according to the provided text, perfectly structured, and thoroughly covers both the inflation outlook and its driving factors.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "B"
+      },
+      "debt_stress_tests": {
+        "qid": "debt_stress_tests",
+        "question": "What assumptions or shocks are used in the debt sustainability stress tests for Seychelles?",
+        "condition": "single",
+        "unit_ids": [
+          154,
+          142,
+          156,
+          130,
+          158
+        ],
+        "context": "[chunk 154] (page 57)\nThe fan chart analysis estimates risks to be moderate due partly to a relatively moderate probability of debt non-stabilization and a relatively low terminal adjusted debt-to-GDP ratio. The GFN module also indicates moderate risk for\nSeychelles in relation to its low average projected gross financing needs and relatively limited exposure on banks to government debt. In the stress scenario, the natural disaster shock was calibrated based on the Disaster Risk Financing Strategy TA Report that estimates the financing needs for public and private entities combined to US$59 million for a 100-year event (or 2.7 percent of GDP). This shock would elevate financing needs in the short-term but would stabilize after three years. In reality, due to geographical location, Seychelles has not experienced many natural disasters. However, the country is highly vulnerable to the rise in sea level from climate change. The RSF is supporting the authorities address climate concerns. The DSA also incorporates a stress test for a contingent liability related to the CBS recapitalization amounting SRC 330 million and financed by local banks.\nSource: IMF staff estimates and projections.\n0.4 0.5 0.2\n0.2 0.5 0.1\n0 25 50\nPercentile in peer group 2/\n0 25 50 75 100\n75 100\nValue (normalize d)\nTriggered stress tests (stress tests not activated in gray)\n2020 2022 2024 2026 2028 2030\n5-25 pct\n25-50 pct\n50-75 pct\n75-95 pct\nActual\n2020 2022 2024 2026 2028 2030\nFinancing provided by banks\nActual\nBaseline\nStress scenario\n0.00\n\n[chunk 142] (page 53)\nSeychelles: Risk of Sovereign Stress\nOverall ... Moderate\nNear term 1/\nMedium term Moderate Moderate\nFanchart Moderate ...\nGFN Moderate ...\nStress test ...\nLong term ... Moderate\nDebt stabilization in the baseline Yes\nMedium-term risks are assessed as moderate on the basis of the strength of institutions and the authorities' commitment to prudent fiscal stance. The\nDSA applied the contigent liability and natural disaster shock.\nSustainable\nDSA Summary Assessment\nCommentary: Staff assesses Seychelles to be at a moderate risk of sovereign stress and debt is assessed to be sustainable. Public debt increased from 57.3 percent of GDP in 2023 to 59.6 percent in 2024, due to exchange rate depreciation and a higher stock of external guarantees. Medium-term liquidity risks are moderate as analyzed by the GFN Financeability and Debt fan chart index. Long-term risk is also considered moderate, and debt is considered sustainable with high probability. However, due to its high-income status, Seychelles faces limited access to concessional financing. The authorities should continue to maintain a prudent fiscal position and develop domestic debt markets to diversify source of financing.\nLong-term risks are moderate on the basis of increasing financing needs for the health system and climate-related expenditures.\nSource: Fund staff.\nNote: The risk of sovereign stress is a broader concept than debt sustainability. Unsustainable debt can only be resolved through exceptional measures (such as debt restructuring). In contrast, a sovereign can face stress without its debt necessarily being unsustainable, and there can be various measures—that do not involve a debt restructuring—to remedy such a situation, such as fiscal adjustment and new financing.\n\n[chunk 156] (page 58)\nFigure 6. Seychelles: Realism of Baseline Assumptions\n3/ Data cover annual obervations from 1990 to 2019 for MAC advanced and emerging economies. Percent of sample on vertical axis.\nCommentary: The V-shaped economic recovery from the Covid pandemic combined with faster than expected fiscal consolidation have significantly reduced public indebtedness. Debt reduction as a share of GDP over the last years and the authorities' strong commitment to prudent fiscal management make Seychelles standout among other comparable countries. However, its heavy reliance on tourism renders the economy vulnerable to shocks. Seychelles is also facing significant climate challenges.\nOptimistic\nPessimistic\nEmerging Markets, Non-Commodity Exporter,\nProgram\n2/ Calculated as the percentile rank of the country's output gap revisions (defined as the difference between real time/period ahead estimates\n4/ The Laubach (2009) rule is a linear rule assuming bond spreads increase by about 4 bps in response to a 1 ppt increase in the projected debt-to-GDP ratio.\n2020 2021 2022 2023 2024 2025 2026 2027\nFiscal Adjustment (rhs)\nBaseline\nMultiplier=0.5\nMultiplier=1\nIn percentage points of GDP\nIn percent\nDistribution 3/\n3-year reduction\nMax. 3-year reduction\n3-year debt reduction above 75th percentile (5.9 ppts of GDP)\npercentile rank 54.1\nPast 5 years\nPrimary deficit\nReal interest rate and relative inflation\nReal GDP growth\nExch. rate depreciation\nResidual\nChange in public sector debt\nNext 5 years\n-2%\n0%\n2%\n5y hist\n2025\n2026\n2027\n2028\n2029\n\n[chunk 130] (page 46)\n2. Integrating climate effects into macroeconomic projections is crucial for accurately assessing the potential impacts on key variables. As climate change poses increasing risks to economic stability, failing to account for these effects can lead to overoptimistic forecasts that do not reflect the realities of vulnerability and resilience. By incorporating climate-related risks and uncertainties into macroeconomic models, policymakers can better understand their potential economic consequences, enabling more informed decision-making. This is particularly relevant for small island states like Seychelles, where climate-induced challenges significantly affect economic performance and development prospects.\n3. This annex presents a new approach, using Seychelles as a pilot case, to integrate climate change into the macroeconomic framework. 1 In doing so, it is important to recognize which climate change effects may already be included in current macroeconomic projections—against the backdrop of a baseline global warming scenario of 2.7C by 2100 typically applied at the Fund. It is crucial to distinguish between two types of climate change effects in macroeconomic projections.\nSlow-moving effects, such as rising sea levels and ocean acidification, manifest over a longer timeframe, typically beyond the medium-term horizon (5 years). In contrast, climate-induced natural disasters, including floods and storms, can occur at any time, including within the medium-term horizon.\n4. With continued and concerted resilience-building efforts, the macroeconomic impact of slow-moving climate change may be broadly contained. In the case of Seychelles, the impact of past slow-moving global temperature changes (e.g., rising sea temperatures and ocean acidification)\nand policies to build resilience to these effects, including ongoing reform measures under the RSF\narrangement, are already embedded in current macroeconomic projections.\n\n[chunk 158] (page 59)\nGFN-to-GDP Ratio Total Public Debt-to-GDP Ratio\nFigure 7. Seychelles: Triggered Modules\nMedium-term extrapolation with debt stabilizing primary balance\nLarge amortizations Climate change: Adaptation\nClimate change: Mitigation\nPensions\nSeychelles: Long-Term Risk Assessment: Large Amortization\nCommentary: The DSA long-term risk assessment is considered moderate. Unlike other small island economies, Seychelles has not been subject to frequent disasters like earthquakes due to its location. However, the country is highly vulnerable to climate change associated with the rise of sea-level. Effective planning and execution of climate policies and identifying and deploying new revenue sources to address social needs will be critical.\nNatural Resources\n-20.0\n0.0\n20.0\n40.0\n60.0\n2017\n2020\n2023\n2026\n2029\n2032\n2035\n2038\n2041\n2044\n2047\n2050\n2053\nLong run projection\nProjection\nBaseline with t+5\nBaseline with t+5 and DSPB\nHistorical 10-year average\n2017\n2020\n2023\n2026\n2029\n2032\n2035\n2038\n2041\n2044\n2047\n2050\n2053\nLong run projection\nProjection\nBaseline with t+5\nBaseline with t+5 and DSPB\nHistorical 10-year average\nGFN-to-GDP Ratio Total Public Debt-to-GDP Ratio\nCommentary: Health spending needs may be higher than what is suggested by the model, given the increasing share of the population suffering from substance abuse and its long-term generational effect. The authorities actively seek external partners to build medical/health infrastructure and devise social programs to address this issue.\nFigure 8. Seychelles: Demographics: Health\n0.0\n20.0\n40.0",
+        "answer": "The debt sustainability analysis (DSA) for Seychelles incorporates a natural disaster shock and a contingent liability shock [chunk 142, chunk 154]. The natural disaster shock is calibrated based on a Disaster Risk Financing Strategy TA Report, which estimates combined financing needs for public and private entities of US$59 million (2.7 percent of GDP) for a 100-year event [chunk 154]. Additionally, the stress testing includes a contingent liability shock related to a Central Bank of Seychelles (CBS) recapitalization amounting to SRC 330 million financed by local banks [chunk 154].",
+        "model": "gemini-3.5-flash",
+        "latency_s": 3.74,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer A accurately captures all relevant debt sustainability stress test assumptions and shocks described in the text (natural disaster shock calibrated to US$59 million / 2.7% of GDP for a 100-year event, and the contingent liability shock for CBS recapitalization of SRC 330 million). All claims are fully backed by its context.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "A"
+      },
+      "climate_risks": {
+        "qid": "climate_risks",
+        "question": "What climate-related risks does Seychelles face, and how does the IMF recommend addressing them?",
+        "condition": "single",
+        "unit_ids": [
+          132,
+          130,
+          50,
+          133,
+          131
+        ],
+        "context": "[chunk 132] (page 47)\nThe 2023 flood, accompanied by an industrial explosion, was classified as a technological disaster. Compared to the Maldives, Mauritius, other small islands, and sub-Saharan\nAfrica (SSA), Seychelles has experienced fewer disasters on average (Fig. 1). Among these events, the\n2002 storm affected the largest share of the population. While overall economic damage has been moderate, the 2004 earthquake had the highest damage-to-GDP ratio at 3.5 percent. Considering climate risks and preparedness, Seychelles is relatively less vulnerable and better prepared for climate-related risks than its peers. According to INFORM—an open-source risk assessment tool adapted by\nIMF staff—Seychelles scores favorably across hazard exposure, vulnerability, and coping capacity dimensions (Fig. 2).\n6. The influence of climate-related natural disasters on macroeconomic projections can be more substantial. Often, their impact is only partially accounted for. One of the challenges in accounting for climate-related natural disasters in projections is that they do not necessarily happen every year. This annex addresses that challenge by employing an expected value methodology to develop an alternative macroeconomic framework with revised medium-term projections for key macro indicators such as GDP growth, inflation, primary balance, net exports, and international reserves. In this approach, the projection of a specific macroeconomic indicator is determined by a probability-based weighted average of its projection under the occurrence of a climate-related natural disaster and its projection in the absence of such events. The impact of a climate-related\nFigure 1. Seychelles: Natural Disasters in\nSelected Countries 2000-2024\nFigure 2. Seychelles: Climate-Driven INFORM\nIndex 2022 (0-10)\n\n[chunk 130] (page 46)\n2. Integrating climate effects into macroeconomic projections is crucial for accurately assessing the potential impacts on key variables. As climate change poses increasing risks to economic stability, failing to account for these effects can lead to overoptimistic forecasts that do not reflect the realities of vulnerability and resilience. By incorporating climate-related risks and uncertainties into macroeconomic models, policymakers can better understand their potential economic consequences, enabling more informed decision-making. This is particularly relevant for small island states like Seychelles, where climate-induced challenges significantly affect economic performance and development prospects.\n3. This annex presents a new approach, using Seychelles as a pilot case, to integrate climate change into the macroeconomic framework. 1 In doing so, it is important to recognize which climate change effects may already be included in current macroeconomic projections—against the backdrop of a baseline global warming scenario of 2.7C by 2100 typically applied at the Fund. It is crucial to distinguish between two types of climate change effects in macroeconomic projections.\nSlow-moving effects, such as rising sea levels and ocean acidification, manifest over a longer timeframe, typically beyond the medium-term horizon (5 years). In contrast, climate-induced natural disasters, including floods and storms, can occur at any time, including within the medium-term horizon.\n4. With continued and concerted resilience-building efforts, the macroeconomic impact of slow-moving climate change may be broadly contained. In the case of Seychelles, the impact of past slow-moving global temperature changes (e.g., rising sea temperatures and ocean acidification)\nand policies to build resilience to these effects, including ongoing reform measures under the RSF\narrangement, are already embedded in current macroeconomic projections.\n\n[chunk 50] (page 26)\nLooking ahead, downside risks appear to dominate, as tourist arrivals and spending from Seychelles’ largest source countries in Europe have historically been sensitive to economic cycles in those countries. In the face of downward revisions to global growth and rising trade tensions, the growth outlook for 2025-26 has been revised with the expectation of fewer arrivals\n13 The authorities are expecting $54.5 million in budget support from the World Bank and $25 million from the\nAfDB.\nand lower per tourist spending. Prospects for the medium-term are uncertain and will depend on how current trade tensions and geopolitical developments play out.\n44. Seychelles approaches this more uncertain environment from a position of relative strength. Real GDP growth, while lower than projected, is roughly in line with potential. Inflation is low. The fiscal position remains prudent, and public debt has declined from over 90 percent of GDP\nat the end of the pandemic to under 60 percent by 2024. The CBS maintains a broadly sufficient reserve cushion and a flexible exchange rate. The banking system appears sound and well capitalized. The authorities have demonstrated strong policy discipline, and the flexibility needed to adapt to new shocks. Continued support under the EFF and RSF programs should assist in helping\nSeychelles maintain macroeconomic stability, both in the sense of continued budget financing as well as maintaining a solid policy framework and structural reform agenda that can address challenges as they emerge.\n45. Fiscal policy in Seychelles continues to demonstrate challenges, albeit mostly with respect to under-spending. While higher-than projected primary surpluses bring faster public debt reduction, repeated underspending on capital projects undermines budget credibility and delays implementation of critical public infrastructure projects.\n\n[chunk 133] (page 47)\nThe impact of a climate-related\nFigure 1. Seychelles: Natural Disasters in\nSelected Countries 2000-2024\nFigure 2. Seychelles: Climate-Driven INFORM\nIndex 2022 (0-10)\nSource: IMF staff estimates\nSeychelles Maldives Mauritius Small Islands Sub-Saharan\nAfrica\nFloods Storms\nDroughts Extreme Temperature\nWildfires Other Disasters\nSeychelles Maldives Mauritius Small Islands Sub-Saharan\nAfrica\nNote: In the Climate-Driven INFORM Risk Index, lower scores across the overall index and its components indicate better performance.\nnatural disaster on a particular variable is calibrated based on the historical effects of such disasters in\nSeychelles and empirical research findings.\nyt+h adj = PND ∗ yt+h ND + (1 - PND) ∗ yt+h without ND (1)\nWhere yt+h adj is the climate adjusted projections for a given variable y at h year in the future. PND is the probability of climate-related natural disaster incidence. yt+h ND is the projection for variable y including the impact of a climate-related natural disaster—calculated based on historical impacts or empirical findings (yt+h ND = yt+h without ND - ND impact). yt+h without ND is the projection for variable y in a year where there is no natural disaster while including all other factors such as global conditions and tourism assumptions.\n7. A two-step approach is employed to estimate the probability of climate-related natural disaster incidence in Seychelles (i.e., PND in equation 1 above).\n\n[chunk 131] (page 46)\nand policies to build resilience to these effects, including ongoing reform measures under the RSF\narrangement, are already embedded in current macroeconomic projections. The slow-moving impacts of global temperature changes manifest over a longer horizon, with the estimated additional future impact indicating a reduction of -0.01 percentage points in growth per year.2 Over a 30-year period, this would accumulate to approximately -0.3 percentage points deducted from the growth rate three\n1 Integrating the effects of climate change into the macroeconomic framework is an inter-departmental exercise designed to potentially be replicated by other countries vulnerable to climate change and with significant macroeconomic impacts on balance of payments, fiscal, and the financial sector.\n2 Author’s calculations based on Mohaddess and Raissi (2024) or Kahn et al. (2021).\ndecades from now. However, with ongoing resilience-building efforts under the RSF arrangement, this reduction in GDP growth may be mostly offset, suggesting that the net effect of this type of climate effects could potentially be zero. This suggests that the primary impact on macroeconomic variables in Seychelles, especially in the medium term, is expected to stem from climate-induced natural disasters rather than slow-moving climate-induced temperature changes.\n5. Floods and storms have been the primary climate-related natural disasters in Seychelles.\nSince 1980, the EM-DAT database has recorded only a few major events: two storms (2002, 2013) and two floods (1997, 2014). The 2023 flood, accompanied by an industrial explosion, was classified as a technological disaster. Compared to the Maldives, Mauritius, other small islands, and sub-Saharan",
+        "answer": "Seychelles faces slow-moving climate risks—such as rising sea levels, rising sea temperatures, and ocean acidification—as well as climate-induced natural disasters like floods and storms, which pose the primary medium-term threat to its economy [chunk 130, chunk 131]. To address these risks, the IMF recommends integrating climate effects into macroeconomic projections using an expected value methodology to adjust forecasts for key variables like GDP growth, inflation, and net reserves, preventing overoptimistic projections and enabling informed decision-making [chunk 130, chunk 132]. Additionally, the framework relies on continued resilience-building efforts, including ongoing reform measures under the Resilience and Sustainability Facility (RSF), to offset the macroeconomic drag of long-term climate change [chunk 130, chunk 131].",
+        "model": "gemini-3.5-flash",
+        "latency_s": 6.81,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer B is completely faithful to the provided context and accurately describes the risks and IMF recommendations regarding macroeconomic integration and RSF reforms.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "B"
+      },
+      "monetary_policy": {
+        "qid": "monetary_policy",
+        "question": "What is the Central Bank of Seychelles' monetary policy rate, and what does the report say about monetary policy?",
+        "condition": "single",
+        "unit_ids": [
+          19,
+          12,
+          3,
+          65,
+          273
+        ],
+        "context": "[chunk 19] (page 12)\nGDP less than expected—0.2 percentage points less in tax revenues and 0.3 percentage points pt in non-tax revenues. External grants were below forecast by 0.5 percentage points of GDP, reflecting delays in project implementation. On the expenditure side, there was a total underspend equivalent to 3.1 percentage points of GDP, driven mostly by shortfalls in capital spending (1.4 percentage points), wages and salaries (0.7 percentage points), and goods and services (0.6 percentage points).\nCapex underspending reflected under-execution of planned projects due to capacity constraints, diversion of planning resources to emergency reconstruction following the industrial explosion and floods in December 2023, and lengthy procurement processes for foreign-funded capital projects.\nUnderspending on wages and salaries reflects continued recruitment delays, while the shortfall in goods and services spending was also linked to procurement delays.\n6. The monetary policy stance remained accommodative in 2024. The Central Bank of\nSeychelles (CBS) has maintained the monetary policy rate (MPR) at 1.75 percent since March 2024.3\nMonetary operations have been calibrated to steer the rate on the 7-day Deposit Auction\nArrangement (DAA) to the MPR. However, excess reserves increased from SR 169 million in 2023 to\nSR 261 million in 2024 (21-day moving average). The impact of monetary policy remains limited, due primarily to ineffective transmission and persistent excess liquidity in the banking sector. The cost of credit remains high, with the average lending rate at 9.9 percent in December 2024 (an increase of 0.2 ppt compared to the previous year).\n\n[chunk 12] (page 6)\n3.1 3.3 3.4 3.7 3.8 3.8 3.9 3.8 3.8 3.8 3.8 3.9\nIn percent of Assessing Reserve Adequacy (ARA) metric 102 104 105 118 115 119 118 117 118 119 124 127\nExchange rate\nSeychelles rupees per US$1 (end-of-period) 14.1 14.2 14.2 ... 14.8 ... ... ... ... ... ... ...\nSeychelles rupees per US$1 (period average) 14.3 14.0 14.0 ... 14.5 ... ... ... ... ... ... ...\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Includes onlending to the parastatals for investment purposes.\n3 Includes private external debt.\n2030\nProj.\n2 Includes debt issued by the Ministry of Finance for monetary purposes.\n(Percent of GDP)\nAct.\n(Annual percent change, unless otherwise indicated)\n(Percent of GDP, unless otherwise indicated)\nAct. Proj.\n2022 2024 2028 20292026 20272023 2025\nFOURTH REVIEWS UNDER THE ARRANGEMENT UNDER\nTHE EXTENDED FUND FACILITY AND THE ARRANGEMENT\nUNDER THE RESILIENCE AND SUSTAINABILITY FACILITY,\nREQUEST FOR MODIFICATION OF PERFORMANCE\nCRITERIA, AND REQUEST FOR MODIFICATION OF REFORM\nMEASURES UNDER THE RESILIENCE AND SUSTAINABILITY\nFACILITY\nEXECUTIVE SUMMARY\nContext.\n\n[chunk 3] (page 3)\nYear-on-year inflation reached 1.7 percent as of December, driven by an increase in utility prices and pass-through effects of currency depreciation. Fiscal performance was tighter than budgeted driven mainly by underspending on capital expenditure, with a primary surplus equivalent to 3.2 percent of GDP in 2024. The\nCentral Bank of Seychelles has maintained an accommodative monetary stance. The current account deficit widened to 7.9 percent of GDP in 2024, but gross international reserves increased to $774 million, equivalent to 3.8 months of imports or 115 percent of the Assessing\nReserve Adequacy (or ARA) metric.\nEFF-supported program implementation has been strong. All quantitative program targets (QPCs) and structural benchmarks (SBs) for end-December 2024 were met. However, two\nSBs scheduled for the first half of 2025 have encountered minor delays due to capacity constraints. Progress has been satisfactory on RSF implementation. All reform measures (RMs) for March 2025 have been implemented. However, one component of an RM\nscheduled for April 2025 (related to energy pricing and the issuance of a new multi -year electricity tariff system) is delayed and expected to be completed in November. The authorities requested minor modifications for two RMs slated for December 2025.\nThe outlook suggests low but stable growth for 2025 and beyond but is subject to considerable uncertainty. Real GDP growth is projected at 3.2 percent for 2025 compared to\n4.3 percent at the previous reviews.\n\n[chunk 65] (page 33)\n3.1 3.3 3.4 3.7 3.8 3.8 3.9 3.8 3.8 3.8 3.8 3.9\nIn percent of Assessing Reserve Adequacy (ARA) metric 102 104 105 118 115 119 118 117 118 119 124 127\nExchange rate\nSeychelles rupees per US$1 (end-of-period) 14.1 14.2 14.2 ... 14.8 ... ... ... ... ... ... ...\nSeychelles rupees per US$1 (period average) 14.3 14.0 14.0 ... 14.5 ... ... ... ... ... ... ...\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Includes onlending to the parastatals for investment purposes.\n3 Includes private external debt.\n2030\nProj.\n2 Includes debt issued by the Ministry of Finance for monetary purposes.\n(Percent of GDP)\nAct.\n(Annual percent change, unless otherwise indicated)\n(Percent of GDP, unless otherwise indicated)\nAct. Proj.\n2022 2024 2028 20292026 20272023 2025\nTable 2. Seychelles: Balance of Payments, 2022-30\n2029 2030\n3rd\nReview\n3rd\nReview\n3rd\nReview\n\n[chunk 273] (page 122)\ncompared to US$682 million (3.4 months) in 2023.\nFiscal performance exceeded the program forecast primarily because of under executed capital projects. The primary surplus in 2024 stood at 3.2 percent of GDP compared to the program forecast of 1.1 percent. While revenue lines were broadly aligned to 3 rd review projections, expenditure shortfalls related to hiring constraints and capital project under execution accounted for the large share of fiscal overperformance. Bottlenecks following the industrial explosion, delayed foreign grants, challenges related to the procurement and project selection process were key factors in the lower-than-expected capital project execution rate.\nYear on year inflation for 2024 stood at 1.71 percent following rounds of energy price adjustments and a weaker exchange rate. Conditions supported an accommodative monetary policy stance by the Central Bank of Seychelles (CBS), whereby the policy rate has remained unchanged since March 2024. However, challenges persist in enhancing the transmission mechanism of monetary policy. No major demand shock via the credit or exchange rate channels was observed following recent government and minimum wage increases.\nRecent high frequency indicators suggest broad alignment with inflation projections, but uncertainties persist. As of June 9 th, Gross Reserves stood at US$854 million, with Net\nInternational Reserves (NIR) at US$693 million, well above the June target of US$629 million. A more favorable euro-dollar cross rate and tourism arrivals growth of 6.7 percent as at end-May have supported a more buoyant services sector, with preliminary estimates indicating first quarter earnings to be 16.1 percent above the 2024 level (in SCR terms).",
+        "answer": "The Central Bank of Seychelles has maintained its monetary policy rate at 1.75 percent since March 2024 [chunk 19]. The report states that monetary policy has remained accommodative, with operations calibrated to steer the rate on the 7-day Deposit Auction Arrangement to the policy rate [chunk 3, chunk 19]. However, the impact of monetary policy remains limited due to ineffective transmission and persistent excess liquidity in the banking sector, keeping the cost of credit high with an average lending rate of 9.9 percent in December 2024 [chunk 19, chunk 273].",
+        "model": "gemini-3.5-flash",
+        "latency_s": 5.64,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer B is also fully faithful to the context (correctly integrating chunks 3, 19, and 273) and provides a complete answer detailing the rate, the stance, and the limitations including excess liquidity and the 9.9 percent average lending rate.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "B"
+      },
+      "external_risks": {
+        "qid": "external_risks",
+        "question": "What external risks could affect Seychelles' economic outlook?",
+        "condition": "single",
+        "unit_ids": [
+          50,
+          132,
+          130,
+          21,
+          176
+        ],
+        "context": "[chunk 50] (page 26)\nLooking ahead, downside risks appear to dominate, as tourist arrivals and spending from Seychelles’ largest source countries in Europe have historically been sensitive to economic cycles in those countries. In the face of downward revisions to global growth and rising trade tensions, the growth outlook for 2025-26 has been revised with the expectation of fewer arrivals\n13 The authorities are expecting $54.5 million in budget support from the World Bank and $25 million from the\nAfDB.\nand lower per tourist spending. Prospects for the medium-term are uncertain and will depend on how current trade tensions and geopolitical developments play out.\n44. Seychelles approaches this more uncertain environment from a position of relative strength. Real GDP growth, while lower than projected, is roughly in line with potential. Inflation is low. The fiscal position remains prudent, and public debt has declined from over 90 percent of GDP\nat the end of the pandemic to under 60 percent by 2024. The CBS maintains a broadly sufficient reserve cushion and a flexible exchange rate. The banking system appears sound and well capitalized. The authorities have demonstrated strong policy discipline, and the flexibility needed to adapt to new shocks. Continued support under the EFF and RSF programs should assist in helping\nSeychelles maintain macroeconomic stability, both in the sense of continued budget financing as well as maintaining a solid policy framework and structural reform agenda that can address challenges as they emerge.\n45. Fiscal policy in Seychelles continues to demonstrate challenges, albeit mostly with respect to under-spending. While higher-than projected primary surpluses bring faster public debt reduction, repeated underspending on capital projects undermines budget credibility and delays implementation of critical public infrastructure projects.\n\n[chunk 132] (page 47)\nThe 2023 flood, accompanied by an industrial explosion, was classified as a technological disaster. Compared to the Maldives, Mauritius, other small islands, and sub-Saharan\nAfrica (SSA), Seychelles has experienced fewer disasters on average (Fig. 1). Among these events, the\n2002 storm affected the largest share of the population. While overall economic damage has been moderate, the 2004 earthquake had the highest damage-to-GDP ratio at 3.5 percent. Considering climate risks and preparedness, Seychelles is relatively less vulnerable and better prepared for climate-related risks than its peers. According to INFORM—an open-source risk assessment tool adapted by\nIMF staff—Seychelles scores favorably across hazard exposure, vulnerability, and coping capacity dimensions (Fig. 2).\n6. The influence of climate-related natural disasters on macroeconomic projections can be more substantial. Often, their impact is only partially accounted for. One of the challenges in accounting for climate-related natural disasters in projections is that they do not necessarily happen every year. This annex addresses that challenge by employing an expected value methodology to develop an alternative macroeconomic framework with revised medium-term projections for key macro indicators such as GDP growth, inflation, primary balance, net exports, and international reserves. In this approach, the projection of a specific macroeconomic indicator is determined by a probability-based weighted average of its projection under the occurrence of a climate-related natural disaster and its projection in the absence of such events. The impact of a climate-related\nFigure 1. Seychelles: Natural Disasters in\nSelected Countries 2000-2024\nFigure 2. Seychelles: Climate-Driven INFORM\nIndex 2022 (0-10)\n\n[chunk 130] (page 46)\n2. Integrating climate effects into macroeconomic projections is crucial for accurately assessing the potential impacts on key variables. As climate change poses increasing risks to economic stability, failing to account for these effects can lead to overoptimistic forecasts that do not reflect the realities of vulnerability and resilience. By incorporating climate-related risks and uncertainties into macroeconomic models, policymakers can better understand their potential economic consequences, enabling more informed decision-making. This is particularly relevant for small island states like Seychelles, where climate-induced challenges significantly affect economic performance and development prospects.\n3. This annex presents a new approach, using Seychelles as a pilot case, to integrate climate change into the macroeconomic framework. 1 In doing so, it is important to recognize which climate change effects may already be included in current macroeconomic projections—against the backdrop of a baseline global warming scenario of 2.7C by 2100 typically applied at the Fund. It is crucial to distinguish between two types of climate change effects in macroeconomic projections.\nSlow-moving effects, such as rising sea levels and ocean acidification, manifest over a longer timeframe, typically beyond the medium-term horizon (5 years). In contrast, climate-induced natural disasters, including floods and storms, can occur at any time, including within the medium-term horizon.\n4. With continued and concerted resilience-building efforts, the macroeconomic impact of slow-moving climate change may be broadly contained. In the case of Seychelles, the impact of past slow-moving global temperature changes (e.g., rising sea temperatures and ocean acidification)\nand policies to build resilience to these effects, including ongoing reform measures under the RSF\narrangement, are already embedded in current macroeconomic projections.\n\n[chunk 21] (page 12)\nReal GDP growth is projected to rise to 3.2 percent in 2025. This is a downward revision from 4.3 percent projected at the third reviews. The less optimistic outlook reflects slower growth in Europe—Seychelles' largest tourism source market. Over the medium\n3 In March 2024, the CBS reduced the MPR by 25bps, from 2 to 1.75 percent.\nterm, growth is anticipated to stabilize around 3.4 percent, assuming a recovery in tourism inflows and a stabilization of tourist spending. Average annual inflation is projected to stabilize around 3 percent but remains subject to external shocks (commodity and transport prices) and currency movements given high import dependency. The current account deficit is expected to average 8.8 percent of GDP over the medium term. An overall balance of payments surplus supported by a modest improvement in the goods and services balance and continued financial inflows (FDI) is projected to maintain reserve coverage around 3.8 months of imports.\n10. Risks appear increasingly tilted to the downside (Annex I). These risks emanate from heightened trade tensions and uncertainty weighing on global growth and trade, and related spillovers to tourism demand, international supply chains, prices, and inflation. 4 Elevated trade tensions may disrupt supply chains, reduce FDI and lead to tighter financial conditions. Additionally, the course of geopolitical conflicts and their effects on commodity prices and international shipping can have direct impacts on Seychelles given its high import dependency and quick pass through to domestic inflation. On the domestic side, financial stability risks may arise from large exposures, credit concentration, and high (albeit declining) NPLs.\n\n[chunk 176] (page 71)\nSincerely yours,\n/s/\nAhmed Afif\nVice President\nMinister of Finance, National Planning and Trade\n/s/\nCaroline Abel\nGovernor, Central Bank of Seychelles\nAttachment I. Memorandum of Economic and Financial Policies\nI. Background and Macroeconomic Outlook\n1. Global economic activity is expected to significantly weaken in 2025. This is primarily due to escalating trade tensions, tightening financial conditions and increased policy uncertainty.\nEconomic activity is anticipated to decline in major economies, dampen disposable income and reduce investment and consumption decisions. As for the commodity price outlook, international fuel prices are forecasted to decline on account of the weakening in global economic activity, whilst global food prices are anticipated to remain broadly unchanged. Nevertheless, global inflation is projected to increase, as the impact from the tariffs are incorporated into the final prices of goods and as firms reassess their production capacities. These developments pose complex challenges for fiscal policy, demanding a careful balance between supporting domestic demand, ensuring debt sustainability, and maintaining resilience against external shocks.\n2. The economic performance in 2024 reflected a modest growth, with an estimated real\nGDP growth rate of 2.9 percent. While the tourism sector experienced slower growth than expected, and the manufacturing sector contracted following the 7th of December Disaster, several key sectors showed resilience. Notably, robust growth is anticipated in the ICT and construction sectors. This positive outcome is largely attributed to the Government's strategic push for digital transformation, coupled with significant construction activities, including the major reconstruction efforts in the Providence and Cascade areas, which are expected to have a lasting impact on the economy.\n3. Budgetary outturn for 2024, exceeded the program target, with a primary surplus of",
+        "answer": "Seychelles' economic outlook is subject to downside external risks from heightened trade tensions, global policy uncertainty, and slower economic growth in major source markets like Europe, which dampens tourism demand and spending [chunk 50, chunk 21, chunk 176]. Furthermore, geopolitical conflicts and trade disruptions could disrupt international supply chains and shipping, impacting global commodity prices and driving up domestic inflation due to the country's high import dependency [chunk 21]. Tightening global financial conditions and tariff-driven global inflation also present significant external challenges [chunk 21, chunk 176].",
+        "model": "gemini-3.5-flash",
+        "latency_s": 4.88,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer B is completely faithful to its provided context and incorporates additional relevant external risks (such as global policy uncertainty and tariff-driven global inflation) found in the extended context, providing a comprehensive and accurate answer.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "B"
+      },
+      "tier1_trap": {
+        "qid": "tier1_trap",
+        "question": "What is the Tier 1 capital ratio of Seychelles' banks?",
+        "condition": "single",
+        "unit_ids": [
+          97,
+          12,
+          65,
+          100,
+          73
+        ],
+        "context": "[chunk 97] (page 37)\nMoney multiplier (broad money/reserve money) 3.9 3.3 3.4 3.7 4.2 4.6 4.8 4.9 4.9\nVelocity (GDP/broad money; end-of-period) 1.0 1.1 1.2 1.2 1.2 1.1 1.1 1.1 1.1\nSources: Central Bank of Seychelles; and IMF staff estimates and projections.\n1 Negative shows accumulation, positive shows retiring (debt that is not rolled over)\n(Millions of Seychelles rupees)\nAct. Proj.\nTable 5. Seychelles: Financial Soundness Indicators for the Banking Sector, 2018–24\n2018 2019 2020 2021 2022 2023 2024\nCapital adequacy\nRegulatory capital to risk weighted assets 20.5 19.5 17.1 22.7 20.7 21.8 19.8\nRegulatory tier 1 capital to risk weighted assets 16.8 16.2 14.1 17.2 15.2 16.0 14.1\nCapital to assets (net worth) 10.1 9.9 8.4 9.2 8.8 10.1 10.4\nNet tangible capitalization 1 10.1 10.0 8.5 9.3 8.9 10.2 10.5\nAsset quality\n\n[chunk 12] (page 6)\n3.1 3.3 3.4 3.7 3.8 3.8 3.9 3.8 3.8 3.8 3.8 3.9\nIn percent of Assessing Reserve Adequacy (ARA) metric 102 104 105 118 115 119 118 117 118 119 124 127\nExchange rate\nSeychelles rupees per US$1 (end-of-period) 14.1 14.2 14.2 ... 14.8 ... ... ... ... ... ... ...\nSeychelles rupees per US$1 (period average) 14.3 14.0 14.0 ... 14.5 ... ... ... ... ... ... ...\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Includes onlending to the parastatals for investment purposes.\n3 Includes private external debt.\n2030\nProj.\n2 Includes debt issued by the Ministry of Finance for monetary purposes.\n(Percent of GDP)\nAct.\n(Annual percent change, unless otherwise indicated)\n(Percent of GDP, unless otherwise indicated)\nAct. Proj.\n2022 2024 2028 20292026 20272023 2025\nFOURTH REVIEWS UNDER THE ARRANGEMENT UNDER\nTHE EXTENDED FUND FACILITY AND THE ARRANGEMENT\nUNDER THE RESILIENCE AND SUSTAINABILITY FACILITY,\nREQUEST FOR MODIFICATION OF PERFORMANCE\nCRITERIA, AND REQUEST FOR MODIFICATION OF REFORM\nMEASURES UNDER THE RESILIENCE AND SUSTAINABILITY\nFACILITY\nEXECUTIVE SUMMARY\nContext.\n\n[chunk 65] (page 33)\n3.1 3.3 3.4 3.7 3.8 3.8 3.9 3.8 3.8 3.8 3.8 3.9\nIn percent of Assessing Reserve Adequacy (ARA) metric 102 104 105 118 115 119 118 117 118 119 124 127\nExchange rate\nSeychelles rupees per US$1 (end-of-period) 14.1 14.2 14.2 ... 14.8 ... ... ... ... ... ... ...\nSeychelles rupees per US$1 (period average) 14.3 14.0 14.0 ... 14.5 ... ... ... ... ... ... ...\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Includes onlending to the parastatals for investment purposes.\n3 Includes private external debt.\n2030\nProj.\n2 Includes debt issued by the Ministry of Finance for monetary purposes.\n(Percent of GDP)\nAct.\n(Annual percent change, unless otherwise indicated)\n(Percent of GDP, unless otherwise indicated)\nAct. Proj.\n2022 2024 2028 20292026 20272023 2025\nTable 2. Seychelles: Balance of Payments, 2022-30\n2029 2030\n3rd\nReview\n3rd\nReview\n3rd\nReview\n\n[chunk 100] (page 38)\nLiquid assets to deposit liabilities 68.5 65.3 67.8 69.4 72.5 73.5 71.2\nForeign exchange exposure\nTotal long position in foreign exchange to capital ... ... ... 5.2 6.9 7.7 4.3\nTotal short position in foreign exchange to capital ... ... ... -4.3 -3.2 -8.3 -2.4\nSource: Central Bank of Seychelles.\n1 Defined as: equity capital/(assets-interest in suspense-provisions).\n2 Defined as: (Interest income - interest expense)/average assets.\n3 Defined as: (Non-interest income - non-interest expense)/average assets.\n4 Core liquid assets include cash, balances with CBS, and deposits with other banks.\n5 Broad liquid assets include core liquid assets plus investments in government securities.\n(Percent, end-of-period)\nTable 6. Seychelles: Program Monitoring – External Financing Requirements and Sources, 2020-30 (Millions of US$, unless otherwise indicated)\n2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030\nGross Financing Requirements 216 198 197 220 258 263 277 273 271 293 315\nCurrent account deficit 173 156 152 162 173 202 207 206 208 223 241\nCG Debt Amortization 43 41 45 59 85 61 70 67 63 70 74\nSources of Financing 216 198 197 220 258 247 270 273 271 293 315\n\n[chunk 73] (page 34)\n1 Per STA recommendations, net lending under financial account is recorded as positive following BPM6 guidance.\n2 The level of GIRs computed from the BOP includes the budget support.\n(Millions of US dollars, unless otherwise indicated)\n2027 20282022 2023 2024 2025 2026\nAct. Proj.Act. Act. Proj.\nTable 3a. Seychelles: Consolidated Government Operations, 2022-301 (Millions of Seychelles Rupees)\n2029 2030\n3rd\nReview\n3rd\nReview\n3rd\nReview\nTotal revenue and grants 8,798 9,726 9,726 10,879 10,758 12,112 11,740 12,375 13,017 13,906 14,707 15,599\nTotal revenue 8,652 9,466 9,466 10,525 10,565 11,666 11,359 11,806 12,678 13,581 14,405 15,294\nTax 7,382 8,169 8,169 8,918 9,021 9,965 9,587 10,087 10,820 11,507 12,326 13,242\nPersonal income tax 1,079 1,190 1,190 1,284 1,331 1,388 1,408 1,502 1,598 1,713 1,836 1,969\nTrade tax 302 330 330 351 382 371 402 424 457 457 514 573",
+        "answer": "The regulatory Tier 1 capital to risk-weighted assets for Seychelles' banking sector was 15.2 percent in 2022 [chunk 97]. Projections for 2023 and 2024 indicate ratios of 16.0 percent and 14.1 percent, respectively [chunk 97]. Historically, this ratio fluctuated between 14.1 percent and 17.2 percent during the 2018–2021 period [chunk 97].",
+        "model": "gemini-3-flash-preview",
+        "latency_s": 3.07,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": NaN,
+        "judge_explanation": "Answer B is completely faithful to the context and provides a comprehensive and accurate overview of the Tier 1 capital ratios over the given timeframe.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "B",
+        "judge_completeness_raw": 5.0,
+        "refusal_correct": false
+      }
+    },
+    "multi": {
+      "bank_regulation": {
+        "qid": "bank_regulation",
+        "question": "What does the IMF recommend about bank regulation, provisioning and the banking legal framework in Seychelles?",
+        "condition": "multi",
+        "unit_ids": [
+          1,
+          271,
+          165,
+          174,
+          6,
+          52,
+          127,
+          175
+        ],
+        "context": "[chunk 1] (page 2)\nThe IMF’s transparency policy allows for the deletion of market-sensitive information and premature disclosure of the authorities’ policy intentions in published staff reports and other documents.\nCopies of this report are available to the public from\nInternational Monetary Fund • Publication Services\nPO Box 92780 • Washington, D.C. 20090\nTelephone: (202) 623-7430 • Fax: (202) 623-7201\nE-mail: publications@imf.org Web: http://www.imf.org\nInternational Monetary Fund\nWashington, D.C.\nJune 2025\nPR 25/199\nIMF Executive Board Completes the Fourth Reviews Under the\nExtended Fund Facility and the Resilience and Sustainability\nFacility Arrangements and Approves US$13.7 Million\nDisbursement for Seychelles\nFOR IMMEDIATE RELEASE\n• The Executive Board of the International Monetary Fund (IMF) completed today the fourth reviews of Seychelles’ economic performance under the Extended Fund Facility (EFF)\nand Resilience and Sustainability Facility (RSF) Arrangements. Completion of the reviews allows for an immediate disbursement of about US$13.7 million intended to strengthen macroeconomic stability, sustain growth, and reinforce fiscal and monetary policy frameworks, while also supporting efforts to strengthen resilience to climate change, exploit synergies with other sources of official financing, and catalyze financing for climate-related investments.\n• Economic growth for Seychelles in 2024 is estimated at 2.9 percent, reflecting lower dynamism in the tourism sector. Inflation remained subdued and fiscal performance was tighter than budgeted, driven mainly by underspending on capital expenditure. For 2025, economic growth is projected at 3.2 percent, reflecting slower growth projected for\n\n[chunk 271] (page 121)\nSeychelles, and Mr. Lenny Palit, Advisor to the Executive Director\nJune 16, 2025\nSeychelles remains strongly committed to reforms set under the IMF programs and has a strong track record of completion. The Seychellois authorities appreciate the continued Fund guidance and technical assistance, and we extend our gratitude to the mission team and Mr. Schneider for their productive consultations under the fourth reviews under the Extended Fund Facility (EFF) and Resilience and Sustainability Facility (RSF).\nFor the EFF, all end-December Performance Criteria (QPCs) were met, with preliminary data suggesting all indicative targets as at end March were also met. All Structural Benchmarks (SBs) were met with two exceptions requiring rescheduling in view of capacity and procurements challenges. Both are expected to be finalized prior to end-2025 and integrated as part of the 2026 budget cycle.\nFor the RSF, all Reform Measures (RMs) due by March have been completed. However, the RM relating to energy pricing due in April required rescheduling due to resource constraints and the need to establish clearer detailed guidance on energy policy. The request for modifications under the financial sector RM is outside of the authorities’\ncontrol as it is subject to release of formal guidance by the Basel Committee on\nBanking Supervision. Future progress under the RSF will depend critically on continued timely technical support from the Fund and key external parties.\nThe authorities remain committed to objectives set out at the start of the programs, but are cognizant of addressing structural challenges in light of geopolitical tensions.\n\n[chunk 165] (page 64)\nThe medium-term outlook for FDI is expected to be strong, driven by the construction of tourism-related establishments and resorts. New external debt\nincurred in 2024 was provided by IFIs and bilateral loans from development partners. Due to Seychelles’ high-income status, these loans were not provided on less concessional terms. Going forward Seychelles faces limited access to concessional financing. The authorities continue to levy an annual tax of 0.5 percent on immovable property owned in Seychelles by non-Seychellois, which is assessed an inflow CFM under the institutional view for liberalization and management of capital flows.\nAssessment. Risks related to capital flows are increasing primarily due to Seychelles’ high-income status which limits its access to concessional loans from development partners. Over the medium-term, the country’s exposure to climate-related challenges may also impact its ability to attract FDI. The authorities should continue to maintain a flexible exchange rate regime and build buffer against external shocks, while implementing structural reforms which would make Seychelles attractive to foreign investors. On the inflow\nCFM related to the tax on immovable property non-Seychellois, staff recommends making the tax broad-based by applying it to both Seychellois and non-Seychellois or removing the measure and relying on alternative fiscal revenue enhancing measures.\nFX Intervention and Reserves Level\nBackground. The exchange rate regime is classified as floating and foreign exchange interventions are aimed at addressing disorderly market conditions and maintaining an adequate level of international reserves. The authorities conducted several foreign exchange auctions for a total of US$69.5 million to accumulate reserves during 2024, mostly in the first part of the year.\n\n[chunk 174] (page 70)\nDecember 2025.\nAll Quantitative Performance Criteria (QPCs) and Indicative Targets (ITs) have been met, and structural reforms in fiscal and public financial management, as well as monetary policy operations, are advancing. The Government is also progressing on RSF-agreed reform measures and remains committed to improving the AML/CFT framework and based on the significant progress of the legislative reforms, Seychelles has submitted a request for re-rating of the five outstanding deficiencies (recommendations 6, 7, 8, 15, 33) in February 2025 for discussion at the August 2025\nESAAMLG meeting.\nTackling regulatory arbitrage of activities involving Virtual Assets (VA) and Virtual Asset Service\nProviders (VASP) remains a key priority. The FSA has issued public warnings and taken enforcement action, including cease and desist orders, against unlicensed operators. To strengthen supervision, it has adopted a blockchain analytics tool and applies strict pre-assessment checks to ensure compliance, with non-compliant applications subject to rejection.\nThe Government remains steadfast in its commitment to the Economic and Fiscal Resilience Action\nPlan established under the 36-month Extended Fund Facility (EFF) arrangement and the RSF\nprogram. As a small island state vulnerable to external shocks and climate risks, our primary goals remain ensuring economic resilience, maintaining debt sustainability, optimizing the tax system, improving expenditure management, and enhancing financial sector stability in line with international standards.\nThis proactive approach reflects Seychelles’ dedication to sustainable growth, financial stability, and resilience-building in the face of both internal and external challenges.\nThe policies we will be implementing over the coming months are presented in the attached\n\n[chunk 6] (page 5)\n“The authorities are advancing with reforms under the RSF to enhance the climate -resilience of public investments, diversify financing, and strengthen assessment and disclosure of climate-related financial sector risk. Successful implementation of the reform agenda will enhance economic resilience and external financing risks by building institutional capacity for public investment in climate adaptation and diversifying Seychelles’ power generation capacity—reducing its dependence on imported energy. Continued collaboration with the IMF\nand other partners will be important to help fill capacity gaps and to mobilize climate finance.”\nSeychelles: Selected Economic and Financial Indicators, 2022-30\nAct.\n3rd\nReview\n3rd\nReview\n3rd\nReview\nNational income and prices\nNominal GDP (millions of Seychelles rupees) 28,807 30,015 30,663 31,041 31,643 33,033 32,899 34,464 36,466 38,841 41,396 44,121\nReal GDP (millions of Seychelles rupees) 25,585 26,922 26,163 27,735 26,935 28,922 27,808 28,692 29,662 30,673 31,731 32,835\nReal GDP 12.7 3.2 2.3 3.0 2.9 4.3 3.2 3.2 3.4 3.4 3.4 3.5\n\n[chunk 52] (page 27)\n47. A data-driven approach to monetary policy is appropriate given current economic and credit conditions. Interest rates remain high in real terms, and there are signs that growth was slower in 2024 than anticipated, and recent CPI data do not suggest demand side price pressures.\nHowever, private credit growth is relatively strong, and the balance of pressures from ongoing trade tensions (lower oil prices on the one hand against the potential for higher prices for other inputs and transport costs on the other) suggest the need for careful monitoring of price developments in\nSeychelles and a data-driven approach to monetary policy in the coming months.\n48. Financial sector risks are assessed as low and there is steady progress on building financial supervisory capacity. Staff welcomes the resumption of quarterly off-site risk assessments and production by CBS of quarterly financial reports. Implementation of the risk-based supervision framework should prove a useful supplement to the CBS supervisory team given capacity constraints. Cabinet approval of the draft Bank Recovery and Resolution Act in November\n2024 was a welcome step. Staff urge final review work to be completed, for the bill to be submitted to parliament, and further discussion on the outline of a deposit insurance scheme. Staff look forward to discussing the scenario-based macroprudential stress testing framework in the near future.\n49. The authorities should continue to improve the effectiveness of the AML/CFT\nframework, including virtual assets, virtual asset service providers14 and transparency of beneficial ownership information. Staff welcomes completion of the second National Risk\nAssessment, its publication in February 2025. With respect to Beneficial Ownership (BO)\n\n[chunk 127] (page 44)\nLet the exchange rate act as a shock absorber to protect reserve buffers.\nIncrease in inflation, food insecurity and poverty.\nDeterioration of fiscal position. Social unrest.\nDelayed fiscal adjustment and structural reforms\nGlobal growth acceleration. Easing of conflicts, positive supply-side surprises (e.g., oil production shocks), productivity gains from AI, or structural reforms raise global demand and trade.\nLow Medium Create additional space fiscal with expected higher revenues.\nCBS to maintain vigilant monitoring and be ready to tighten monetary stance to anchor inflation expectations.\nRemain vigilant and deploy macroprudential measures if credit growth becomes excessive.\nImprove economic activity indicators and strengthen financial sector soundness. Better fiscal position reduces debt sustainability risks.\nLimited access to external grants and concessional financing. Due to\nSeychelles’ high-income status, favorable financing conditions and grants from multilaterals and donors become scarcer.\nMedium Medium Consider tapping alternative sources of external financing in the medium term.\nEnsure a prudent macro-fiscal stance to foster market access at reasonable terms.\nPreemptively rebuild fiscal and FX\nbuffers.\nAccess to costly external financing could worsen the balance of payments with implications for the exchange rate.\nVulnerabilities in the banking sector.\nHigher NPL levels observed in some banks increase vulnerabilities in the sector.\nMedium Medium Encourage and facilitate prudent restructuring of loans and enhance management and monitoring of NPLs.\nThe authorities should provide guidance on prudential treatment of moratoria and NPL\nmanagement strategies and assess their implementation\nHigher NPL levels in the banking sector, which increased mainly due to the withdrawal of forbearance measures, could pose risks to financial stability.\nSource of Risks Relative Likelihood Expected Impact if Realized Policy Response\nStructural Risks\nClimate change.\n\n[chunk 175] (page 71)\nThis proactive approach reflects Seychelles’ dedication to sustainable growth, financial stability, and resilience-building in the face of both internal and external challenges.\nThe policies we will be implementing over the coming months are presented in the attached\nMemorandum of Economic and Financial Policies, which updates the Memorandum of December\n2024. We are requesting the completion of the fourth review under the EFF and RSF approved in May\n2023. In this context, we request modification of targets proposed as quantitative performance criteria for June and indicative targets for September 2025 to align with the macro framework agreed in the context of the fourth reviews mission. Moreover, we ask for minor modification for two RMs slated for December 2025 (6th review) to account for the Basel Committee on Banking Supervision not yet having issued formal guidance on assessment and disclosure of climate-related financial risk.\nWe believe that the economic and financial policies set forth in the MEFP are sufficient to ensure that the objectives of the program will be met. We stand ready to take any further measures that may prove necessary to meet our objectives. We will consult with the Fund on the adoption of these measures, and in advance of revisions to the policies contained in the MEFP, in accordance with the\nFund’s policies on such consultations. We will supply the Fund with timely and accurate data that are needed for program monitoring.\nWe authorize the publication of this letter of intent, the attached MEFP, the technical memorandum of understanding, and the forthcoming staff report.\nSincerely yours,\n/s/\nAhmed Afif\nVice President\nMinister of Finance, National Planning and Trade\n/s/\nCaroline Abel\nGovernor, Central Bank of Seychelles\nAttachment I. Memorandum of Economic and Financial Policies\nI.",
+        "answer": "The IMF urges the authorities to complete the final review of the draft Bank Recovery and Resolution Act for submission to parliament, discuss the outline of a deposit insurance scheme, and continue implementing a risk-based supervision framework alongside scenario-based stress testing [chunk 52]. To manage banking sector vulnerabilities, the IMF also recommends encouraging prudent loan restructuring, enhancing NPL monitoring, and providing guidance on the prudential treatment of moratoria and NPL management strategies [chunk 127].",
+        "model": "gemini-3.5-flash",
+        "latency_s": 4.87,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer A is fully faithful to its provided context and addresses the question completely, detailing recommendations on bank legislation, risk-based supervision, loan restructuring, and NPL management.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "A"
+      },
+      "inflation_outlook": {
+        "qid": "inflation_outlook",
+        "question": "What is the inflation outlook for Seychelles, and what factors are driving it?",
+        "condition": "multi",
+        "unit_ids": [
+          173,
+          178,
+          17,
+          50,
+          21,
+          156,
+          3,
+          2
+        ],
+        "context": "[chunk 173] (page 70)\nRevenue (excluding grants) is projected to rise to 34.5% of GDP, with current expenditure at 31.6%.\nTotal expenditure and net lending are expected at 37.3% of GDP, with capital expenditure revised down to 5.0%. Domestic financing for capital projects will increase to SR 1,050.2 million, largely due to ongoing projects and key national events. Over the medium term, the Government will advance tax reforms to boost domestic resource mobilization.\nIn 2024, the Seychelles rupee weakened by 3.7% against the USD, driven by a 3.8% rise in foreign exchange demand outpacing a 2.1% increase in supply. The depreciation moderated in early 2025 compared to late 2024. Domestic prices began rising year-on-year from May 2024 due to the weaker currency and higher electricity tariffs. However, inflation eased from January 2025, largely due to tariff reductions. As of March 2025, year-on-year inflation was -0.04%, with a 12-month average of\n0.6%. Inflation is projected to reach 1.2% year-on-year and 1.0% on a 12-month average basis by\nDecember 2025.\nAll Quantitative Performance Criteria (QPCs) and Indicative Targets (ITs) have been met, and structural reforms in fiscal and public financial management, as well as monetary policy operations, are advancing.\n\n[chunk 178] (page 72)\n4. The Seychelles rupee weakened by 3.7 percent against the USD in annual average terms in 2024. This reflected developments in the domestic foreign exchange market whereby demand for foreign exchange rose by 3.8 per cent, whilst that of supply increased by a lower\nmagnitude of 2.1 per cent. During the first quarter of 2025, the currency depreciated by a lesser extent when compared to the fourth quarter of 2024.\n5. Domestic prices increased in year-on-year terms since May 2024 as a result of the weaker domestic currency, as well as higher electricity tariffs. However, there has been a moderation in the rate of inflation as of January 2025, mainly driven by lower electricity tariffs. In\nMarch 2025, the year-on-year inflation rate was negative 0.04 percent whilst the 12-month average stood at 0.6 percent. The year-on-year and 12-month average rates of inflation for December 2025 are forecasted at 1.2 percent and 1.0 percent, respectively.\n6. For the year 2025, Seychelles’ real GDP growth has been revised downwards to 3.2 percent, compared to the Budget forecast of 4.3 percent. The downward revision stems largely to a more subdued outlook in tourism-related sectors. The ‘Manufacturing Other’ sector is expected to grow by 3 percent, bolstered by efforts from the remaining quarry operator to increase production of rock and concrete products and help address supply constraints. This growth is further reinforced by increased construction activities, including preparations for the upcoming FIFA Beach Soccer World\nCup.\n\n[chunk 17] (page 11)\nGeneral elections are scheduled for late-September 2025.\n2. Headline inflation increased to 1.7 percent (YoY) in 2024, from -2.7 percent in 2023, but has since fallen. Utility tariffs were the primary driver in 2024, with multiple increases cumulating to 9 percent by end-year. Depreciation of the rupee (by 4 percent relative to the US\ndollar in 2024, and 1.9 percent in real effective terms) also contributed to upward pressure on prices, albeit with a lower-than-expected pass-through to non-food items. In 2025, headline inflation has declined and reached –0.04 in March (y-o-y) on the back of lower food prices, utilities, and recreation and culture. Recently introduced CBS surveys indicate inflation expectations for 12 months ahead average about 1.5 percent.1\n3. The current account deficit increased by 0.5 percentage points to about 7.9 percent of GDP in 2024. Tourism arrivals grew by only 0.5 percent over 2023, spending per tourist fell by\n7.4 percent. In the financial account, an anticipated increase in FDI did not materialize2, contributing to a lower overall balance of payments surplus. The external sector assessment for\n2024 suggests that Seychelles’ external position was substantially weaker than the level implied by medium-term fundamentals and desirable policies (Annex IV).\n4. Gross international reserves increased to $774 million by December 2024 (3.8 months of imports, 115 percent of the ARA metric)—an increase of $92 million compared to the end of\n2023.\n\n[chunk 50] (page 26)\nLooking ahead, downside risks appear to dominate, as tourist arrivals and spending from Seychelles’ largest source countries in Europe have historically been sensitive to economic cycles in those countries. In the face of downward revisions to global growth and rising trade tensions, the growth outlook for 2025-26 has been revised with the expectation of fewer arrivals\n13 The authorities are expecting $54.5 million in budget support from the World Bank and $25 million from the\nAfDB.\nand lower per tourist spending. Prospects for the medium-term are uncertain and will depend on how current trade tensions and geopolitical developments play out.\n44. Seychelles approaches this more uncertain environment from a position of relative strength. Real GDP growth, while lower than projected, is roughly in line with potential. Inflation is low. The fiscal position remains prudent, and public debt has declined from over 90 percent of GDP\nat the end of the pandemic to under 60 percent by 2024. The CBS maintains a broadly sufficient reserve cushion and a flexible exchange rate. The banking system appears sound and well capitalized. The authorities have demonstrated strong policy discipline, and the flexibility needed to adapt to new shocks. Continued support under the EFF and RSF programs should assist in helping\nSeychelles maintain macroeconomic stability, both in the sense of continued budget financing as well as maintaining a solid policy framework and structural reform agenda that can address challenges as they emerge.\n45. Fiscal policy in Seychelles continues to demonstrate challenges, albeit mostly with respect to under-spending. While higher-than projected primary surpluses bring faster public debt reduction, repeated underspending on capital projects undermines budget credibility and delays implementation of critical public infrastructure projects.\n\n[chunk 21] (page 12)\nReal GDP growth is projected to rise to 3.2 percent in 2025. This is a downward revision from 4.3 percent projected at the third reviews. The less optimistic outlook reflects slower growth in Europe—Seychelles' largest tourism source market. Over the medium\n3 In March 2024, the CBS reduced the MPR by 25bps, from 2 to 1.75 percent.\nterm, growth is anticipated to stabilize around 3.4 percent, assuming a recovery in tourism inflows and a stabilization of tourist spending. Average annual inflation is projected to stabilize around 3 percent but remains subject to external shocks (commodity and transport prices) and currency movements given high import dependency. The current account deficit is expected to average 8.8 percent of GDP over the medium term. An overall balance of payments surplus supported by a modest improvement in the goods and services balance and continued financial inflows (FDI) is projected to maintain reserve coverage around 3.8 months of imports.\n10. Risks appear increasingly tilted to the downside (Annex I). These risks emanate from heightened trade tensions and uncertainty weighing on global growth and trade, and related spillovers to tourism demand, international supply chains, prices, and inflation. 4 Elevated trade tensions may disrupt supply chains, reduce FDI and lead to tighter financial conditions. Additionally, the course of geopolitical conflicts and their effects on commodity prices and international shipping can have direct impacts on Seychelles given its high import dependency and quick pass through to domestic inflation. On the domestic side, financial stability risks may arise from large exposures, credit concentration, and high (albeit declining) NPLs.\n\n[chunk 156] (page 58)\nFigure 6. Seychelles: Realism of Baseline Assumptions\n3/ Data cover annual obervations from 1990 to 2019 for MAC advanced and emerging economies. Percent of sample on vertical axis.\nCommentary: The V-shaped economic recovery from the Covid pandemic combined with faster than expected fiscal consolidation have significantly reduced public indebtedness. Debt reduction as a share of GDP over the last years and the authorities' strong commitment to prudent fiscal management make Seychelles standout among other comparable countries. However, its heavy reliance on tourism renders the economy vulnerable to shocks. Seychelles is also facing significant climate challenges.\nOptimistic\nPessimistic\nEmerging Markets, Non-Commodity Exporter,\nProgram\n2/ Calculated as the percentile rank of the country's output gap revisions (defined as the difference between real time/period ahead estimates\n4/ The Laubach (2009) rule is a linear rule assuming bond spreads increase by about 4 bps in response to a 1 ppt increase in the projected debt-to-GDP ratio.\n2020 2021 2022 2023 2024 2025 2026 2027\nFiscal Adjustment (rhs)\nBaseline\nMultiplier=0.5\nMultiplier=1\nIn percentage points of GDP\nIn percent\nDistribution 3/\n3-year reduction\nMax. 3-year reduction\n3-year debt reduction above 75th percentile (5.9 ppts of GDP)\npercentile rank 54.1\nPast 5 years\nPrimary deficit\nReal interest rate and relative inflation\nReal GDP growth\nExch. rate depreciation\nResidual\nChange in public sector debt\nNext 5 years\n-2%\n0%\n2%\n5y hist\n2025\n2026\n2027\n2028\n2029\n\n[chunk 3] (page 3)\nYear-on-year inflation reached 1.7 percent as of December, driven by an increase in utility prices and pass-through effects of currency depreciation. Fiscal performance was tighter than budgeted driven mainly by underspending on capital expenditure, with a primary surplus equivalent to 3.2 percent of GDP in 2024. The\nCentral Bank of Seychelles has maintained an accommodative monetary stance. The current account deficit widened to 7.9 percent of GDP in 2024, but gross international reserves increased to $774 million, equivalent to 3.8 months of imports or 115 percent of the Assessing\nReserve Adequacy (or ARA) metric.\nEFF-supported program implementation has been strong. All quantitative program targets (QPCs) and structural benchmarks (SBs) for end-December 2024 were met. However, two\nSBs scheduled for the first half of 2025 have encountered minor delays due to capacity constraints. Progress has been satisfactory on RSF implementation. All reform measures (RMs) for March 2025 have been implemented. However, one component of an RM\nscheduled for April 2025 (related to energy pricing and the issuance of a new multi -year electricity tariff system) is delayed and expected to be completed in November. The authorities requested minor modifications for two RMs slated for December 2025.\nThe outlook suggests low but stable growth for 2025 and beyond but is subject to considerable uncertainty. Real GDP growth is projected at 3.2 percent for 2025 compared to\n4.3 percent at the previous reviews.\n\n[chunk 2] (page 3)\nInflation remained subdued and fiscal performance was tighter than budgeted, driven mainly by underspending on capital expenditure. For 2025, economic growth is projected at 3.2 percent, reflecting slower growth projected for\nEurope—Seychelles' most important tourism source market.\n• Performance under the EFF has been strong with all quantitative targets and structural benchmarks for end-December 2024 met. However, two SBs scheduled for 2025 have encountered minor delays due to capacity constraints. Progress has been satisfactory under the RSF implementation, and the authorities remain committed to the programs’\nobjectives.\nWashington, DC – June 16, 2025: The Executive Board of the International Monetary Fund (IMF) completed today the fourth reviews of Seychelles’ economic performance under the 36 -\nmonth EFF and RSF Arrangements approved on May 31, 2023. The completion of the reviews allows for the authorities to draw the equivalent of SDR 6.1 million (about $8.3 million) under the EFF and SDR 3.9 million (about $5.3 million) under the RSF, bringing total disbursements to SDR 30.5 million (about $41.7 million) and SDR 13.3 million (about $18.2 million) under the\nEFF and RSF, respectively.\nEconomic growth for Seychelles in 2024 is estimated at 2.9 percent, slightly lower than earlier forecasts due to lower activity in the tourism sector. Year-on-year inflation reached 1.7 percent as of December, driven by an increase in utility prices and pass-through effects of currency depreciation.",
+        "answer": "Inflation is projected to reach 1.2 percent year-on-year by December 2025 and stabilize around 3 percent over the medium term [chunk 173, 21]. Recent price pressures were driven by utility tariff hikes and rupee depreciation, though inflation moderated in early 2025 due to tariff reductions and lower food prices [chunk 17, 178]. The outlook remains subject to external shocks, such as commodity and transport price fluctuations, due to the country's high import dependency [chunk 21].",
+        "model": "gemini-3-flash-preview",
+        "latency_s": 4.4,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer A is fully supported by the provided context and addresses both the outlook and the driving factors completely and accurately.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "A"
+      },
+      "debt_stress_tests": {
+        "qid": "debt_stress_tests",
+        "question": "What assumptions or shocks are used in the debt sustainability stress tests for Seychelles?",
+        "condition": "multi",
+        "unit_ids": [
+          154,
+          142,
+          156,
+          158,
+          130,
+          50,
+          132,
+          137
+        ],
+        "context": "[chunk 154] (page 57)\nThe fan chart analysis estimates risks to be moderate due partly to a relatively moderate probability of debt non-stabilization and a relatively low terminal adjusted debt-to-GDP ratio. The GFN module also indicates moderate risk for\nSeychelles in relation to its low average projected gross financing needs and relatively limited exposure on banks to government debt. In the stress scenario, the natural disaster shock was calibrated based on the Disaster Risk Financing Strategy TA Report that estimates the financing needs for public and private entities combined to US$59 million for a 100-year event (or 2.7 percent of GDP). This shock would elevate financing needs in the short-term but would stabilize after three years. In reality, due to geographical location, Seychelles has not experienced many natural disasters. However, the country is highly vulnerable to the rise in sea level from climate change. The RSF is supporting the authorities address climate concerns. The DSA also incorporates a stress test for a contingent liability related to the CBS recapitalization amounting SRC 330 million and financed by local banks.\nSource: IMF staff estimates and projections.\n0.4 0.5 0.2\n0.2 0.5 0.1\n0 25 50\nPercentile in peer group 2/\n0 25 50 75 100\n75 100\nValue (normalize d)\nTriggered stress tests (stress tests not activated in gray)\n2020 2022 2024 2026 2028 2030\n5-25 pct\n25-50 pct\n50-75 pct\n75-95 pct\nActual\n2020 2022 2024 2026 2028 2030\nFinancing provided by banks\nActual\nBaseline\nStress scenario\n0.00\n\n[chunk 142] (page 53)\nSeychelles: Risk of Sovereign Stress\nOverall ... Moderate\nNear term 1/\nMedium term Moderate Moderate\nFanchart Moderate ...\nGFN Moderate ...\nStress test ...\nLong term ... Moderate\nDebt stabilization in the baseline Yes\nMedium-term risks are assessed as moderate on the basis of the strength of institutions and the authorities' commitment to prudent fiscal stance. The\nDSA applied the contigent liability and natural disaster shock.\nSustainable\nDSA Summary Assessment\nCommentary: Staff assesses Seychelles to be at a moderate risk of sovereign stress and debt is assessed to be sustainable. Public debt increased from 57.3 percent of GDP in 2023 to 59.6 percent in 2024, due to exchange rate depreciation and a higher stock of external guarantees. Medium-term liquidity risks are moderate as analyzed by the GFN Financeability and Debt fan chart index. Long-term risk is also considered moderate, and debt is considered sustainable with high probability. However, due to its high-income status, Seychelles faces limited access to concessional financing. The authorities should continue to maintain a prudent fiscal position and develop domestic debt markets to diversify source of financing.\nLong-term risks are moderate on the basis of increasing financing needs for the health system and climate-related expenditures.\nSource: Fund staff.\nNote: The risk of sovereign stress is a broader concept than debt sustainability. Unsustainable debt can only be resolved through exceptional measures (such as debt restructuring). In contrast, a sovereign can face stress without its debt necessarily being unsustainable, and there can be various measures—that do not involve a debt restructuring—to remedy such a situation, such as fiscal adjustment and new financing.\n\n[chunk 156] (page 58)\nFigure 6. Seychelles: Realism of Baseline Assumptions\n3/ Data cover annual obervations from 1990 to 2019 for MAC advanced and emerging economies. Percent of sample on vertical axis.\nCommentary: The V-shaped economic recovery from the Covid pandemic combined with faster than expected fiscal consolidation have significantly reduced public indebtedness. Debt reduction as a share of GDP over the last years and the authorities' strong commitment to prudent fiscal management make Seychelles standout among other comparable countries. However, its heavy reliance on tourism renders the economy vulnerable to shocks. Seychelles is also facing significant climate challenges.\nOptimistic\nPessimistic\nEmerging Markets, Non-Commodity Exporter,\nProgram\n2/ Calculated as the percentile rank of the country's output gap revisions (defined as the difference between real time/period ahead estimates\n4/ The Laubach (2009) rule is a linear rule assuming bond spreads increase by about 4 bps in response to a 1 ppt increase in the projected debt-to-GDP ratio.\n2020 2021 2022 2023 2024 2025 2026 2027\nFiscal Adjustment (rhs)\nBaseline\nMultiplier=0.5\nMultiplier=1\nIn percentage points of GDP\nIn percent\nDistribution 3/\n3-year reduction\nMax. 3-year reduction\n3-year debt reduction above 75th percentile (5.9 ppts of GDP)\npercentile rank 54.1\nPast 5 years\nPrimary deficit\nReal interest rate and relative inflation\nReal GDP growth\nExch. rate depreciation\nResidual\nChange in public sector debt\nNext 5 years\n-2%\n0%\n2%\n5y hist\n2025\n2026\n2027\n2028\n2029\n\n[chunk 158] (page 59)\nGFN-to-GDP Ratio Total Public Debt-to-GDP Ratio\nFigure 7. Seychelles: Triggered Modules\nMedium-term extrapolation with debt stabilizing primary balance\nLarge amortizations Climate change: Adaptation\nClimate change: Mitigation\nPensions\nSeychelles: Long-Term Risk Assessment: Large Amortization\nCommentary: The DSA long-term risk assessment is considered moderate. Unlike other small island economies, Seychelles has not been subject to frequent disasters like earthquakes due to its location. However, the country is highly vulnerable to climate change associated with the rise of sea-level. Effective planning and execution of climate policies and identifying and deploying new revenue sources to address social needs will be critical.\nNatural Resources\n-20.0\n0.0\n20.0\n40.0\n60.0\n2017\n2020\n2023\n2026\n2029\n2032\n2035\n2038\n2041\n2044\n2047\n2050\n2053\nLong run projection\nProjection\nBaseline with t+5\nBaseline with t+5 and DSPB\nHistorical 10-year average\n2017\n2020\n2023\n2026\n2029\n2032\n2035\n2038\n2041\n2044\n2047\n2050\n2053\nLong run projection\nProjection\nBaseline with t+5\nBaseline with t+5 and DSPB\nHistorical 10-year average\nGFN-to-GDP Ratio Total Public Debt-to-GDP Ratio\nCommentary: Health spending needs may be higher than what is suggested by the model, given the increasing share of the population suffering from substance abuse and its long-term generational effect. The authorities actively seek external partners to build medical/health infrastructure and devise social programs to address this issue.\nFigure 8. Seychelles: Demographics: Health\n0.0\n20.0\n40.0\n\n[chunk 130] (page 46)\n2. Integrating climate effects into macroeconomic projections is crucial for accurately assessing the potential impacts on key variables. As climate change poses increasing risks to economic stability, failing to account for these effects can lead to overoptimistic forecasts that do not reflect the realities of vulnerability and resilience. By incorporating climate-related risks and uncertainties into macroeconomic models, policymakers can better understand their potential economic consequences, enabling more informed decision-making. This is particularly relevant for small island states like Seychelles, where climate-induced challenges significantly affect economic performance and development prospects.\n3. This annex presents a new approach, using Seychelles as a pilot case, to integrate climate change into the macroeconomic framework. 1 In doing so, it is important to recognize which climate change effects may already be included in current macroeconomic projections—against the backdrop of a baseline global warming scenario of 2.7C by 2100 typically applied at the Fund. It is crucial to distinguish between two types of climate change effects in macroeconomic projections.\nSlow-moving effects, such as rising sea levels and ocean acidification, manifest over a longer timeframe, typically beyond the medium-term horizon (5 years). In contrast, climate-induced natural disasters, including floods and storms, can occur at any time, including within the medium-term horizon.\n4. With continued and concerted resilience-building efforts, the macroeconomic impact of slow-moving climate change may be broadly contained. In the case of Seychelles, the impact of past slow-moving global temperature changes (e.g., rising sea temperatures and ocean acidification)\nand policies to build resilience to these effects, including ongoing reform measures under the RSF\narrangement, are already embedded in current macroeconomic projections.\n\n[chunk 50] (page 26)\nLooking ahead, downside risks appear to dominate, as tourist arrivals and spending from Seychelles’ largest source countries in Europe have historically been sensitive to economic cycles in those countries. In the face of downward revisions to global growth and rising trade tensions, the growth outlook for 2025-26 has been revised with the expectation of fewer arrivals\n13 The authorities are expecting $54.5 million in budget support from the World Bank and $25 million from the\nAfDB.\nand lower per tourist spending. Prospects for the medium-term are uncertain and will depend on how current trade tensions and geopolitical developments play out.\n44. Seychelles approaches this more uncertain environment from a position of relative strength. Real GDP growth, while lower than projected, is roughly in line with potential. Inflation is low. The fiscal position remains prudent, and public debt has declined from over 90 percent of GDP\nat the end of the pandemic to under 60 percent by 2024. The CBS maintains a broadly sufficient reserve cushion and a flexible exchange rate. The banking system appears sound and well capitalized. The authorities have demonstrated strong policy discipline, and the flexibility needed to adapt to new shocks. Continued support under the EFF and RSF programs should assist in helping\nSeychelles maintain macroeconomic stability, both in the sense of continued budget financing as well as maintaining a solid policy framework and structural reform agenda that can address challenges as they emerge.\n45. Fiscal policy in Seychelles continues to demonstrate challenges, albeit mostly with respect to under-spending. While higher-than projected primary surpluses bring faster public debt reduction, repeated underspending on capital projects undermines budget credibility and delays implementation of critical public infrastructure projects.\n\n[chunk 132] (page 47)\nThe 2023 flood, accompanied by an industrial explosion, was classified as a technological disaster. Compared to the Maldives, Mauritius, other small islands, and sub-Saharan\nAfrica (SSA), Seychelles has experienced fewer disasters on average (Fig. 1). Among these events, the\n2002 storm affected the largest share of the population. While overall economic damage has been moderate, the 2004 earthquake had the highest damage-to-GDP ratio at 3.5 percent. Considering climate risks and preparedness, Seychelles is relatively less vulnerable and better prepared for climate-related risks than its peers. According to INFORM—an open-source risk assessment tool adapted by\nIMF staff—Seychelles scores favorably across hazard exposure, vulnerability, and coping capacity dimensions (Fig. 2).\n6. The influence of climate-related natural disasters on macroeconomic projections can be more substantial. Often, their impact is only partially accounted for. One of the challenges in accounting for climate-related natural disasters in projections is that they do not necessarily happen every year. This annex addresses that challenge by employing an expected value methodology to develop an alternative macroeconomic framework with revised medium-term projections for key macro indicators such as GDP growth, inflation, primary balance, net exports, and international reserves. In this approach, the projection of a specific macroeconomic indicator is determined by a probability-based weighted average of its projection under the occurrence of a climate-related natural disaster and its projection in the absence of such events. The impact of a climate-related\nFigure 1. Seychelles: Natural Disasters in\nSelected Countries 2000-2024\nFigure 2. Seychelles: Climate-Driven INFORM\nIndex 2022 (0-10)\n\n[chunk 137] (page 49)\n10. Natural disaster shocks are contractionary and induce immediate fiscal and external imbalances. Figure 3 presents the impulse responses of key macroeconomic variables—output, public finances, and external sector indicators—to a one-time natural disaster shock.7 GDP growth declines immediately, reflecting disrupted production and increased economic uncertainty. Total and tax revenues also drop due to reduced economic activity and potential delays in tax collection.\nGovernment increases current expenditures, likely for emergency relief and social transfers, while capital expenditures decline. This decline may indicate a reallocation of fiscal resources away from investment projects or constraints on financing. Capital spending exhibits the most volatility among fiscal variables, highlighting uncertainty in post-disaster investment behavior. In the external sector, imports initially rise, driven by demand for relief goods and materials for reconstruction, but this effect diminishes over time. Conversely, exports experience a decline, possibly attributed to disruptions in production and trade infrastructure, particularly impacting the tourism sector. These dynamics underscore the vulnerability of trade balances in small island economies to natural disasters.\n11. Climate resilient investments can help mitigate the effects of climate change on GDP\ngrowth. Incorporating climate considerations into public investment and enhancing climate-resilient infrastructure in Seychelles under the RSF arrangement can significantly mitigate the adverse effects of climate change on GDP growth. By prioritizing investments that address vulnerabilities to storms\n6 An additional dummy variable was included in the SVAR model to account for the negative impacts of COVID on macroeconomic variables included in the SVAR model. Abdel-Latif, 2025 (unpublished memo - link) provides more technical details on the estimated SVAR model.\n7 Figure 3 presents the annual effects (rather than cumulative effects) of a natural disaster shock.",
+        "answer": "The debt sustainability analysis (DSA) for Seychelles incorporates a natural disaster shock and a contingent liability stress test [chunk 142]. The natural disaster shock is calibrated for a 100-year event with financing needs of US$59 million (2.7 percent of GDP), while the contingent liability shock involves a SRC 330 million Central Bank of Seychelles (CBS) recapitalization financed by local banks [chunk 154]. Additionally, long-term risk assessments evaluate shocks related to large amortizations, pensions, and climate change adaptation and mitigation [chunk 158].",
+        "model": "gemini-3-flash-preview",
+        "latency_s": 4.01,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer B correctly outlines the natural disaster shock and contingent liability stress test, and also mentions additional long-term risk assessment modules/shocks shown in the text (large amortizations, pensions, and climate change adaptation/mitigation). All claims are supported by the provided text.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "B"
+      },
+      "climate_risks": {
+        "qid": "climate_risks",
+        "question": "What climate-related risks does Seychelles face, and how does the IMF recommend addressing them?",
+        "condition": "multi",
+        "unit_ids": [
+          132,
+          130,
+          131,
+          138,
+          134,
+          171,
+          158,
+          133
+        ],
+        "context": "[chunk 132] (page 47)\nThe 2023 flood, accompanied by an industrial explosion, was classified as a technological disaster. Compared to the Maldives, Mauritius, other small islands, and sub-Saharan\nAfrica (SSA), Seychelles has experienced fewer disasters on average (Fig. 1). Among these events, the\n2002 storm affected the largest share of the population. While overall economic damage has been moderate, the 2004 earthquake had the highest damage-to-GDP ratio at 3.5 percent. Considering climate risks and preparedness, Seychelles is relatively less vulnerable and better prepared for climate-related risks than its peers. According to INFORM—an open-source risk assessment tool adapted by\nIMF staff—Seychelles scores favorably across hazard exposure, vulnerability, and coping capacity dimensions (Fig. 2).\n6. The influence of climate-related natural disasters on macroeconomic projections can be more substantial. Often, their impact is only partially accounted for. One of the challenges in accounting for climate-related natural disasters in projections is that they do not necessarily happen every year. This annex addresses that challenge by employing an expected value methodology to develop an alternative macroeconomic framework with revised medium-term projections for key macro indicators such as GDP growth, inflation, primary balance, net exports, and international reserves. In this approach, the projection of a specific macroeconomic indicator is determined by a probability-based weighted average of its projection under the occurrence of a climate-related natural disaster and its projection in the absence of such events. The impact of a climate-related\nFigure 1. Seychelles: Natural Disasters in\nSelected Countries 2000-2024\nFigure 2. Seychelles: Climate-Driven INFORM\nIndex 2022 (0-10)\n\n[chunk 130] (page 46)\n2. Integrating climate effects into macroeconomic projections is crucial for accurately assessing the potential impacts on key variables. As climate change poses increasing risks to economic stability, failing to account for these effects can lead to overoptimistic forecasts that do not reflect the realities of vulnerability and resilience. By incorporating climate-related risks and uncertainties into macroeconomic models, policymakers can better understand their potential economic consequences, enabling more informed decision-making. This is particularly relevant for small island states like Seychelles, where climate-induced challenges significantly affect economic performance and development prospects.\n3. This annex presents a new approach, using Seychelles as a pilot case, to integrate climate change into the macroeconomic framework. 1 In doing so, it is important to recognize which climate change effects may already be included in current macroeconomic projections—against the backdrop of a baseline global warming scenario of 2.7C by 2100 typically applied at the Fund. It is crucial to distinguish between two types of climate change effects in macroeconomic projections.\nSlow-moving effects, such as rising sea levels and ocean acidification, manifest over a longer timeframe, typically beyond the medium-term horizon (5 years). In contrast, climate-induced natural disasters, including floods and storms, can occur at any time, including within the medium-term horizon.\n4. With continued and concerted resilience-building efforts, the macroeconomic impact of slow-moving climate change may be broadly contained. In the case of Seychelles, the impact of past slow-moving global temperature changes (e.g., rising sea temperatures and ocean acidification)\nand policies to build resilience to these effects, including ongoing reform measures under the RSF\narrangement, are already embedded in current macroeconomic projections.\n\n[chunk 131] (page 46)\nand policies to build resilience to these effects, including ongoing reform measures under the RSF\narrangement, are already embedded in current macroeconomic projections. The slow-moving impacts of global temperature changes manifest over a longer horizon, with the estimated additional future impact indicating a reduction of -0.01 percentage points in growth per year.2 Over a 30-year period, this would accumulate to approximately -0.3 percentage points deducted from the growth rate three\n1 Integrating the effects of climate change into the macroeconomic framework is an inter-departmental exercise designed to potentially be replicated by other countries vulnerable to climate change and with significant macroeconomic impacts on balance of payments, fiscal, and the financial sector.\n2 Author’s calculations based on Mohaddess and Raissi (2024) or Kahn et al. (2021).\ndecades from now. However, with ongoing resilience-building efforts under the RSF arrangement, this reduction in GDP growth may be mostly offset, suggesting that the net effect of this type of climate effects could potentially be zero. This suggests that the primary impact on macroeconomic variables in Seychelles, especially in the medium term, is expected to stem from climate-induced natural disasters rather than slow-moving climate-induced temperature changes.\n5. Floods and storms have been the primary climate-related natural disasters in Seychelles.\nSince 1980, the EM-DAT database has recorded only a few major events: two storms (2002, 2013) and two floods (1997, 2014). The 2023 flood, accompanied by an industrial explosion, was classified as a technological disaster. Compared to the Maldives, Mauritius, other small islands, and sub-Saharan\n\n[chunk 138] (page 49)\nAbdel-Latif, 2025 (unpublished memo - link) provides more technical details on the estimated SVAR model.\n7 Figure 3 presents the annual effects (rather than cumulative effects) of a natural disaster shock.\nand floods—such as upgrading coastal defenses, improving drainage systems, and reinforcing critical infrastructure—Seychelles can better withstand the impacts of climate-related events. The findings in (Nguyen, Feng and Garcia-Escribano, 2025, weblink) from a local projections model for small islands indicate that adaptation efforts can lead to improvements of climate resilient infrastructure that offset the negative impact of natural disasters on GDP growth from an average of -1.5 percentage points to\n-1 percentage points, improving the growth outcome by about 33 percent compared to relatively lower quality infrastructure. 8\n12. An expected value approach is employed to explicitly adjust existing projections to account for the effects of climate-related natural disasters.9 This methodology utilizes the estimated probability of such disaster incidence in conjunction with the impacts of such disasters based on findings from VAR model based empirical findings (and cross-checked with historical data)\nand the long-term trends in the absence of natural disasters. Probability-based weighted averages are then applied to estimate the climate-adjusted projection for a given variable (see Equation 1). Figure 4 presents the climate-adjusted growth projections derived from this approach. The results shown in\nFigure 4 indicate that climate-adjusted GDP growth rates are expected to be slightly lower than current projections. This trend is also observed for government revenues (both total and tax), capital expenditures, and exports, where applying the expected value approach yields a marginally lower trajectory for these variables.\n\n[chunk 134] (page 48)\n7. A two-step approach is employed to estimate the probability of climate-related natural disaster incidence in Seychelles (i.e., PND in equation 1 above). The first step involves identifying severe disasters in the International Disaster Database (EM-DAT) database, using an intensity metric defined as the ratio of the total affected population to the overall population size. A disaster is included for a particular year if it affects at least 100 individuals per million people.3 In the second step, once disasters are identified, the probability of occurrence is determined by calculating the annual probability (PR(ND)) and deriving the average return period T = 1/PR(ND). To estimate the probability of at least one disaster occurring over multiple years (n), the formula R = 1 - (1 - 1/T)n is applied. This approach accounts for reporting inconsistencies by restricting the analysis to data from\n2000 to 2024, ensuring that only recent trends in disaster frequency and intensity are reflected in the estimation. As a result, the probability of an intense flood or storm occurring in Seychelles for any given year is estimated to be 12 percent.4\n8. Estimating long-term trends in the absence of natural disasters and assessing their impacts is informed by historical data and empirical research (i.e., yt+h without ND). By filtering out years where Seychelles was impacted by past climate-related natural disasters, the counterfactual long-term trend of a specific macroeconomic variable can be estimated using the Hodrick-Prescott (HP) filter or average growth rate.5 The trend effects of other factors, such as global conditions and assumptions regarding the performance of tourism and other sectors, remain. For instance, using\n\n[chunk 171] (page 69)\nAppendix I. Letter of Intent\nVictoria\nMay 21, 2025\nMs. Kristalina Georgieva,\nManaging Director,\nInternational Monetary Fund\n700 19th St, NW\nWashington, DC 20431\nUSA\nDear Madam Managing Director:\nOn behalf of the Government of the Republic of Seychelles, we wish to express our continued commitment to implementing the economic and financial policies supported under the Extended\nFund Facility (EFF) and Resilience and Sustainability Facility (RSF) arrangements. These programs remain critical to supporting our ongoing macroeconomic stabilization and structural reform agenda.\nGlobal economic activity is projected to weaken significantly in 2025, driven by rising trade tensions, tighter financial conditions, and heightened policy uncertainty. These trends present complex fiscal challenges for a vulnerable small island states like Seychelles, requiring a balance between supporting domestic demand, maintaining debt sustainability, and building resilience to external shocks.\nDespite the December 2023 disaster and global uncertainties, Seychelles demonstrated economic resilience in 2024, achieving a primary surplus of 3.2% of GDP and advancing reforms in fiscal, monetary, and structural areas. Our transformative agenda focuses on modernizing the economy, improving public sector efficiency, and fostering sustainable, inclusive growth. Key reforms include digitalizing public services, enhancing public financial management, improving the business environment, and building resilience in tourism, agriculture, and fisheries.\nWe remain firmly committed to reducing public debt to 50% of GDP by 2030, supported by sound fiscal policies, improved cash flow forecasting, and ongoing reforms in public investment management. On climate resilience, we continue to implement adaptation and mitigation strategies aligned with our NDCs, while actively mobilizing resources to close the climate financing gap.\n\n[chunk 158] (page 59)\nGFN-to-GDP Ratio Total Public Debt-to-GDP Ratio\nFigure 7. Seychelles: Triggered Modules\nMedium-term extrapolation with debt stabilizing primary balance\nLarge amortizations Climate change: Adaptation\nClimate change: Mitigation\nPensions\nSeychelles: Long-Term Risk Assessment: Large Amortization\nCommentary: The DSA long-term risk assessment is considered moderate. Unlike other small island economies, Seychelles has not been subject to frequent disasters like earthquakes due to its location. However, the country is highly vulnerable to climate change associated with the rise of sea-level. Effective planning and execution of climate policies and identifying and deploying new revenue sources to address social needs will be critical.\nNatural Resources\n-20.0\n0.0\n20.0\n40.0\n60.0\n2017\n2020\n2023\n2026\n2029\n2032\n2035\n2038\n2041\n2044\n2047\n2050\n2053\nLong run projection\nProjection\nBaseline with t+5\nBaseline with t+5 and DSPB\nHistorical 10-year average\n2017\n2020\n2023\n2026\n2029\n2032\n2035\n2038\n2041\n2044\n2047\n2050\n2053\nLong run projection\nProjection\nBaseline with t+5\nBaseline with t+5 and DSPB\nHistorical 10-year average\nGFN-to-GDP Ratio Total Public Debt-to-GDP Ratio\nCommentary: Health spending needs may be higher than what is suggested by the model, given the increasing share of the population suffering from substance abuse and its long-term generational effect. The authorities actively seek external partners to build medical/health infrastructure and devise social programs to address this issue.\nFigure 8. Seychelles: Demographics: Health\n0.0\n20.0\n40.0\n\n[chunk 133] (page 47)\nThe impact of a climate-related\nFigure 1. Seychelles: Natural Disasters in\nSelected Countries 2000-2024\nFigure 2. Seychelles: Climate-Driven INFORM\nIndex 2022 (0-10)\nSource: IMF staff estimates\nSeychelles Maldives Mauritius Small Islands Sub-Saharan\nAfrica\nFloods Storms\nDroughts Extreme Temperature\nWildfires Other Disasters\nSeychelles Maldives Mauritius Small Islands Sub-Saharan\nAfrica\nNote: In the Climate-Driven INFORM Risk Index, lower scores across the overall index and its components indicate better performance.\nnatural disaster on a particular variable is calibrated based on the historical effects of such disasters in\nSeychelles and empirical research findings.\nyt+h adj = PND ∗ yt+h ND + (1 - PND) ∗ yt+h without ND (1)\nWhere yt+h adj is the climate adjusted projections for a given variable y at h year in the future. PND is the probability of climate-related natural disaster incidence. yt+h ND is the projection for variable y including the impact of a climate-related natural disaster—calculated based on historical impacts or empirical findings (yt+h ND = yt+h without ND - ND impact). yt+h without ND is the projection for variable y in a year where there is no natural disaster while including all other factors such as global conditions and tourism assumptions.\n7. A two-step approach is employed to estimate the probability of climate-related natural disaster incidence in Seychelles (i.e., PND in equation 1 above).",
+        "answer": "Seychelles faces slow-moving climate risks like rising sea levels and ocean acidification, alongside natural disasters such as floods and storms [chunk 130, 131]. To address these, the IMF recommends integrating climate-related risks into macroeconomic projections using an expected value methodology to ensure forecasts accurately reflect economic vulnerabilities [chunk 130, 132]. Furthermore, adaptation efforts such as upgrading coastal defenses and drainage systems, combined with reforms under the Resilience and Sustainability Facility (RSF), are recommended to build resilience and offset potential reductions in GDP growth [chunk 131, 138].",
+        "model": "gemini-3-flash-preview",
+        "latency_s": 5.96,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer A is fully faithful to its provided context and covers both the climate-related risks and the IMF's methodological and adaptation recommendations completely.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "A"
+      },
+      "monetary_policy": {
+        "qid": "monetary_policy",
+        "question": "What is the Central Bank of Seychelles' monetary policy rate, and what does the report say about monetary policy?",
+        "condition": "multi",
+        "unit_ids": [
+          19,
+          12,
+          65,
+          3,
+          156,
+          73,
+          97,
+          72
+        ],
+        "context": "[chunk 19] (page 12)\nGDP less than expected—0.2 percentage points less in tax revenues and 0.3 percentage points pt in non-tax revenues. External grants were below forecast by 0.5 percentage points of GDP, reflecting delays in project implementation. On the expenditure side, there was a total underspend equivalent to 3.1 percentage points of GDP, driven mostly by shortfalls in capital spending (1.4 percentage points), wages and salaries (0.7 percentage points), and goods and services (0.6 percentage points).\nCapex underspending reflected under-execution of planned projects due to capacity constraints, diversion of planning resources to emergency reconstruction following the industrial explosion and floods in December 2023, and lengthy procurement processes for foreign-funded capital projects.\nUnderspending on wages and salaries reflects continued recruitment delays, while the shortfall in goods and services spending was also linked to procurement delays.\n6. The monetary policy stance remained accommodative in 2024. The Central Bank of\nSeychelles (CBS) has maintained the monetary policy rate (MPR) at 1.75 percent since March 2024.3\nMonetary operations have been calibrated to steer the rate on the 7-day Deposit Auction\nArrangement (DAA) to the MPR. However, excess reserves increased from SR 169 million in 2023 to\nSR 261 million in 2024 (21-day moving average). The impact of monetary policy remains limited, due primarily to ineffective transmission and persistent excess liquidity in the banking sector. The cost of credit remains high, with the average lending rate at 9.9 percent in December 2024 (an increase of 0.2 ppt compared to the previous year).\n\n[chunk 12] (page 6)\n3.1 3.3 3.4 3.7 3.8 3.8 3.9 3.8 3.8 3.8 3.8 3.9\nIn percent of Assessing Reserve Adequacy (ARA) metric 102 104 105 118 115 119 118 117 118 119 124 127\nExchange rate\nSeychelles rupees per US$1 (end-of-period) 14.1 14.2 14.2 ... 14.8 ... ... ... ... ... ... ...\nSeychelles rupees per US$1 (period average) 14.3 14.0 14.0 ... 14.5 ... ... ... ... ... ... ...\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Includes onlending to the parastatals for investment purposes.\n3 Includes private external debt.\n2030\nProj.\n2 Includes debt issued by the Ministry of Finance for monetary purposes.\n(Percent of GDP)\nAct.\n(Annual percent change, unless otherwise indicated)\n(Percent of GDP, unless otherwise indicated)\nAct. Proj.\n2022 2024 2028 20292026 20272023 2025\nFOURTH REVIEWS UNDER THE ARRANGEMENT UNDER\nTHE EXTENDED FUND FACILITY AND THE ARRANGEMENT\nUNDER THE RESILIENCE AND SUSTAINABILITY FACILITY,\nREQUEST FOR MODIFICATION OF PERFORMANCE\nCRITERIA, AND REQUEST FOR MODIFICATION OF REFORM\nMEASURES UNDER THE RESILIENCE AND SUSTAINABILITY\nFACILITY\nEXECUTIVE SUMMARY\nContext.\n\n[chunk 65] (page 33)\n3.1 3.3 3.4 3.7 3.8 3.8 3.9 3.8 3.8 3.8 3.8 3.9\nIn percent of Assessing Reserve Adequacy (ARA) metric 102 104 105 118 115 119 118 117 118 119 124 127\nExchange rate\nSeychelles rupees per US$1 (end-of-period) 14.1 14.2 14.2 ... 14.8 ... ... ... ... ... ... ...\nSeychelles rupees per US$1 (period average) 14.3 14.0 14.0 ... 14.5 ... ... ... ... ... ... ...\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Includes onlending to the parastatals for investment purposes.\n3 Includes private external debt.\n2030\nProj.\n2 Includes debt issued by the Ministry of Finance for monetary purposes.\n(Percent of GDP)\nAct.\n(Annual percent change, unless otherwise indicated)\n(Percent of GDP, unless otherwise indicated)\nAct. Proj.\n2022 2024 2028 20292026 20272023 2025\nTable 2. Seychelles: Balance of Payments, 2022-30\n2029 2030\n3rd\nReview\n3rd\nReview\n3rd\nReview\n\n[chunk 3] (page 3)\nYear-on-year inflation reached 1.7 percent as of December, driven by an increase in utility prices and pass-through effects of currency depreciation. Fiscal performance was tighter than budgeted driven mainly by underspending on capital expenditure, with a primary surplus equivalent to 3.2 percent of GDP in 2024. The\nCentral Bank of Seychelles has maintained an accommodative monetary stance. The current account deficit widened to 7.9 percent of GDP in 2024, but gross international reserves increased to $774 million, equivalent to 3.8 months of imports or 115 percent of the Assessing\nReserve Adequacy (or ARA) metric.\nEFF-supported program implementation has been strong. All quantitative program targets (QPCs) and structural benchmarks (SBs) for end-December 2024 were met. However, two\nSBs scheduled for the first half of 2025 have encountered minor delays due to capacity constraints. Progress has been satisfactory on RSF implementation. All reform measures (RMs) for March 2025 have been implemented. However, one component of an RM\nscheduled for April 2025 (related to energy pricing and the issuance of a new multi -year electricity tariff system) is delayed and expected to be completed in November. The authorities requested minor modifications for two RMs slated for December 2025.\nThe outlook suggests low but stable growth for 2025 and beyond but is subject to considerable uncertainty. Real GDP growth is projected at 3.2 percent for 2025 compared to\n4.3 percent at the previous reviews.\n\n[chunk 156] (page 58)\nFigure 6. Seychelles: Realism of Baseline Assumptions\n3/ Data cover annual obervations from 1990 to 2019 for MAC advanced and emerging economies. Percent of sample on vertical axis.\nCommentary: The V-shaped economic recovery from the Covid pandemic combined with faster than expected fiscal consolidation have significantly reduced public indebtedness. Debt reduction as a share of GDP over the last years and the authorities' strong commitment to prudent fiscal management make Seychelles standout among other comparable countries. However, its heavy reliance on tourism renders the economy vulnerable to shocks. Seychelles is also facing significant climate challenges.\nOptimistic\nPessimistic\nEmerging Markets, Non-Commodity Exporter,\nProgram\n2/ Calculated as the percentile rank of the country's output gap revisions (defined as the difference between real time/period ahead estimates\n4/ The Laubach (2009) rule is a linear rule assuming bond spreads increase by about 4 bps in response to a 1 ppt increase in the projected debt-to-GDP ratio.\n2020 2021 2022 2023 2024 2025 2026 2027\nFiscal Adjustment (rhs)\nBaseline\nMultiplier=0.5\nMultiplier=1\nIn percentage points of GDP\nIn percent\nDistribution 3/\n3-year reduction\nMax. 3-year reduction\n3-year debt reduction above 75th percentile (5.9 ppts of GDP)\npercentile rank 54.1\nPast 5 years\nPrimary deficit\nReal interest rate and relative inflation\nReal GDP growth\nExch. rate depreciation\nResidual\nChange in public sector debt\nNext 5 years\n-2%\n0%\n2%\n5y hist\n2025\n2026\n2027\n2028\n2029\n\n[chunk 73] (page 34)\n1 Per STA recommendations, net lending under financial account is recorded as positive following BPM6 guidance.\n2 The level of GIRs computed from the BOP includes the budget support.\n(Millions of US dollars, unless otherwise indicated)\n2027 20282022 2023 2024 2025 2026\nAct. Proj.Act. Act. Proj.\nTable 3a. Seychelles: Consolidated Government Operations, 2022-301 (Millions of Seychelles Rupees)\n2029 2030\n3rd\nReview\n3rd\nReview\n3rd\nReview\nTotal revenue and grants 8,798 9,726 9,726 10,879 10,758 12,112 11,740 12,375 13,017 13,906 14,707 15,599\nTotal revenue 8,652 9,466 9,466 10,525 10,565 11,666 11,359 11,806 12,678 13,581 14,405 15,294\nTax 7,382 8,169 8,169 8,918 9,021 9,965 9,587 10,087 10,820 11,507 12,326 13,242\nPersonal income tax 1,079 1,190 1,190 1,284 1,331 1,388 1,408 1,502 1,598 1,713 1,836 1,969\nTrade tax 302 330 330 351 382 371 402 424 457 457 514 573\n\n[chunk 97] (page 37)\nMoney multiplier (broad money/reserve money) 3.9 3.3 3.4 3.7 4.2 4.6 4.8 4.9 4.9\nVelocity (GDP/broad money; end-of-period) 1.0 1.1 1.2 1.2 1.2 1.1 1.1 1.1 1.1\nSources: Central Bank of Seychelles; and IMF staff estimates and projections.\n1 Negative shows accumulation, positive shows retiring (debt that is not rolled over)\n(Millions of Seychelles rupees)\nAct. Proj.\nTable 5. Seychelles: Financial Soundness Indicators for the Banking Sector, 2018–24\n2018 2019 2020 2021 2022 2023 2024\nCapital adequacy\nRegulatory capital to risk weighted assets 20.5 19.5 17.1 22.7 20.7 21.8 19.8\nRegulatory tier 1 capital to risk weighted assets 16.8 16.2 14.1 17.2 15.2 16.0 14.1\nCapital to assets (net worth) 10.1 9.9 8.4 9.2 8.8 10.1 10.4\nNet tangible capitalization 1 10.1 10.0 8.5 9.3 8.9 10.2 10.5\nAsset quality\n\n[chunk 72] (page 34)\nPercentage of IMF reserve adequacy metric 102 104 105 118 115 119 118 117 118 119 124 127\nGross official reserves without RSF (stock, e.o.p.)2 678 678 794 761 815 781 784 816 848 956 1,021 (Months of imports of goods & services) 3.3 3.4 3.6 3.7 3.6 3.7 3.6 3.6 3.6 3.8 3.9\nPercentage of IMF reserve adequacy metric 104 104 116 113 114 112 110 112 113 124 127\nGovernment and government-guaranteed external debt 578 591 591 690 648 777 742 784 786 745 698 653 (Percent of GDP) 29 28 27 32 30 35 34 35 33 30 27 24\nGDP (Millions of U.S. dollars) 2,018 2,141 2,187 2,134 2,178 2,227 2,188 2,256 2,349 2,463 2,583 2,733\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Per STA recommendations, net lending under financial account is recorded as positive following BPM6 guidance.\n2 The level of GIRs computed from the BOP includes the budget support.\n(Millions of US dollars, unless otherwise indicated)",
+        "answer": "The Central Bank of Seychelles (CBS) has maintained its monetary policy rate (MPR) at 1.75 percent since March 2024 [chunk 19]. The monetary policy stance remains accommodative, with operations calibrated to steer the 7-day Deposit Auction Arrangement rate toward the MPR [chunk 19][chunk 3]. However, the impact of monetary policy is limited due to persistent excess liquidity in the banking sector and ineffective transmission [chunk 19].",
+        "model": "gemini-3-flash-preview",
+        "latency_s": 2.39,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer A is fully faithful to the provided context and accurately captures the monetary policy rate (1.75 percent), the accommodative stance, and the limitations of monetary policy due to transmission and excess liquidity.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "A"
+      },
+      "external_risks": {
+        "qid": "external_risks",
+        "question": "What external risks could affect Seychelles' economic outlook?",
+        "condition": "multi",
+        "unit_ids": [
+          50,
+          130,
+          132,
+          21,
+          137,
+          138,
+          4,
+          136
+        ],
+        "context": "[chunk 50] (page 26)\nLooking ahead, downside risks appear to dominate, as tourist arrivals and spending from Seychelles’ largest source countries in Europe have historically been sensitive to economic cycles in those countries. In the face of downward revisions to global growth and rising trade tensions, the growth outlook for 2025-26 has been revised with the expectation of fewer arrivals\n13 The authorities are expecting $54.5 million in budget support from the World Bank and $25 million from the\nAfDB.\nand lower per tourist spending. Prospects for the medium-term are uncertain and will depend on how current trade tensions and geopolitical developments play out.\n44. Seychelles approaches this more uncertain environment from a position of relative strength. Real GDP growth, while lower than projected, is roughly in line with potential. Inflation is low. The fiscal position remains prudent, and public debt has declined from over 90 percent of GDP\nat the end of the pandemic to under 60 percent by 2024. The CBS maintains a broadly sufficient reserve cushion and a flexible exchange rate. The banking system appears sound and well capitalized. The authorities have demonstrated strong policy discipline, and the flexibility needed to adapt to new shocks. Continued support under the EFF and RSF programs should assist in helping\nSeychelles maintain macroeconomic stability, both in the sense of continued budget financing as well as maintaining a solid policy framework and structural reform agenda that can address challenges as they emerge.\n45. Fiscal policy in Seychelles continues to demonstrate challenges, albeit mostly with respect to under-spending. While higher-than projected primary surpluses bring faster public debt reduction, repeated underspending on capital projects undermines budget credibility and delays implementation of critical public infrastructure projects.\n\n[chunk 130] (page 46)\n2. Integrating climate effects into macroeconomic projections is crucial for accurately assessing the potential impacts on key variables. As climate change poses increasing risks to economic stability, failing to account for these effects can lead to overoptimistic forecasts that do not reflect the realities of vulnerability and resilience. By incorporating climate-related risks and uncertainties into macroeconomic models, policymakers can better understand their potential economic consequences, enabling more informed decision-making. This is particularly relevant for small island states like Seychelles, where climate-induced challenges significantly affect economic performance and development prospects.\n3. This annex presents a new approach, using Seychelles as a pilot case, to integrate climate change into the macroeconomic framework. 1 In doing so, it is important to recognize which climate change effects may already be included in current macroeconomic projections—against the backdrop of a baseline global warming scenario of 2.7C by 2100 typically applied at the Fund. It is crucial to distinguish between two types of climate change effects in macroeconomic projections.\nSlow-moving effects, such as rising sea levels and ocean acidification, manifest over a longer timeframe, typically beyond the medium-term horizon (5 years). In contrast, climate-induced natural disasters, including floods and storms, can occur at any time, including within the medium-term horizon.\n4. With continued and concerted resilience-building efforts, the macroeconomic impact of slow-moving climate change may be broadly contained. In the case of Seychelles, the impact of past slow-moving global temperature changes (e.g., rising sea temperatures and ocean acidification)\nand policies to build resilience to these effects, including ongoing reform measures under the RSF\narrangement, are already embedded in current macroeconomic projections.\n\n[chunk 132] (page 47)\nThe 2023 flood, accompanied by an industrial explosion, was classified as a technological disaster. Compared to the Maldives, Mauritius, other small islands, and sub-Saharan\nAfrica (SSA), Seychelles has experienced fewer disasters on average (Fig. 1). Among these events, the\n2002 storm affected the largest share of the population. While overall economic damage has been moderate, the 2004 earthquake had the highest damage-to-GDP ratio at 3.5 percent. Considering climate risks and preparedness, Seychelles is relatively less vulnerable and better prepared for climate-related risks than its peers. According to INFORM—an open-source risk assessment tool adapted by\nIMF staff—Seychelles scores favorably across hazard exposure, vulnerability, and coping capacity dimensions (Fig. 2).\n6. The influence of climate-related natural disasters on macroeconomic projections can be more substantial. Often, their impact is only partially accounted for. One of the challenges in accounting for climate-related natural disasters in projections is that they do not necessarily happen every year. This annex addresses that challenge by employing an expected value methodology to develop an alternative macroeconomic framework with revised medium-term projections for key macro indicators such as GDP growth, inflation, primary balance, net exports, and international reserves. In this approach, the projection of a specific macroeconomic indicator is determined by a probability-based weighted average of its projection under the occurrence of a climate-related natural disaster and its projection in the absence of such events. The impact of a climate-related\nFigure 1. Seychelles: Natural Disasters in\nSelected Countries 2000-2024\nFigure 2. Seychelles: Climate-Driven INFORM\nIndex 2022 (0-10)\n\n[chunk 21] (page 12)\nReal GDP growth is projected to rise to 3.2 percent in 2025. This is a downward revision from 4.3 percent projected at the third reviews. The less optimistic outlook reflects slower growth in Europe—Seychelles' largest tourism source market. Over the medium\n3 In March 2024, the CBS reduced the MPR by 25bps, from 2 to 1.75 percent.\nterm, growth is anticipated to stabilize around 3.4 percent, assuming a recovery in tourism inflows and a stabilization of tourist spending. Average annual inflation is projected to stabilize around 3 percent but remains subject to external shocks (commodity and transport prices) and currency movements given high import dependency. The current account deficit is expected to average 8.8 percent of GDP over the medium term. An overall balance of payments surplus supported by a modest improvement in the goods and services balance and continued financial inflows (FDI) is projected to maintain reserve coverage around 3.8 months of imports.\n10. Risks appear increasingly tilted to the downside (Annex I). These risks emanate from heightened trade tensions and uncertainty weighing on global growth and trade, and related spillovers to tourism demand, international supply chains, prices, and inflation. 4 Elevated trade tensions may disrupt supply chains, reduce FDI and lead to tighter financial conditions. Additionally, the course of geopolitical conflicts and their effects on commodity prices and international shipping can have direct impacts on Seychelles given its high import dependency and quick pass through to domestic inflation. On the domestic side, financial stability risks may arise from large exposures, credit concentration, and high (albeit declining) NPLs.\n\n[chunk 137] (page 49)\n10. Natural disaster shocks are contractionary and induce immediate fiscal and external imbalances. Figure 3 presents the impulse responses of key macroeconomic variables—output, public finances, and external sector indicators—to a one-time natural disaster shock.7 GDP growth declines immediately, reflecting disrupted production and increased economic uncertainty. Total and tax revenues also drop due to reduced economic activity and potential delays in tax collection.\nGovernment increases current expenditures, likely for emergency relief and social transfers, while capital expenditures decline. This decline may indicate a reallocation of fiscal resources away from investment projects or constraints on financing. Capital spending exhibits the most volatility among fiscal variables, highlighting uncertainty in post-disaster investment behavior. In the external sector, imports initially rise, driven by demand for relief goods and materials for reconstruction, but this effect diminishes over time. Conversely, exports experience a decline, possibly attributed to disruptions in production and trade infrastructure, particularly impacting the tourism sector. These dynamics underscore the vulnerability of trade balances in small island economies to natural disasters.\n11. Climate resilient investments can help mitigate the effects of climate change on GDP\ngrowth. Incorporating climate considerations into public investment and enhancing climate-resilient infrastructure in Seychelles under the RSF arrangement can significantly mitigate the adverse effects of climate change on GDP growth. By prioritizing investments that address vulnerabilities to storms\n6 An additional dummy variable was included in the SVAR model to account for the negative impacts of COVID on macroeconomic variables included in the SVAR model. Abdel-Latif, 2025 (unpublished memo - link) provides more technical details on the estimated SVAR model.\n7 Figure 3 presents the annual effects (rather than cumulative effects) of a natural disaster shock.\n\n[chunk 138] (page 49)\nAbdel-Latif, 2025 (unpublished memo - link) provides more technical details on the estimated SVAR model.\n7 Figure 3 presents the annual effects (rather than cumulative effects) of a natural disaster shock.\nand floods—such as upgrading coastal defenses, improving drainage systems, and reinforcing critical infrastructure—Seychelles can better withstand the impacts of climate-related events. The findings in (Nguyen, Feng and Garcia-Escribano, 2025, weblink) from a local projections model for small islands indicate that adaptation efforts can lead to improvements of climate resilient infrastructure that offset the negative impact of natural disasters on GDP growth from an average of -1.5 percentage points to\n-1 percentage points, improving the growth outcome by about 33 percent compared to relatively lower quality infrastructure. 8\n12. An expected value approach is employed to explicitly adjust existing projections to account for the effects of climate-related natural disasters.9 This methodology utilizes the estimated probability of such disaster incidence in conjunction with the impacts of such disasters based on findings from VAR model based empirical findings (and cross-checked with historical data)\nand the long-term trends in the absence of natural disasters. Probability-based weighted averages are then applied to estimate the climate-adjusted projection for a given variable (see Equation 1). Figure 4 presents the climate-adjusted growth projections derived from this approach. The results shown in\nFigure 4 indicate that climate-adjusted GDP growth rates are expected to be slightly lower than current projections. This trend is also observed for government revenues (both total and tax), capital expenditures, and exports, where applying the expected value approach yields a marginally lower trajectory for these variables.\n\n[chunk 4] (page 4)\nThe outlook suggests low but stable growth for 2025 and beyond but is subject to considerable uncertainty. Real GDP growth is projected at 3.2 percent for 2025 compared to\n4.3 percent at the previous reviews. The downward revision reflects slower a weaker outlook for tourist activity on the back of slower growth in Europe (Seychelles' most important tourism source market). Year-on-year inflation is expected to moderate to 1.2 percent by end-2025 due to lower utility, fuel and food prices. Reserve coverage is expected to increase to 3.9 months of import cover in 2025. Near-term downside risks relate mainly to how slower global growth and higher uncertainty translate into tourism arrivals and spending.\nGoing forward, continuation of prudent macroeconomic policies is paramount for maintaining resilience. The authorities’ near-term priorities are to support economic growth, strengthen fiscal and external positions, and maintain prudent monetary policy and a sound financial sector. In the medium-term, the authorities’ aim to continue a steady fiscal consolidation to reduce the ratio of public debt to GDP, while simultaneously improving the efficiency of public spending. Building capacity with respect to public financial management and financial sector supervision is another key focus. The structural reform agenda emphasizes revenue administration, public financial and investment management, climate change resilience, and governance improvements, including digitalization and transparency.\nFollowing the Executive Board’s discussion, Mr. Bo Li, Deputy Managing Director, and acting\nChair, issued the following statement:\n“Seychelles has continued to demonstrate sound macroeconomic management and commitment to structural reforms. Lower than expected GDP growth for 2024 reflected lower tourism income and weakened performance in such sectors as accommodation, food services, and transportation.\n\n[chunk 136] (page 49)\n9. Projections of macroeconomic variables in years where climate-related natural disasters occur (i.e., yt+h ND ) subtract the average impact of climate-related natural disasters from the long-term trend estimated above. The annex estimates the impact of climate-related natural disasters on\nSeychelles' economy using data from EM-DAT and a Structural Vector Autoregression (SVAR) model with zero-sign restrictions. Natural disaster shocks are treated as structurally exogenous, meaning they are not influenced by other macroeconomic variables. Conversely, these shocks are assumed to negatively affect key variables such as GDP, government revenue, and imports, enabling a causal interpretation of their effects. The sign restrictions are imposed on impact only—that is, on the contemporaneous responses of macroeconomic variables in the year of the natural disaster event.\nThis approach ensures that identification remains theoretically informed while allowing the dynamic responses over subsequent periods to be determined by the data. The average impulse response for t\n= 1, 2 is then used to quantify the effect of natural disaster on various macroeconomic variables. For instance, the SVAR approach indicates an average deviation of 1.3 percentage points from the counterfactual trend for GDP growth. As a cross-check, the average effect during disaster years shows a deviation of 1.1 percentage points from the counterfactual trend. A natural disaster could result in declines of 2.4 percent in total revenue, 12.7 percent in tax revenue, and 4 percent in capital expenditure, while total expenditure and imports increased by 2.7 and 8.4 percent, respectively.6\n10. Natural disaster shocks are contractionary and induce immediate fiscal and external imbalances.",
+        "answer": "Seychelles' economic outlook faces downside external risks from slower global growth and economic deceleration in Europe—its main tourism source market—which threatens tourism arrivals and spending [chunk 4, chunk 21, chunk 50]. Additionally, heightened trade tensions and ongoing geopolitical conflicts pose risks by disrupting international supply chains, global trade, and shipping [chunk 21, chunk 50]. Due to the country's high import dependency, these conflicts and trade disruptions could negatively affect commodity and transport prices, directly impacting domestic inflation, while also threatening FDI and tightening financial conditions [chunk 21].",
+        "model": "gemini-3.5-flash",
+        "latency_s": 7.95,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": 5.0,
+        "judge_explanation": "Answer A is fully supported by the provided context and covers all major external risks mentioned in the source material, including downside risks from Europe, trade tensions, geopolitical conflicts, supply chain disruptions, and high import dependency effects on inflation.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "A"
+      },
+      "tier1_trap": {
+        "qid": "tier1_trap",
+        "question": "What is the Tier 1 capital ratio of Seychelles' banks?",
+        "condition": "multi",
+        "unit_ids": [
+          97,
+          100,
+          102,
+          154,
+          12,
+          65,
+          73,
+          72
+        ],
+        "context": "[chunk 97] (page 37)\nMoney multiplier (broad money/reserve money) 3.9 3.3 3.4 3.7 4.2 4.6 4.8 4.9 4.9\nVelocity (GDP/broad money; end-of-period) 1.0 1.1 1.2 1.2 1.2 1.1 1.1 1.1 1.1\nSources: Central Bank of Seychelles; and IMF staff estimates and projections.\n1 Negative shows accumulation, positive shows retiring (debt that is not rolled over)\n(Millions of Seychelles rupees)\nAct. Proj.\nTable 5. Seychelles: Financial Soundness Indicators for the Banking Sector, 2018–24\n2018 2019 2020 2021 2022 2023 2024\nCapital adequacy\nRegulatory capital to risk weighted assets 20.5 19.5 17.1 22.7 20.7 21.8 19.8\nRegulatory tier 1 capital to risk weighted assets 16.8 16.2 14.1 17.2 15.2 16.0 14.1\nCapital to assets (net worth) 10.1 9.9 8.4 9.2 8.8 10.1 10.4\nNet tangible capitalization 1 10.1 10.0 8.5 9.3 8.9 10.2 10.5\nAsset quality\n\n[chunk 100] (page 38)\nLiquid assets to deposit liabilities 68.5 65.3 67.8 69.4 72.5 73.5 71.2\nForeign exchange exposure\nTotal long position in foreign exchange to capital ... ... ... 5.2 6.9 7.7 4.3\nTotal short position in foreign exchange to capital ... ... ... -4.3 -3.2 -8.3 -2.4\nSource: Central Bank of Seychelles.\n1 Defined as: equity capital/(assets-interest in suspense-provisions).\n2 Defined as: (Interest income - interest expense)/average assets.\n3 Defined as: (Non-interest income - non-interest expense)/average assets.\n4 Core liquid assets include cash, balances with CBS, and deposits with other banks.\n5 Broad liquid assets include core liquid assets plus investments in government securities.\n(Percent, end-of-period)\nTable 6. Seychelles: Program Monitoring – External Financing Requirements and Sources, 2020-30 (Millions of US$, unless otherwise indicated)\n2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030\nGross Financing Requirements 216 198 197 220 258 263 277 273 271 293 315\nCurrent account deficit 173 156 152 162 173 202 207 206 208 223 241\nCG Debt Amortization 43 41 45 59 85 61 70 67 63 70 74\nSources of Financing 216 198 197 220 258 247 270 273 271 293 315\n\n[chunk 102] (page 39)\nCapital account balance 21 24 14 5 9 23 33 19 18 19 19\nNet errors and omissions 0 0 0 0 0 0 0 0 0 0 0\nChange in reserves (- = increase) 35 -97 56 12 -47 -43 -13 -32 -32 -63 -65\nFinancing gap 0 0 0 0 0 16 8 0 0 0 0\nProspective Financing 16 8 0 0 0 0\nIMF EFF purchases1 16 8 0 0 0 0\nMemo items\nGIR (percent of ARA) 112 121 102 105 115 118 117 118 119 124 127 excluding RSF 100 100 107 110 113 111 0 0\nGIR (months of imports of G&S) 3.8 3.7 3.1 3.4 3.8 3.9 3.8 3.8 3.8 3.8 3.9 excluding RSF 3.1 3.3 3.3 3.1 3.2 3.2 0.0 0.0\nSource: Central Bank of Seychelles and IMF staff estimates and projections.\n1 Including IMF disbursements associated with future reviews.\nTable 7. Seychelles: Schedule of Reviews and Purchases Under the EFF-Supported Program and Proposed Disbursements Under the RSF Arrangement\nSDR\nmillion\nPercent of\nQuota\n\n[chunk 154] (page 57)\nThe fan chart analysis estimates risks to be moderate due partly to a relatively moderate probability of debt non-stabilization and a relatively low terminal adjusted debt-to-GDP ratio. The GFN module also indicates moderate risk for\nSeychelles in relation to its low average projected gross financing needs and relatively limited exposure on banks to government debt. In the stress scenario, the natural disaster shock was calibrated based on the Disaster Risk Financing Strategy TA Report that estimates the financing needs for public and private entities combined to US$59 million for a 100-year event (or 2.7 percent of GDP). This shock would elevate financing needs in the short-term but would stabilize after three years. In reality, due to geographical location, Seychelles has not experienced many natural disasters. However, the country is highly vulnerable to the rise in sea level from climate change. The RSF is supporting the authorities address climate concerns. The DSA also incorporates a stress test for a contingent liability related to the CBS recapitalization amounting SRC 330 million and financed by local banks.\nSource: IMF staff estimates and projections.\n0.4 0.5 0.2\n0.2 0.5 0.1\n0 25 50\nPercentile in peer group 2/\n0 25 50 75 100\n75 100\nValue (normalize d)\nTriggered stress tests (stress tests not activated in gray)\n2020 2022 2024 2026 2028 2030\n5-25 pct\n25-50 pct\n50-75 pct\n75-95 pct\nActual\n2020 2022 2024 2026 2028 2030\nFinancing provided by banks\nActual\nBaseline\nStress scenario\n0.00\n\n[chunk 12] (page 6)\n3.1 3.3 3.4 3.7 3.8 3.8 3.9 3.8 3.8 3.8 3.8 3.9\nIn percent of Assessing Reserve Adequacy (ARA) metric 102 104 105 118 115 119 118 117 118 119 124 127\nExchange rate\nSeychelles rupees per US$1 (end-of-period) 14.1 14.2 14.2 ... 14.8 ... ... ... ... ... ... ...\nSeychelles rupees per US$1 (period average) 14.3 14.0 14.0 ... 14.5 ... ... ... ... ... ... ...\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Includes onlending to the parastatals for investment purposes.\n3 Includes private external debt.\n2030\nProj.\n2 Includes debt issued by the Ministry of Finance for monetary purposes.\n(Percent of GDP)\nAct.\n(Annual percent change, unless otherwise indicated)\n(Percent of GDP, unless otherwise indicated)\nAct. Proj.\n2022 2024 2028 20292026 20272023 2025\nFOURTH REVIEWS UNDER THE ARRANGEMENT UNDER\nTHE EXTENDED FUND FACILITY AND THE ARRANGEMENT\nUNDER THE RESILIENCE AND SUSTAINABILITY FACILITY,\nREQUEST FOR MODIFICATION OF PERFORMANCE\nCRITERIA, AND REQUEST FOR MODIFICATION OF REFORM\nMEASURES UNDER THE RESILIENCE AND SUSTAINABILITY\nFACILITY\nEXECUTIVE SUMMARY\nContext.\n\n[chunk 65] (page 33)\n3.1 3.3 3.4 3.7 3.8 3.8 3.9 3.8 3.8 3.8 3.8 3.9\nIn percent of Assessing Reserve Adequacy (ARA) metric 102 104 105 118 115 119 118 117 118 119 124 127\nExchange rate\nSeychelles rupees per US$1 (end-of-period) 14.1 14.2 14.2 ... 14.8 ... ... ... ... ... ... ...\nSeychelles rupees per US$1 (period average) 14.3 14.0 14.0 ... 14.5 ... ... ... ... ... ... ...\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Includes onlending to the parastatals for investment purposes.\n3 Includes private external debt.\n2030\nProj.\n2 Includes debt issued by the Ministry of Finance for monetary purposes.\n(Percent of GDP)\nAct.\n(Annual percent change, unless otherwise indicated)\n(Percent of GDP, unless otherwise indicated)\nAct. Proj.\n2022 2024 2028 20292026 20272023 2025\nTable 2. Seychelles: Balance of Payments, 2022-30\n2029 2030\n3rd\nReview\n3rd\nReview\n3rd\nReview\n\n[chunk 73] (page 34)\n1 Per STA recommendations, net lending under financial account is recorded as positive following BPM6 guidance.\n2 The level of GIRs computed from the BOP includes the budget support.\n(Millions of US dollars, unless otherwise indicated)\n2027 20282022 2023 2024 2025 2026\nAct. Proj.Act. Act. Proj.\nTable 3a. Seychelles: Consolidated Government Operations, 2022-301 (Millions of Seychelles Rupees)\n2029 2030\n3rd\nReview\n3rd\nReview\n3rd\nReview\nTotal revenue and grants 8,798 9,726 9,726 10,879 10,758 12,112 11,740 12,375 13,017 13,906 14,707 15,599\nTotal revenue 8,652 9,466 9,466 10,525 10,565 11,666 11,359 11,806 12,678 13,581 14,405 15,294\nTax 7,382 8,169 8,169 8,918 9,021 9,965 9,587 10,087 10,820 11,507 12,326 13,242\nPersonal income tax 1,079 1,190 1,190 1,284 1,331 1,388 1,408 1,502 1,598 1,713 1,836 1,969\nTrade tax 302 330 330 351 382 371 402 424 457 457 514 573\n\n[chunk 72] (page 34)\nPercentage of IMF reserve adequacy metric 102 104 105 118 115 119 118 117 118 119 124 127\nGross official reserves without RSF (stock, e.o.p.)2 678 678 794 761 815 781 784 816 848 956 1,021 (Months of imports of goods & services) 3.3 3.4 3.6 3.7 3.6 3.7 3.6 3.6 3.6 3.8 3.9\nPercentage of IMF reserve adequacy metric 104 104 116 113 114 112 110 112 113 124 127\nGovernment and government-guaranteed external debt 578 591 591 690 648 777 742 784 786 745 698 653 (Percent of GDP) 29 28 27 32 30 35 34 35 33 30 27 24\nGDP (Millions of U.S. dollars) 2,018 2,141 2,187 2,134 2,178 2,227 2,188 2,256 2,349 2,463 2,583 2,733\nSources: Central Bank of Seychelles; Ministry of Finance; and IMF staff estimates and projections.\n1 Per STA recommendations, net lending under financial account is recorded as positive following BPM6 guidance.\n2 The level of GIRs computed from the BOP includes the budget support.\n(Millions of US dollars, unless otherwise indicated)",
+        "answer": "The regulatory Tier 1 capital to risk-weighted assets for Seychelles' banks was 15.2 percent in 2022, following a peak of 17.2 percent in 2021 and a low of 14.1 percent in 2020 [chunk 97]. Projections for 2023 and 2024 estimate the ratio will be 16.0 percent and 14.1 percent, respectively [chunk 97]. These financial soundness indicators are based on data from the Central Bank of Seychelles [chunk 97, chunk 100].",
+        "model": "gemini-3-flash-preview",
+        "latency_s": 3.91,
+        "status": "ok",
+        "faithfulness": 5.0,
+        "completeness": NaN,
+        "judge_explanation": "Answer A is fully faithful to the provided context and completely answers the question with accurate data from Table 5.",
+        "judge_model": "gemini-3.5-flash-lite",
+        "shown_as": "A",
+        "judge_completeness_raw": 5.0,
+        "refusal_correct": false
+      }
+    }
+  }
+}

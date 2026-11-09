@@ -1,0 +1,87 @@
+{
+  "Inflation & Prices": {
+    "count": 75,
+    "keywords": [
+      "inflation",
+      "consumer prices",
+      "CPI",
+      "price pressures",
+      "food prices",
+      "fuel prices",
+      "core inflation"
+    ]
+  },
+  "Interest Rates & Credit": {
+    "count": 98,
+    "keywords": [
+      "interest rate",
+      "policy rate",
+      "lending rate",
+      "credit",
+      "private sector credit",
+      "borrowing costs",
+      "loan growth"
+    ]
+  },
+  "Housing & Real Estate": {
+    "count": 34,
+    "keywords": [
+      "housing",
+      "real estate",
+      "property prices",
+      "house prices",
+      "mortgage",
+      "construction",
+      "property market"
+    ]
+  },
+  "Banking Capital & Liquidity": {
+    "count": 77,
+    "keywords": [
+      "bank capital",
+      "capital adequacy",
+      "Tier 1",
+      "liquidity",
+      "non-performing loans",
+      "NPL",
+      "banking sector",
+      "financial institutions"
+    ]
+  },
+  "Sovereign Debt": {
+    "count": 67,
+    "keywords": [
+      "public debt",
+      "government debt",
+      "sovereign debt",
+      "debt sustainability",
+      "debt service",
+      "fiscal deficit"
+    ]
+  },
+  "Labor Market Dynamics": {
+    "count": 16,
+    "keywords": [
+      "unemployment",
+      "employment",
+      "labor market",
+      "labour market",
+      "wages",
+      "workforce",
+      "job creation"
+    ]
+  },
+  "Systemic Financial Risk": {
+    "count": 57,
+    "keywords": [
+      "systemic risk",
+      "financial stability",
+      "financial vulnerability",
+      "contagion",
+      "financial sector risk",
+      "climate risk",
+      "external shocks",
+      "macroprudential"
+    ]
+  }
+}

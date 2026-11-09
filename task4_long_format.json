@@ -1,0 +1,410 @@
+[
+  {
+    "year":2022,
+    "series":"Real GDP growth",
+    "value":12.7,
+    "projection":false
+  },
+  {
+    "year":2023,
+    "series":"Real GDP growth",
+    "value":2.3,
+    "projection":false
+  },
+  {
+    "year":2024,
+    "series":"Real GDP growth",
+    "value":2.9,
+    "projection":false
+  },
+  {
+    "year":2025,
+    "series":"Real GDP growth",
+    "value":3.2,
+    "projection":true
+  },
+  {
+    "year":2026,
+    "series":"Real GDP growth",
+    "value":3.2,
+    "projection":true
+  },
+  {
+    "year":2027,
+    "series":"Real GDP growth",
+    "value":3.4,
+    "projection":true
+  },
+  {
+    "year":2028,
+    "series":"Real GDP growth",
+    "value":3.4,
+    "projection":true
+  },
+  {
+    "year":2029,
+    "series":"Real GDP growth",
+    "value":3.4,
+    "projection":true
+  },
+  {
+    "year":2030,
+    "series":"Real GDP growth",
+    "value":3.5,
+    "projection":true
+  },
+  {
+    "year":2022,
+    "series":"Headline CPI inflation",
+    "value":2.6,
+    "projection":false
+  },
+  {
+    "year":2023,
+    "series":"Headline CPI inflation",
+    "value":-0.9,
+    "projection":false
+  },
+  {
+    "year":2024,
+    "series":"Headline CPI inflation",
+    "value":0.3,
+    "projection":false
+  },
+  {
+    "year":2025,
+    "series":"Headline CPI inflation",
+    "value":1.0,
+    "projection":true
+  },
+  {
+    "year":2026,
+    "series":"Headline CPI inflation",
+    "value":2.0,
+    "projection":true
+  },
+  {
+    "year":2027,
+    "series":"Headline CPI inflation",
+    "value":2.6,
+    "projection":true
+  },
+  {
+    "year":2028,
+    "series":"Headline CPI inflation",
+    "value":3.0,
+    "projection":true
+  },
+  {
+    "year":2029,
+    "series":"Headline CPI inflation",
+    "value":3.0,
+    "projection":true
+  },
+  {
+    "year":2030,
+    "series":"Headline CPI inflation",
+    "value":3.0,
+    "projection":true
+  },
+  {
+    "year":2020,
+    "series":"Private sector credit growth",
+    "value":20.2,
+    "projection":false
+  },
+  {
+    "year":2021,
+    "series":"Private sector credit growth",
+    "value":-11.9,
+    "projection":false
+  },
+  {
+    "year":2022,
+    "series":"Private sector credit growth",
+    "value":4.0,
+    "projection":false
+  },
+  {
+    "year":2023,
+    "series":"Private sector credit growth",
+    "value":7.4,
+    "projection":false
+  },
+  {
+    "year":2024,
+    "series":"Private sector credit growth",
+    "value":12.1,
+    "projection":false
+  },
+  {
+    "year":2025,
+    "series":"Private sector credit growth",
+    "value":9.4,
+    "projection":true
+  },
+  {
+    "year":2026,
+    "series":"Private sector credit growth",
+    "value":9.1,
+    "projection":true
+  },
+  {
+    "year":2027,
+    "series":"Private sector credit growth",
+    "value":8.6,
+    "projection":true
+  },
+  {
+    "year":2028,
+    "series":"Private sector credit growth",
+    "value":8.4,
+    "projection":true
+  },
+  {
+    "year":2018,
+    "series":"Non-performing loans ratio",
+    "value":3.5,
+    "projection":false
+  },
+  {
+    "year":2019,
+    "series":"Non-performing loans ratio",
+    "value":2.7,
+    "projection":false
+  },
+  {
+    "year":2020,
+    "series":"Non-performing loans ratio",
+    "value":3.3,
+    "projection":false
+  },
+  {
+    "year":2021,
+    "series":"Non-performing loans ratio",
+    "value":5.5,
+    "projection":false
+  },
+  {
+    "year":2022,
+    "series":"Non-performing loans ratio",
+    "value":7.6,
+    "projection":false
+  },
+  {
+    "year":2023,
+    "series":"Non-performing loans ratio",
+    "value":8.1,
+    "projection":false
+  },
+  {
+    "year":2024,
+    "series":"Non-performing loans ratio",
+    "value":5.5,
+    "projection":false
+  },
+  {
+    "year":2018,
+    "series":"Regulatory capital to risk-weighted assets",
+    "value":20.5,
+    "projection":false
+  },
+  {
+    "year":2019,
+    "series":"Regulatory capital to risk-weighted assets",
+    "value":19.5,
+    "projection":false
+  },
+  {
+    "year":2020,
+    "series":"Regulatory capital to risk-weighted assets",
+    "value":17.1,
+    "projection":false
+  },
+  {
+    "year":2021,
+    "series":"Regulatory capital to risk-weighted assets",
+    "value":22.7,
+    "projection":false
+  },
+  {
+    "year":2022,
+    "series":"Regulatory capital to risk-weighted assets",
+    "value":20.7,
+    "projection":false
+  },
+  {
+    "year":2023,
+    "series":"Regulatory capital to risk-weighted assets",
+    "value":21.8,
+    "projection":false
+  },
+  {
+    "year":2024,
+    "series":"Regulatory capital to risk-weighted assets",
+    "value":19.8,
+    "projection":false
+  },
+  {
+    "year":2022,
+    "series":"Central government debt (% of GDP)",
+    "value":62.6,
+    "projection":false
+  },
+  {
+    "year":2023,
+    "series":"Central government debt (% of GDP)",
+    "value":57.3,
+    "projection":false
+  },
+  {
+    "year":2024,
+    "series":"Central government debt (% of GDP)",
+    "value":59.6,
+    "projection":false
+  },
+  {
+    "year":2025,
+    "series":"Central government debt (% of GDP)",
+    "value":61.2,
+    "projection":true
+  },
+  {
+    "year":2026,
+    "series":"Central government debt (% of GDP)",
+    "value":61.8,
+    "projection":true
+  },
+  {
+    "year":2027,
+    "series":"Central government debt (% of GDP)",
+    "value":60.4,
+    "projection":true
+  },
+  {
+    "year":2028,
+    "series":"Central government debt (% of GDP)",
+    "value":56.8,
+    "projection":true
+  },
+  {
+    "year":2029,
+    "series":"Central government debt (% of GDP)",
+    "value":52.6,
+    "projection":true
+  },
+  {
+    "year":2030,
+    "series":"Central government debt (% of GDP)",
+    "value":49.0,
+    "projection":true
+  },
+  {
+    "year":2022,
+    "series":"Current account balance (% of GDP)",
+    "value":-7.5,
+    "projection":false
+  },
+  {
+    "year":2023,
+    "series":"Current account balance (% of GDP)",
+    "value":-7.4,
+    "projection":false
+  },
+  {
+    "year":2024,
+    "series":"Current account balance (% of GDP)",
+    "value":-7.9,
+    "projection":false
+  },
+  {
+    "year":2025,
+    "series":"Current account balance (% of GDP)",
+    "value":-9.2,
+    "projection":true
+  },
+  {
+    "year":2026,
+    "series":"Current account balance (% of GDP)",
+    "value":-9.2,
+    "projection":true
+  },
+  {
+    "year":2027,
+    "series":"Current account balance (% of GDP)",
+    "value":-8.8,
+    "projection":true
+  },
+  {
+    "year":2028,
+    "series":"Current account balance (% of GDP)",
+    "value":-8.4,
+    "projection":true
+  },
+  {
+    "year":2029,
+    "series":"Current account balance (% of GDP)",
+    "value":-8.6,
+    "projection":true
+  },
+  {
+    "year":2030,
+    "series":"Current account balance (% of GDP)",
+    "value":-8.8,
+    "projection":true
+  },
+  {
+    "year":2022,
+    "series":"Primary balance (% of GDP)",
+    "value":1.0,
+    "projection":false
+  },
+  {
+    "year":2023,
+    "series":"Primary balance (% of GDP)",
+    "value":1.7,
+    "projection":false
+  },
+  {
+    "year":2024,
+    "series":"Primary balance (% of GDP)",
+    "value":3.2,
+    "projection":false
+  },
+  {
+    "year":2025,
+    "series":"Primary balance (% of GDP)",
+    "value":1.2,
+    "projection":true
+  },
+  {
+    "year":2026,
+    "series":"Primary balance (% of GDP)",
+    "value":1.8,
+    "projection":true
+  },
+  {
+    "year":2027,
+    "series":"Primary balance (% of GDP)",
+    "value":2.5,
+    "projection":true
+  },
+  {
+    "year":2028,
+    "series":"Primary balance (% of GDP)",
+    "value":2.9,
+    "projection":true
+  },
+  {
+    "year":2029,
+    "series":"Primary balance (% of GDP)",
+    "value":3.1,
+    "projection":true
+  },
+  {
+    "year":2030,
+    "series":"Primary balance (% of GDP)",
+    "value":3.1,
+    "projection":true
+  }
+]

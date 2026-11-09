@@ -1,0 +1,95 @@
+{
+  "report": "IMF Country Report No. 25/147",
+  "cleaning_pct_removed": 6.1,
+  "chunks": 279,
+  "retrieval_units": 279,
+  "summary_words_max": 86,
+  "judge_means": {
+    "consistency": 5.0,
+    "completeness": 4.88,
+    "factual_alignment": 5.0
+  },
+  "numeric_support_exec_summary": 1.0,
+  "indicators": {
+    "country_name": "Seychelles",
+    "gdp_growth_forecast_pct": 3.2,
+    "headline_inflation_rate_pct": -0.04,
+    "central_bank_policy_rate_pct": 1.75,
+    "non_performing_loan_ratio": 5.5,
+    "unemployment_rate_pct": 2.0,
+    "tier_1_capital_ratio": 14.1
+  },
+  "fallbacks": [],
+  "trend_series_verified": 3,
+  "trend_series": 8,
+  "minilm_text_unseen_pct": 18.7,
+  "cleaning_kept_text_identical_pages": "126/126",
+  "retrieval_questions": 15,
+  "citation_repairs": {
+    "single": [],
+    "multi": []
+  },
+  "llm_calls_this_run": {
+    "api calls": 45,
+    "from cache": 2
+  },
+  "retrieval": [
+    {
+      "config": "MiniLM single-query",
+      "hit@1": 0.267,
+      "hit@k": 0.6,
+      "mrr@10": 0.402,
+      "k": 5,
+      "n": 15
+    },
+    {
+      "config": "BGE single-query",
+      "hit@1": 0.4,
+      "hit@k": 0.867,
+      "mrr@10": 0.56,
+      "k": 5,
+      "n": 15
+    },
+    {
+      "config": "BGE single-query",
+      "hit@1": 0.4,
+      "hit@k": 0.867,
+      "mrr@10": 0.56,
+      "k": 8,
+      "n": 15
+    },
+    {
+      "config": "BGE multi-query",
+      "hit@1": 0.533,
+      "hit@k": 0.867,
+      "mrr@10": 0.65,
+      "k": 5,
+      "n": 15
+    },
+    {
+      "config": "BGE multi-query",
+      "hit@1": 0.533,
+      "hit@k": 0.867,
+      "mrr@10": 0.65,
+      "k": 8,
+      "n": 15
+    }
+  ],
+  "rag_means": {
+    "multi": {
+      "faithfulness": 5.0,
+      "completeness": 5.0
+    },
+    "single": {
+      "faithfulness": 5.0,
+      "completeness": 4.33
+    }
+  },
+  "rag_status": "{('multi', 'ok'): 7, ('single', 'ok'): 6, ('single', 'refused'): 1}",
+  "models_used": {
+    "gemini-3.5-flash": 20,
+    "gemini-3.5-flash-lite": 17,
+    "gemini-3-flash-preview": 7,
+    "gemini-3.6-flash": 1
+  }
+}

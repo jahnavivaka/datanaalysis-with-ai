@@ -1,0 +1,682 @@
+{
+  "theme_counts": [
+    {
+      "theme": "Inflation & Prices",
+      "mentions_full": 72,
+      "mentions_prose": 72,
+      "sentences_prose": 66,
+      "naive_full": 72,
+      "share_full_pct": 19.6
+    },
+    {
+      "theme": "Interest Rates & Credit",
+      "mentions_full": 71,
+      "mentions_prose": 71,
+      "sentences_prose": 68,
+      "naive_full": 71,
+      "share_full_pct": 19.3
+    },
+    {
+      "theme": "Sovereign Debt",
+      "mentions_full": 67,
+      "mentions_prose": 67,
+      "sentences_prose": 62,
+      "naive_full": 67,
+      "share_full_pct": 18.2
+    },
+    {
+      "theme": "Banking Capital & Liquidity",
+      "mentions_full": 64,
+      "mentions_prose": 64,
+      "sentences_prose": 61,
+      "naive_full": 64,
+      "share_full_pct": 17.4
+    },
+    {
+      "theme": "Systemic Financial Risk",
+      "mentions_full": 50,
+      "mentions_prose": 50,
+      "sentences_prose": 44,
+      "naive_full": 50,
+      "share_full_pct": 13.6
+    },
+    {
+      "theme": "Housing & Real Estate",
+      "mentions_full": 29,
+      "mentions_prose": 29,
+      "sentences_prose": 25,
+      "naive_full": 29,
+      "share_full_pct": 7.9
+    },
+    {
+      "theme": "Labor Market Dynamics",
+      "mentions_full": 15,
+      "mentions_prose": 15,
+      "sentences_prose": 14,
+      "naive_full": 15,
+      "share_full_pct": 4.1
+    }
+  ],
+  "theme_keywords": {
+    "Inflation & Prices": [
+      "inflation",
+      "consumer prices",
+      "CPI",
+      "price pressures",
+      "food prices",
+      "fuel prices",
+      "core inflation"
+    ],
+    "Interest Rates & Credit": [
+      "interest rate",
+      "policy rate",
+      "lending rate",
+      "credit",
+      "private sector credit",
+      "borrowing costs",
+      "loan growth"
+    ],
+    "Housing & Real Estate": [
+      "housing",
+      "real estate",
+      "property prices",
+      "house prices",
+      "mortgage",
+      "construction",
+      "property market"
+    ],
+    "Banking Capital & Liquidity": [
+      "bank capital",
+      "capital adequacy",
+      "Tier 1",
+      "liquidity",
+      "non-performing loans",
+      "NPL",
+      "banking sector",
+      "financial institutions"
+    ],
+    "Sovereign Debt": [
+      "public debt",
+      "government debt",
+      "sovereign debt",
+      "debt sustainability",
+      "debt service",
+      "fiscal deficit"
+    ],
+    "Labor Market Dynamics": [
+      "unemployment",
+      "employment",
+      "labor market",
+      "labour market",
+      "wages",
+      "workforce",
+      "job creation"
+    ],
+    "Systemic Financial Risk": [
+      "systemic risk",
+      "financial stability",
+      "financial vulnerability",
+      "contagion",
+      "financial sector risk",
+      "climate risk",
+      "external shocks",
+      "macroprudential"
+    ]
+  },
+  "multi_theme_sentence_pct": 9.0,
+  "insights": {
+    "strengths": [
+      {
+        "item": "Primary fiscal surplus",
+        "evidence": "Fiscal performance was tighter than budgeted driven mainly by underspending on capital expenditure, with a primary surplus equivalent to 3.2 percent of GDP in 2024.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Robust reserve accumulation",
+        "evidence": "The current account deficit widened to 7.9 percent of GDP in 2024, but gross international reserves increased to $774 million, equivalent to 3.8 months of imports or 115 percent of the Assessing Reserve Adequacy (or ARA) metric.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Decline in unemployment rate",
+        "evidence": "The unemployment rate reached 2 percent in Q4 2024, down from 2.8 percent in Q4 2023.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Private credit growth",
+        "evidence": "Credit to the private sector grew 12.1 percent in 2024, compared to 7.4 percent growth in 2023.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Banking sector capital adequacy",
+        "evidence": "All banks are maintaining regulatory capital above the prudential requirement of 12 percent and have remained adequately liquid (Table 5).",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Reduction in non-performing loans",
+        "evidence": "Moreover, NPLs as a share of gross loans decreased from 8.1 percent in 2023 to 5.5 percent in December 2024 but remain above the pre-pandemic average of about 3 percent.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      }
+    ],
+    "vulnerabilities": [
+      {
+        "item": "Widening current account deficit",
+        "evidence": "The current account deficit increased by 0.5 percentage points to about 7.9 percent of GDP in 2024.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Slowdown in European tourism demand",
+        "evidence": "The downward revision reflects slower a weaker outlook for tourist activity on the back of slower growth in Europe (Seychelles' most important tourism source market).",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Capital expenditure underspending",
+        "evidence": "Capex underspending reflected under-execution of planned projects due to capacity constraints, diversion of planning resources to emergency reconstruction following the industrial explosion and floods in December 2023, and lengthy procurement processes for foreign-funded capital projects.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Rise in public debt",
+        "evidence": "Public debt increased from 57.3 percent of GDP in 2023 to 59.6 percent in 2024, due to a higher real interest rate, exchange rate depreciation and higher stock of government guarantees.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "High cost of bank credit",
+        "evidence": "The cost of credit remains high, with the average lending rate at 9.9 percent in December 2024 (an increase of 0.2 ppt compared to the previous year).",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Monetary policy transmission constraints",
+        "evidence": "The impact of monetary policy remains limited, due primarily to ineffective transmission and persistent excess liquidity in the banking sector.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      },
+      {
+        "item": "Threats from climate change",
+        "evidence": "Climate change remains an ongoing risk via sea level rise damage from natural disasters to coastal infrastructure and tourism.",
+        "quote_support": 1.0,
+        "evidence_check": "verbatim",
+        "numbers": []
+      }
+    ]
+  },
+  "insight_model": "gemini-3.6-flash",
+  "indicators": {
+    "country_name": "Seychelles",
+    "gdp_growth_forecast_pct": 3.2,
+    "headline_inflation_rate_pct": -0.04,
+    "central_bank_policy_rate_pct": 1.75,
+    "non_performing_loan_ratio": 5.5,
+    "unemployment_rate_pct": 2.0,
+    "tier_1_capital_ratio": 14.1
+  },
+  "indicator_sources": {
+    "gdp_growth_forecast_pct": {
+      "value": 3.2,
+      "period": "2025",
+      "source_quote": "Real GDP growth is projected at 3.2 percent for 2025 compared to 4.3 percent at the previous reviews.",
+      "source_type": "text",
+      "table_row": null,
+      "reason": null
+    },
+    "headline_inflation_rate_pct": {
+      "value": -0.04,
+      "period": "March 2025",
+      "source_quote": "In 2025, headline inflation has declined and reached –0.04 in March (y-o-y) on the back of lower food prices, utilities, and recreation and culture.",
+      "source_type": "text",
+      "table_row": null,
+      "reason": null
+    },
+    "central_bank_policy_rate_pct": {
+      "value": 1.75,
+      "period": "Q2 2025",
+      "source_quote": "The Monetary Policy Rate (MPR) remained unchanged at 1.75 percent in the second quarter of 2025.",
+      "source_type": "text",
+      "table_row": null,
+      "reason": null
+    },
+    "non_performing_loan_ratio": {
+      "value": 5.5,
+      "period": "December 2024",
+      "source_quote": "Moreover, NPLs as a share of gross loans decreased from 8.1 percent in 2023 to 5.5 percent in December 2024 but remain above the pre-pandemic average of about 3 percent.",
+      "source_type": "text",
+      "table_row": null,
+      "reason": null
+    },
+    "unemployment_rate_pct": {
+      "value": 2.0,
+      "period": "Q4 2024",
+      "source_quote": "The unemployment rate reached 2 percent in Q4 2024, down from 2.8 percent in Q4 2023.",
+      "source_type": "text",
+      "table_row": null,
+      "reason": null
+    },
+    "tier_1_capital_ratio": {
+      "value": 14.1,
+      "period": "2024",
+      "source_quote": "Regulatory tier 1 capital to risk weighted assets 16.8 16.2 14.1 17.2 15.2 16.0 14.1",
+      "source_type": "table",
+      "table_row": "Regulatory tier 1 capital to risk weighted assets",
+      "reason": null
+    }
+  },
+  "indicator_model": "gemini-3.5-flash",
+  "indicator_checks": [
+    {
+      "indicator": "gdp_growth_forecast_pct",
+      "value": 3.2,
+      "period": "2025",
+      "quote_in_report": true,
+      "value_in_quote": true,
+      "period_in_quote": true,
+      "table_value_same_year": 3.2,
+      "table_check": "matches table"
+    },
+    {
+      "indicator": "headline_inflation_rate_pct",
+      "value": -0.04,
+      "period": "March 2025",
+      "quote_in_report": true,
+      "value_in_quote": false,
+      "period_in_quote": true,
+      "table_value_same_year": 1.0,
+      "table_check": "differs from table (1) - check"
+    },
+    {
+      "indicator": "central_bank_policy_rate_pct",
+      "value": 1.75,
+      "period": "Q2 2025",
+      "quote_in_report": true,
+      "value_in_quote": true,
+      "period_in_quote": true,
+      "table_value_same_year": null,
+      "table_check": "n/a (no table series)"
+    },
+    {
+      "indicator": "non_performing_loan_ratio",
+      "value": 5.5,
+      "period": "December 2024",
+      "quote_in_report": true,
+      "value_in_quote": true,
+      "period_in_quote": true,
+      "table_value_same_year": 5.5,
+      "table_check": "matches table"
+    },
+    {
+      "indicator": "unemployment_rate_pct",
+      "value": 2.0,
+      "period": "Q4 2024",
+      "quote_in_report": true,
+      "value_in_quote": true,
+      "period_in_quote": true,
+      "table_value_same_year": null,
+      "table_check": "n/a (no table series)"
+    },
+    {
+      "indicator": "tier_1_capital_ratio",
+      "value": 14.1,
+      "period": "2024",
+      "quote_in_report": true,
+      "value_in_quote": true,
+      "period_in_quote": false,
+      "table_value_same_year": null,
+      "table_check": "n/a (no table series)"
+    }
+  ],
+  "indicator_audit": {
+    "gdp_growth_forecast_pct": {
+      "verdict": "correct",
+      "correct_value": null,
+      "explanation": "The source document explicitly projects real GDP growth at 3.2 percent for 2025.",
+      "valid_label": true
+    },
+    "headline_inflation_rate_pct": {
+      "verdict": "correct",
+      "correct_value": null,
+      "explanation": "The source document states that headline inflation reached –0.04 in March (y-o-y) in 2025.",
+      "valid_label": true
+    },
+    "central_bank_policy_rate_pct": {
+      "verdict": "correct",
+      "correct_value": null,
+      "explanation": "The source document confirms the Monetary Policy Rate remained unchanged at 1.75 percent in the second quarter of 2025.",
+      "valid_label": true
+    },
+    "non_performing_loan_ratio": {
+      "verdict": "correct",
+      "correct_value": null,
+      "explanation": "The source document states NPLs as a share of gross loans decreased to 5.5 percent in December 2024.",
+      "valid_label": true
+    },
+    "unemployment_rate_pct": {
+      "verdict": "correct",
+      "correct_value": null,
+      "explanation": "The source document states the unemployment rate reached 2 percent in Q4 2024.",
+      "valid_label": true
+    },
+    "tier_1_capital_ratio": {
+      "verdict": "correct",
+      "correct_value": null,
+      "explanation": "Table 5 in the source document lists the Regulatory tier 1 capital to risk weighted assets as 14.1 for 2024.",
+      "valid_label": true
+    }
+  },
+  "fallbacks": {},
+  "related_context": {
+    "total_regulatory_capital_to_rwa_pct": 19.8,
+    "year": 2024,
+    "note": "closest reported measure - NOT Tier 1"
+  },
+  "time_series": [
+    {
+      "series": "Real GDP growth",
+      "unit": "Annual percent change",
+      "table": "Table 1. Seychelles: Selected Economic and Financial Indicators, 2022-30",
+      "row_label": "Real GDP",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "values": [
+        12.7,
+        2.3,
+        2.9,
+        3.2,
+        3.2,
+        3.4,
+        3.4,
+        3.4,
+        3.5
+      ],
+      "first_projection_year": 2025,
+      "first_projection_year_llm": 2025,
+      "verification": {
+        "values_found": false,
+        "row_label": null,
+        "label_matches": false,
+        "years_consistent": true,
+        "year_anchors": 2
+      }
+    },
+    {
+      "series": "Headline CPI inflation",
+      "unit": "Annual percent change",
+      "table": "Table 1. Seychelles: Selected Economic and Financial Indicators, 2022-30",
+      "row_label": "CPI (annual average)",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "values": [
+        2.6,
+        -0.9,
+        0.3,
+        1.0,
+        2.0,
+        2.6,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "first_projection_year": 2025,
+      "first_projection_year_llm": 2025,
+      "verification": {
+        "values_found": false,
+        "row_label": null,
+        "label_matches": false,
+        "years_consistent": true,
+        "year_anchors": 2
+      }
+    },
+    {
+      "series": "Private sector credit growth",
+      "unit": "12–month percent change",
+      "table": "Table 4. Seychelles: Depository Corporations Survey and Central Bank Accounts, 2020-28",
+      "row_label": "Credit to the private sector (12–month percent change)",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028
+      ],
+      "values": [
+        20.2,
+        -11.9,
+        4.0,
+        7.4,
+        12.1,
+        9.4,
+        9.1,
+        8.6,
+        8.4
+      ],
+      "first_projection_year": 2025,
+      "first_projection_year_llm": 2025,
+      "verification": {
+        "values_found": true,
+        "row_label": "Credit to the private sector (12–month percent change)",
+        "label_matches": true,
+        "years_consistent": true,
+        "year_anchors": 2
+      }
+    },
+    {
+      "series": "Non-performing loans ratio",
+      "unit": "Percent",
+      "table": "Table 5. Seychelles: Financial Soundness Indicators for the Banking Sector, 2018–24",
+      "row_label": "Non-performing loans to gross loans",
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "values": [
+        3.5,
+        2.7,
+        3.3,
+        5.5,
+        7.6,
+        8.1,
+        5.5
+      ],
+      "first_projection_year": null,
+      "first_projection_year_llm": null,
+      "verification": {
+        "values_found": true,
+        "row_label": "Non-performing loans to gross loans",
+        "label_matches": true,
+        "years_consistent": true,
+        "year_anchors": 2
+      }
+    },
+    {
+      "series": "Regulatory capital to risk-weighted assets",
+      "unit": "Percent",
+      "table": "Table 5. Seychelles: Financial Soundness Indicators for the Banking Sector, 2018–24",
+      "row_label": "Regulatory capital to risk weighted assets",
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "values": [
+        20.5,
+        19.5,
+        17.1,
+        22.7,
+        20.7,
+        21.8,
+        19.8
+      ],
+      "first_projection_year": null,
+      "first_projection_year_llm": null,
+      "verification": {
+        "values_found": true,
+        "row_label": "Regulatory capital to risk weighted assets",
+        "label_matches": true,
+        "years_consistent": true,
+        "year_anchors": 0
+      }
+    },
+    {
+      "series": "Central government debt (% of GDP)",
+      "unit": "Percent of GDP",
+      "table": "Table 1. Seychelles: Selected Economic and Financial Indicators, 2022-30",
+      "row_label": "Total government and government-guaranteed debt",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "values": [
+        62.6,
+        57.3,
+        59.6,
+        61.2,
+        61.8,
+        60.4,
+        56.8,
+        52.6,
+        49.0
+      ],
+      "first_projection_year": 2025,
+      "first_projection_year_llm": 2025,
+      "verification": {
+        "values_found": false,
+        "row_label": null,
+        "label_matches": false,
+        "years_consistent": true,
+        "year_anchors": 4
+      }
+    },
+    {
+      "series": "Current account balance (% of GDP)",
+      "unit": "Percent of GDP",
+      "table": "Table 1. Seychelles: Selected Economic and Financial Indicators, 2022-30",
+      "row_label": "Current account balance including official transfers (in percent of GDP)",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "values": [
+        -7.5,
+        -7.4,
+        -7.9,
+        -9.2,
+        -9.2,
+        -8.8,
+        -8.4,
+        -8.6,
+        -8.8
+      ],
+      "first_projection_year": 2025,
+      "first_projection_year_llm": 2025,
+      "verification": {
+        "values_found": false,
+        "row_label": null,
+        "label_matches": false,
+        "years_consistent": true,
+        "year_anchors": 0
+      }
+    },
+    {
+      "series": "Primary balance (% of GDP)",
+      "unit": "Percent of GDP",
+      "table": "Table 1. Seychelles: Selected Economic and Financial Indicators, 2022-30",
+      "row_label": "Primary balance",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "values": [
+        1.0,
+        1.7,
+        3.2,
+        1.2,
+        1.8,
+        2.5,
+        2.9,
+        3.1,
+        3.1
+      ],
+      "first_projection_year": 2025,
+      "first_projection_year_llm": 2025,
+      "verification": {
+        "values_found": false,
+        "row_label": null,
+        "label_matches": false,
+        "years_consistent": true,
+        "year_anchors": 5
+      }
+    }
+  ],
+  "trend_model": "gemini-3.5-flash"
+}
